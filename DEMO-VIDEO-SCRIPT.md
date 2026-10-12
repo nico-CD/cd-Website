@@ -7,7 +7,9 @@ This cut has to hold until the next card reprint. Soft-launch page keeps "coming
 **Length:** 75-90 seconds  
 **Primary demo:** HVAC (`hvac.carrillodynamics.com`)  
 **Runner-up if HVAC flakes:** Roofing Command Center (`/app`)  
-**Format:** Short face intro + screen recording + VO  
+**Format:** Short face intro + **desktop** screen recording + VO  
+**Audio:** Earbuds mic preferred over laptop mic (clearer, less keyboard noise)  
+**Look:** Regular shirt, regular background. No studio setup.  
 **Languages:** One English cut + Spanish closer (full ES remake later if ES traffic warrants it)
 
 ---
