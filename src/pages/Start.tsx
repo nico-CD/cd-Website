@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Clapperboard, ExternalLink, Languages } from "lucide-react";
@@ -10,11 +10,21 @@ import { DEMO_HUB_URL } from "@/data/trades";
 
 /**
  * QR-only landing. Not linked from the public homepage.
- * card scanners arrive here directly.
+ * Card scanners arrive here directly.
  */
 const Start = () => {
   const { lang, setLanguage } = useTranslation();
   const [searchParams] = useSearchParams();
+  const [calendlyHeight, setCalendlyHeight] = useState(900);
+
+  useEffect(() => {
+    const syncHeight = () => {
+      setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
+    };
+    syncHeight();
+    window.addEventListener("resize", syncHeight);
+    return () => window.removeEventListener("resize", syncHeight);
+  }, []);
 
   const hubHome = useMemo(() => {
     const url = new URL(DEMO_HUB_URL);
@@ -35,15 +45,16 @@ const Start = () => {
   const copy =
     lang === "en"
       ? {
-          title: "Watch the walk-through.",
-          titleAccent: "Then book a call.",
+          title: "Demo video coming soon.",
+          titleAccent: "Book a call.",
           subtitle:
-            "This video shows the engines we build for local trades, in English or Spanish. Then book 15 minutes or drive a live demo yourself.",
+            "A short walk-through of the engines we build for local trades is on the way. For now, book 15 minutes or open the live demos.",
           videoBadge: "Walk-through video coming soon",
-          previewAlt: "CD Engine Demos preview",
-          previewBadge: "Live Demos",
-          openHub: "Open CD Engine Demos",
           bookPrimary: "Book a 15-min strategy call",
+          demosEyebrow: "Want to click around first?",
+          demosBody:
+            "Open CD Engine Demos and drive seven live trade engines yourself.",
+          openHub: "Open CD Engine Demos",
           bookTitleLead: "Book Your",
           bookTitleAccent: "Strategy Session",
           bookBody:
@@ -51,15 +62,16 @@ const Start = () => {
           langToggle: "ES",
         }
       : {
-          title: "Vea el recorrido.",
-          titleAccent: "Luego agende.",
+          title: "Video demo próximamente.",
+          titleAccent: "Agende una llamada.",
           subtitle:
-            "Este video muestra los motores que construimos para oficios locales, en inglés o español. Luego reserve 15 minutos o pruebe un demo en vivo.",
+            "Un recorrido corto de los motores que construimos para oficios locales está en camino. Por ahora, reserve 15 minutos o abra los demos en vivo.",
           videoBadge: "Video del recorrido próximamente",
-          previewAlt: "Vista previa de CD Engine Demos",
-          previewBadge: "Demos en vivo",
-          openHub: "Abrir CD Engine Demos",
           bookPrimary: "Agendar llamada de 15 min",
+          demosEyebrow: "¿Prefiere explorar primero?",
+          demosBody:
+            "Abra CD Engine Demos y pruebe siete motores de oficios en vivo.",
+          openHub: "Abrir CD Engine Demos",
           bookTitleLead: "Agende Su",
           bookTitleAccent: "Sesión de Estrategia",
           bookBody:
@@ -106,17 +118,18 @@ const Start = () => {
           }}
         />
 
-        <section className="relative px-4 pb-6 pt-8 sm:px-6 sm:pt-10">
+        {/* Path: Watch → Book → optional demos */}
+        <section className="relative px-4 pb-10 pt-8 sm:px-6 sm:pb-14 sm:pt-12">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-black uppercase tracking-tight sm:text-4xl">
               {copy.title}{" "}
               <span className="text-[#10b981]">{copy.titleAccent}</span>
             </h1>
-            <p className="mx-auto mt-3 max-w-lg text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
+            <p className="mx-auto mt-4 max-w-lg text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
               {copy.subtitle}
             </p>
 
-            <div className="relative mt-6 w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#18181B]">
+            <div className="relative mt-8 w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#18181B]">
               <div className="relative aspect-video w-full">
                 <img
                   src="/images/demo-preview.jpg"
@@ -136,33 +149,26 @@ const Start = () => {
             <button
               type="button"
               onClick={scrollToBook}
-              className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center rounded-xl bg-[#10b981] px-5 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors hover:bg-[#0ea672] sm:w-auto sm:px-8"
+              className="mt-8 inline-flex min-h-[48px] w-full items-center justify-center rounded-xl bg-[#10b981] px-5 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors hover:bg-[#0ea672] sm:w-auto sm:px-8"
             >
               {copy.bookPrimary}
             </button>
+          </div>
+        </section>
 
+        <section className="relative z-10 border-t border-foreground/10 px-4 py-12 sm:px-6 sm:py-16">
+          <div className="relative z-10 mx-auto max-w-3xl text-center">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#10b981]">
+              {copy.demosEyebrow}
+            </p>
+            <p className="mx-auto mt-3 max-w-md text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
+              {copy.demosBody}
+            </p>
             <a
               href={hubHome}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={copy.openHub}
-              className="group relative mt-5 block w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#18181B] transition-all duration-300 hover:border-[#10b981]/50 hover:shadow-[0_20px_50px_-15px_rgba(16,185,129,0.35)]"
-            >
-              <span className="absolute right-3 top-3 z-10 rounded-full border border-[#10b981]/40 bg-[#18181B]/90 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#10b981] backdrop-blur-sm sm:right-4 sm:top-4">
-                {copy.previewBadge}
-              </span>
-              <img
-                src="/images/demo-preview.jpg"
-                alt={copy.previewAlt}
-                className="block aspect-video w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-              />
-            </a>
-
-            <a
-              href={hubHome}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border border-[#10b981]/40 px-5 py-3.5 text-sm font-black uppercase tracking-wider text-[#10b981] transition-colors hover:bg-[#10b981]/10 sm:w-auto sm:px-8"
+              className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border border-[#10b981]/40 px-5 py-3.5 text-sm font-black uppercase tracking-wider text-[#10b981] transition-colors hover:bg-[#10b981]/10 sm:w-auto sm:px-8"
             >
               {copy.openHub}
               <ExternalLink className="h-4 w-4" />
@@ -170,7 +176,10 @@ const Start = () => {
           </div>
         </section>
 
-        <section id="book" className="relative z-10 scroll-mt-20 px-4 pt-20 pb-16 sm:px-6 sm:pt-24 md:pb-24">
+        <section
+          id="book"
+          className="relative z-10 scroll-mt-20 border-t border-foreground/10 px-4 pt-14 pb-16 sm:px-6 sm:pt-20 md:pb-24"
+        >
           <motion.div className="relative z-10 mx-auto w-full max-w-full md:max-w-4xl" {...revealProps}>
             <div className="mb-8 space-y-3 text-center sm:mb-10">
               <h2 className="text-3xl font-black uppercase leading-none tracking-tight sm:text-4xl">
@@ -185,7 +194,7 @@ const Start = () => {
             <InlineWidget
               url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang === "en" ? "en" : "es"}`}
               styles={{
-                height: "700px",
+                height: `${calendlyHeight}px`,
                 width: "100%",
                 border: "none",
                 overflow: "hidden",

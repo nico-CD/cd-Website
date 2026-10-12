@@ -63,24 +63,6 @@ export interface I18nContent {
         successSub: string;
         operationalStress: string;
     };
-    intake: {
-        title: string;
-        titleItalic: string;
-        titleAccent: string;
-        subtitle: string;
-        fullName: string;
-        email: string;
-        companyName: string;
-        companyWebsite: string;
-        industry: string;
-        industryPlaceholder: string;
-        bottleneck: string;
-        bottleneckPlaceholder: string;
-        consent: string;
-        consentPrivacy: string;
-        submit: string;
-        submitting: string;
-    };
     privacyPolicy: {
         title: string;
         titleMain: string;
@@ -161,24 +143,6 @@ export const i18nData: Record<Language, I18nContent> = {
             successTitle: "Analysis Complete.",
             successSub: "Your custom ROI breakdown has been engineered. Download the PDF and book your session below.",
             operationalStress: "Operational Stress"
-        },
-        intake: {
-            title: "Get your ",
-            titleItalic: "Free ",
-            titleAccent: "Automation Diagnostic.",
-            subtitle: "Tell us where your manual bottlenecks are. In 24 hours, we'll send you a personalized video analysis and automation diagnostic.",
-            fullName: "Full Name",
-            email: "Business Email",
-            companyName: "Company Name",
-            companyWebsite: "Company Website",
-            industry: "Industry",
-            industryPlaceholder: "Select your industry",
-            bottleneck: "Primary Bottleneck",
-            bottleneckPlaceholder: "Select bottleneck",
-            consent: "I consent to the Diagnostic Analysis and occasional strategy updates.",
-            consentPrivacy: "Data is processed in accordance with our Privacy Governance Standards.",
-            submit: "Get Diagnostic",
-            submitting: "Initiating_"
         },
         privacyPolicy: {
             title: "Privacy Policy",
@@ -488,24 +452,6 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             successTitle: "Análisis Completado.",
             successSub: "Su desglose de ROI personalizado ha sido diseñado. Descargue el PDF y reserve su sesión a continuación.",
             operationalStress: "Estrés Operativo"
-        },
-        intake: {
-            title: "Obtenga su ",
-            titleAccent: "Diagnóstico de Automatización ",
-            titleItalic: "Gratis.",
-            subtitle: "Díganos dónde están sus mayores obstáculos operativos. En 24 horas, le enviaremos un análisis en video personalizado y un diagnóstico de automatización.",
-            fullName: "Nombre Completo",
-            email: "Email de Negocios",
-            companyName: "Nombre de la Empresa",
-            companyWebsite: "Sitio Web de la Empresa",
-            industry: "Industria",
-            industryPlaceholder: "Seleccione su industria",
-            bottleneck: "Mayor Obstáculo Operativo",
-            bottleneckPlaceholder: "Seleccione su obstáculo principal",
-            consent: "Doy mi consentimiento para el Análisis de Diagnóstico y actualizaciones ocasionales de estrategia.",
-            consentPrivacy: "Los datos se procesan de acuerdo con nuestros Estándares de Gobernanza de Privacidad.",
-            submit: "Obtenga su Diagnóstico",
-            submitting: "Iniciando_"
         },
         privacyPolicy: {
             title: "Política de Privacidad",

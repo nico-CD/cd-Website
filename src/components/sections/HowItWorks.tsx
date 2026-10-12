@@ -10,10 +10,10 @@ const HowItWorks = () => {
         {
             badge: lang === 'en' ? "Step 1" : "Paso 1",
             icon: ClipboardCheck,
-            title: lang === 'en' ? "Book a Session Below" : "Reserve una Sesión",
+            title: lang === 'en' ? "Test-Drive, Then Book" : "Pruebe, Luego Agende",
             description: lang === 'en'
-                ? "Test-drive our engine below, grab 15 minutes on our calendar to map out your own digital engine."
-                : "Pruebe nuestro motor abajo, reserve 15 minutos en el calendario para trazar su propio motor digital."
+                ? "Open the live trade engines, then grab 15 minutes so we can map an engine for your shop."
+                : "Abra los motores de oficios en vivo y reserve 15 minutos para trazar un motor para su taller."
         },
         {
             badge: lang === 'en' ? "Step 2" : "Paso 2",

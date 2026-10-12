@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import SEOManager from '@/components/SEOManager';
@@ -6,9 +6,20 @@ import { useTranslation } from '@/components/LanguageProvider';
 import { motion } from 'framer-motion';
 import { InlineWidget } from 'react-calendly';
 import { ArrowRight, Search, PenTool, Rocket } from "lucide-react";
+import { DEMO_HUB_URL } from "@/data/trades";
 
 const Book = () => {
     const { lang } = useTranslation();
+    const [calendlyHeight, setCalendlyHeight] = useState(900);
+
+    useEffect(() => {
+        const syncHeight = () => {
+            setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
+        };
+        syncHeight();
+        window.addEventListener("resize", syncHeight);
+        return () => window.removeEventListener("resize", syncHeight);
+    }, []);
 
     const revealProps = {
         initial: { opacity: 0, y: 20 },
@@ -18,11 +29,11 @@ const Book = () => {
     };
 
     return (
-        <div className="bg-background min-h-screen text-foreground selection:bg-[#10b981]/10 font-sans">
+        <div className="bg-background min-h-screen overflow-x-hidden text-foreground selection:bg-[#10b981]/10 font-sans">
             <SEOManager />
             <Navbar />
             
-            <section className="pt-32 pb-24 px-6 min-h-screen bg-zinc-950 relative overflow-hidden flex flex-col items-center">
+            <section className="pt-28 pb-24 px-4 sm:px-6 min-h-screen bg-zinc-950 relative overflow-hidden flex flex-col items-center">
                 {/* Engineering Graph Paper Background */}
                 <div 
                     className="absolute inset-0 pointer-events-none opacity-[0.4]"
@@ -62,7 +73,7 @@ const Book = () => {
                     <InlineWidget 
                         url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang}`}
                         styles={{
-                            height: '700px',
+                            height: `${calendlyHeight}px`,
                             width: '100%',
                             border: 'none',
                             overflow: 'hidden'
@@ -111,10 +122,10 @@ const Book = () => {
                                 <PenTool className="w-8 h-8 text-[#10b981]" />
                             </div>
                             <h3 className="text-xl font-black uppercase text-foreground mb-3">
-                                {lang === 'en' ? "2. The Blueprint" : "2. El Plano"}
+                                {lang === 'en' ? "2. The Plan" : "2. El Plan"}
                             </h3>
                             <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We design a custom automation architecture for your trade." : "Diseñamos una arquitectura de automatización personalizada."}
+                                {lang === 'en' ? "We sketch a custom automation engine for your shop." : "Bosquejamos un motor de automatización a la medida de su taller."}
                             </p>
                         </div>
                         
@@ -147,7 +158,7 @@ const Book = () => {
                             </p>
                         </div>
                         <a 
-                            href="https://demo.carrillodynamics.com" 
+                            href={DEMO_HUB_URL} 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="shrink-0 flex items-center justify-center gap-2 h-14 px-8 bg-[#10b981] hover:bg-[#0ea672] text-black font-black uppercase tracking-widest text-sm transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] rounded-none"
