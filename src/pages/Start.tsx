@@ -155,32 +155,12 @@ const Start = () => {
           </div>
         </section>
 
-        <section className="relative z-10 border-t border-foreground/10 px-4 py-12 sm:px-6 sm:py-16">
-          <div className="relative z-10 mx-auto max-w-3xl text-center">
-            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#10b981]">
-              {copy.demosEyebrow}
-            </p>
-            <p className="mx-auto mt-3 max-w-md text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
-              {copy.demosBody}
-            </p>
-            <a
-              href={hubHome}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border border-[#10b981]/40 px-5 py-3.5 text-sm font-black uppercase tracking-wider text-[#10b981] transition-colors hover:bg-[#10b981]/10 sm:w-auto sm:px-8"
-            >
-              {copy.openHub}
-              <ExternalLink className="h-4 w-4" />
-            </a>
-          </div>
-        </section>
-
         <section
           id="book"
-          className="relative z-10 scroll-mt-20 border-t border-foreground/10 px-4 pt-14 pb-16 sm:px-6 sm:pt-20 md:pb-24"
+          className="relative z-10 scroll-mt-20 border-t border-foreground/10 px-4 pt-14 pb-10 sm:px-6 sm:pt-20 sm:pb-12"
         >
           <motion.div className="relative z-10 mx-auto w-full max-w-full md:max-w-4xl" {...revealProps}>
-            <div className="mb-8 space-y-3 text-center sm:mb-10">
+            <div className="mb-3 space-y-2 text-center sm:mb-4">
               <h2 className="text-3xl font-black uppercase leading-none tracking-tight sm:text-4xl">
                 {copy.bookTitleLead}{" "}
                 <span className="italic text-[#10b981]">{copy.bookTitleAccent}</span>
@@ -207,6 +187,26 @@ const Start = () => {
               }}
             />
           </motion.div>
+        </section>
+
+        <section className="relative z-10 border-t border-foreground/10 px-4 py-12 sm:px-6 sm:py-16">
+          <div className="relative z-10 mx-auto max-w-3xl text-center">
+            <p className="text-[11px] font-black uppercase tracking-[0.2em] text-[#10b981]">
+              {copy.demosEyebrow}
+            </p>
+            <p className="mx-auto mt-3 max-w-md text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
+              {copy.demosBody}
+            </p>
+            <a
+              href={hubHome}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl border border-[#10b981]/40 px-5 py-3.5 text-sm font-black uppercase tracking-wider text-[#10b981] transition-colors hover:bg-[#10b981]/10 sm:w-auto sm:px-8"
+            >
+              {copy.openHub}
+              <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
         </section>
       </main>
 
