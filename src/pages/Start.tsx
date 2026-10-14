@@ -1,12 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Clapperboard, ExternalLink, Languages } from "lucide-react";
+import { ExternalLink, Languages } from "lucide-react";
 import { InlineWidget } from "react-calendly";
 import Footer from "@/components/Footer";
 import SEOManager from "@/components/SEOManager";
 import { useTranslation } from "@/components/LanguageProvider";
 import { DEMO_HUB_URL } from "@/data/trades";
+
+/** Unlisted YouTube walk-through for business-card QR scanners. */
+const DEMO_VIDEO_ID = "0dcWE4plkrY";
 
 /**
  * QR-only landing. Not linked from the public homepage.
@@ -45,11 +48,11 @@ const Start = () => {
   const copy =
     lang === "en"
       ? {
-          title: "Demo video coming soon.",
+          title: "Watch the demo.",
           titleAccent: "Book a call.",
           subtitle:
-            "A short walk-through of the engines we build for local trades is on the way. For now, book 15 minutes or open the live demos.",
-          videoBadge: "Walk-through video coming soon",
+            "A short walk-through of the engines we build for local trades. Then book 15 minutes or open the live demos.",
+          videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a 15-min strategy call",
           demosEyebrow: "Want to click around first?",
           demosBody:
@@ -62,11 +65,11 @@ const Start = () => {
           langToggle: "ES",
         }
       : {
-          title: "Video demo próximamente.",
+          title: "Vea el demo.",
           titleAccent: "Agende una llamada.",
           subtitle:
-            "Un recorrido corto de los motores que construimos para oficios locales está en camino. Por ahora, reserve 15 minutos o abra los demos en vivo.",
-          videoBadge: "Video del recorrido próximamente",
+            "Un recorrido corto de los motores que construimos para oficios locales. Luego reserve 15 minutos o abra los demos en vivo.",
+          videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agendar llamada de 15 min",
           demosEyebrow: "¿Prefiere explorar primero?",
           demosBody:
@@ -131,18 +134,14 @@ const Start = () => {
 
             <div className="relative mt-8 w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#18181B]">
               <div className="relative aspect-video w-full">
-                <img
-                  src="/images/demo-preview.jpg"
-                  alt=""
-                  aria-hidden="true"
-                  className="absolute inset-0 h-full w-full object-cover object-top opacity-40"
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${DEMO_VIDEO_ID}?rel=0`}
+                  title={copy.videoTitle}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 h-full w-full border-0"
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 flex items-center justify-center px-4">
-                  <div className="inline-flex max-w-full items-center gap-2 rounded-full border border-zinc-700 bg-zinc-950/90 px-4 py-2.5 text-[11px] text-emerald-400 backdrop-blur-md sm:text-sm">
-                    <Clapperboard className="h-4 w-4 shrink-0" />
-                    <span className="truncate">{copy.videoBadge}</span>
-                  </div>
-                </div>
               </div>
             </div>
 
