@@ -18,7 +18,7 @@ const VideoGate = () => {
       ? {
           titleLead: "Test-drive our",
           titleAccent: "engines.",
-          body: "Open CD Engine Demos to try seven live trade engines.",
+          body: "Open CD Engine Demos to try nine live trade engines.",
           cta: "Open demos",
           badge: "Live Demos",
           previewAlt: "CD Engine Demos preview",
@@ -26,7 +26,7 @@ const VideoGate = () => {
       : {
           titleLead: "Pruebe nuestros",
           titleAccent: "motores.",
-          body: "Abra CD Engine Demos para probar siete motores de oficios en vivo.",
+          body: "Abra CD Engine Demos para probar nueve motores de oficios en vivo.",
           cta: "Abrir demos",
           badge: "Demos en vivo",
           previewAlt: "Vista previa de CD Engine Demos",
