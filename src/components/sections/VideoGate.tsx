@@ -18,18 +18,18 @@ const VideoGate = () => {
       ? {
           titleLead: "Test-drive our",
           titleAccent: "engines.",
-          body: "Open CD Engine Demos to try nine live trade engines.",
+          body: "Nine live trade engines. Open one and click through like a real job.",
           cta: "Open demos",
-          badge: "Live Demos",
-          previewAlt: "CD Engine Demos preview",
+          previewAlt:
+            "Night service call — the kind of trade shop engine you can test-drive live",
         }
       : {
           titleLead: "Pruebe nuestros",
           titleAccent: "motores.",
-          body: "Abra CD Engine Demos para probar nueve motores de oficios en vivo.",
+          body: "Nueve motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
           cta: "Abrir demos",
-          badge: "Demos en vivo",
-          previewAlt: "Vista previa de CD Engine Demos",
+          previewAlt:
+            "Llamada de servicio nocturna — el tipo de motor de oficio que puede probar en vivo",
         };
 
   return (
@@ -45,12 +45,12 @@ const VideoGate = () => {
       />
 
       <motion.div className="relative z-10 mx-auto max-w-6xl" {...revealProps}>
-        <div className="mb-12 space-y-6 text-center md:mb-16">
+        <div className="mb-10 space-y-5 text-center md:mb-12">
           <h2 className="mx-auto text-4xl font-black uppercase leading-none tracking-tight text-foreground sm:text-5xl md:text-6xl">
             {copy.titleLead}{" "}
             <span className="text-[#10b981]">{copy.titleAccent}</span>
           </h2>
-          <p className="mx-auto max-w-3xl text-lg font-medium leading-relaxed text-muted-foreground md:text-xl">
+          <p className="mx-auto max-w-2xl text-lg font-medium leading-relaxed text-muted-foreground md:text-xl">
             {copy.body}
           </p>
         </div>
@@ -60,22 +60,25 @@ const VideoGate = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={copy.cta}
-          className="group relative block w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#18181B] transition-all duration-300 hover:border-[#10b981]/50 hover:shadow-[0_20px_50px_-15px_rgba(16,185,129,0.35)]"
+          className="group relative block w-full overflow-hidden rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10b981] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          <span className="absolute right-4 top-4 z-10 rounded-full border border-[#10b981]/40 bg-[#18181B]/90 px-3 py-1 text-[10px] font-black uppercase tracking-widest text-[#10b981] backdrop-blur-sm">
-            {copy.badge}
-          </span>
-          <img
-            src="/images/demo-preview.jpg"
-            alt={copy.previewAlt}
-            className="block aspect-video w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
-          />
-          <div className="pointer-events-none absolute inset-0 bg-[#10b981]/0 transition-colors duration-300 group-hover:bg-[#10b981]/5" />
-          <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <span className="inline-flex w-fit items-center gap-2 rounded-xl bg-[#10b981] px-5 py-3 text-sm font-black uppercase tracking-wider text-zinc-950 shadow-lg transition-colors group-hover:bg-[#0ea672]">
-              {copy.cta}
-              <ExternalLink className="h-4 w-4" />
-            </span>
+          <div className="relative aspect-[16/10] w-full sm:aspect-video">
+            <img
+              src="/images/demo-preview.jpg"
+              alt={copy.previewAlt}
+              className="absolute inset-0 h-full w-full object-cover object-[center_35%] transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+            />
+            {/* Atmosphere + CD brand wash — keeps the photo, kills nested-UI noise */}
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/45 to-zinc-950/15" />
+            <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/70 via-transparent to-transparent" />
+            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(16,185,129,0.28),_transparent_55%)]" />
+
+            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-8 md:p-10">
+              <span className="inline-flex min-h-[48px] items-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 shadow-[0_12px_40px_-8px_rgba(16,185,129,0.65)] transition-transform duration-300 group-hover:translate-y-[-2px] group-hover:bg-[#0ea672]">
+                {copy.cta}
+                <ExternalLink className="h-4 w-4" />
+              </span>
+            </div>
           </div>
         </a>
       </motion.div>
