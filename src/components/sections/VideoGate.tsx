@@ -21,7 +21,7 @@ const VideoGate = () => {
           body: "Nine live trade engines. Open one and click through like a real job.",
           cta: "Open demos",
           previewAlt:
-            "Night service call — the kind of trade shop engine you can test-drive live",
+            "Collage of nine live trade engines: HVAC, plumbing, electrical, waste, roofing, towing, landscaping, cleaning, and custom",
         }
       : {
           titleLead: "Pruebe nuestros",
@@ -29,7 +29,7 @@ const VideoGate = () => {
           body: "Nueve motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
           cta: "Abrir demos",
           previewAlt:
-            "Llamada de servicio nocturna — el tipo de motor de oficio que puede probar en vivo",
+            "Collage de nueve motores en vivo: HVAC, plomería, eléctrico, residuos, techado, grúas, paisajismo, limpieza y a medida",
         };
 
   return (
@@ -66,12 +66,11 @@ const VideoGate = () => {
             <img
               src="/images/demo-preview.jpg"
               alt={copy.previewAlt}
-              className="absolute inset-0 h-full w-full object-cover object-[center_35%] transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
             />
-            {/* Atmosphere + CD brand wash — keeps the photo, kills nested-UI noise */}
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/45 to-zinc-950/15" />
-            <div className="absolute inset-0 bg-gradient-to-r from-zinc-950/70 via-transparent to-transparent" />
-            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(16,185,129,0.28),_transparent_55%)]" />
+            {/* Light scrim so the collage stays readable and the CTA pops */}
+            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent" />
+            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(16,185,129,0.22),_transparent_55%)]" />
 
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-8 md:p-10">
               <span className="inline-flex min-h-[48px] items-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 shadow-[0_12px_40px_-8px_rgba(16,185,129,0.65)] transition-transform duration-300 group-hover:translate-y-[-2px] group-hover:bg-[#0ea672]">
