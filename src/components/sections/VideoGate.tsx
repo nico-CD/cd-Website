@@ -68,7 +68,7 @@ const VideoGate = () => {
           <img
             src="/images/demo-preview.jpg"
             alt={copy.previewAlt}
-            className="block aspect-video w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+            className="block aspect-video w-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
           />
           <div className="pointer-events-none absolute inset-0 bg-[#10b981]/0 transition-colors duration-300 group-hover:bg-[#10b981]/5" />
           <div className="absolute bottom-4 left-4 right-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
