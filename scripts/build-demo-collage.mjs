@@ -24,17 +24,53 @@ const assets = {
   custom: path.join(local, "custom.jpg"),
 };
 
-/** Editorial bento on 1920x1080 with 8px emerald-gap gutters (bg shows through). */
+/** Editorial bento on 1920x1080. Outer margin keeps labels inside rounded clips; 8px gutters. */
+const M = 16;
+const G = 8;
+const innerW = W - M * 2;
+const innerH = H - M * 2;
+const topH = Math.round(innerH * 0.648);
+const botH = innerH - topH - G;
+const leftW = Math.round(innerW * 0.583);
+const rightW = innerW - leftW - G;
+const rightCol = Math.floor((rightW - G) / 2);
+const rightCol2 = rightW - G - rightCol;
+const midH = Math.floor((topH - G) / 2);
+const midH2 = topH - G - midH;
+const botCell = Math.floor((innerW - G * 3) / 4);
+const botLast = innerW - G * 3 - botCell * 3;
+
 const panels = [
-  { key: "hvac", label: "HVAC", x: 0, y: 0, w: 1120, h: 700 },
-  { key: "roofing", label: "ROOFING", x: 1128, y: 0, w: 384, h: 346 },
-  { key: "towing", label: "TOWING", x: 1520, y: 0, w: 400, h: 346 },
-  { key: "waste", label: "WASTE", x: 1128, y: 354, w: 384, h: 346 },
-  { key: "electrical", label: "ELECTRICAL", x: 1520, y: 354, w: 400, h: 346 },
-  { key: "plumbing", label: "PLUMBING", x: 0, y: 708, w: 472, h: 372 },
-  { key: "landscaping", label: "LANDSCAPING", x: 480, y: 708, w: 472, h: 372 },
-  { key: "cleaning", label: "CLEANING", x: 960, y: 708, w: 472, h: 372 },
-  { key: "custom", label: "CUSTOM", x: 1440, y: 708, w: 480, h: 372 },
+  { key: "hvac", label: "HVAC", x: M, y: M, w: leftW, h: topH },
+  { key: "roofing", label: "ROOFING", x: M + leftW + G, y: M, w: rightCol, h: midH },
+  { key: "towing", label: "TOWING", x: M + leftW + G + rightCol + G, y: M, w: rightCol2, h: midH },
+  { key: "waste", label: "WASTE", x: M + leftW + G, y: M + midH + G, w: rightCol, h: midH2 },
+  {
+    key: "electrical",
+    label: "ELECTRICAL",
+    x: M + leftW + G + rightCol + G,
+    y: M + midH + G,
+    w: rightCol2,
+    h: midH2,
+  },
+  { key: "plumbing", label: "PLUMBING", x: M, y: M + topH + G, w: botCell, h: botH },
+  { key: "landscaping", label: "LANDSCAPING", x: M + botCell + G, y: M + topH + G, w: botCell, h: botH },
+  {
+    key: "cleaning",
+    label: "CLEANING",
+    x: M + (botCell + G) * 2,
+    y: M + topH + G,
+    w: botCell,
+    h: botH,
+  },
+  {
+    key: "custom",
+    label: "CUSTOM",
+    x: M + (botCell + G) * 3,
+    y: M + topH + G,
+    w: botLast,
+    h: botH,
+  },
 ];
 
 function labelSvg(text, width, height) {

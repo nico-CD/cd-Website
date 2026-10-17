@@ -60,24 +60,25 @@ const VideoGate = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={copy.cta}
-          className="group relative block w-full overflow-hidden rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10b981] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="group relative block w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#09090b] transition-colors duration-300 hover:border-[#10b981]/45 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10b981] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          <div className="relative aspect-[16/10] w-full sm:aspect-video">
+          {/* Match collage 16:9 exactly — no object-cover crop, no hover-scale clip */}
+          <div className="relative aspect-video w-full overflow-hidden bg-[#09090b]">
             <img
               src="/images/demo-preview.jpg"
               alt={copy.previewAlt}
-              className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+              className="block h-full w-full object-contain object-center"
             />
-            {/* Light scrim so the collage stays readable and the CTA pops */}
-            <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/90 via-zinc-950/20 to-transparent" />
-            <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(16,185,129,0.22),_transparent_55%)]" />
+          </div>
 
-            <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-4 p-5 sm:p-8 md:p-10">
-              <span className="inline-flex min-h-[48px] items-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 shadow-[0_12px_40px_-8px_rgba(16,185,129,0.65)] transition-transform duration-300 group-hover:translate-y-[-2px] group-hover:bg-[#0ea672]">
-                {copy.cta}
-                <ExternalLink className="h-4 w-4" />
-              </span>
-            </div>
+          <div className="flex items-center justify-between gap-4 border-t border-[#27272A] bg-zinc-950/90 px-5 py-4 sm:px-8 sm:py-5">
+            <span className="hidden text-sm font-medium text-zinc-400 sm:inline">
+              {lang === "en" ? "HVAC · Plumbing · Electrical · +6 more" : "HVAC · Plomería · Eléctrico · +6 más"}
+            </span>
+            <span className="inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors group-hover:bg-[#0ea672] sm:w-auto">
+              {copy.cta}
+              <ExternalLink className="h-4 w-4" />
+            </span>
           </div>
         </a>
       </motion.div>
