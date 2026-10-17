@@ -20,16 +20,20 @@ const VideoGate = () => {
           titleAccent: "engines.",
           body: "Nine live trade engines. Open one and click through like a real job.",
           cta: "Open demos",
+          trades:
+            "HVAC · Plumbing · Electrical · Waste · Roofing · Towing · Landscaping · Cleaning · Custom",
           previewAlt:
-            "Collage of nine live trade engines: HVAC, plumbing, electrical, waste, roofing, towing, landscaping, cleaning, and custom",
+            "Live trade engines you can test-drive — HVAC and eight more trades",
         }
       : {
           titleLead: "Pruebe nuestros",
           titleAccent: "motores.",
           body: "Nueve motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
           cta: "Abrir demos",
+          trades:
+            "HVAC · Plomería · Eléctrico · Residuos · Techado · Grúas · Paisajismo · Limpieza · A medida",
           previewAlt:
-            "Collage de nueve motores en vivo: HVAC, plomería, eléctrico, residuos, techado, grúas, paisajismo, limpieza y a medida",
+            "Motores de oficios en vivo que puede probar — HVAC y ocho más",
         };
 
   return (
@@ -62,23 +66,32 @@ const VideoGate = () => {
           aria-label={copy.cta}
           className="group relative block w-full overflow-hidden rounded-2xl border border-[#27272A] bg-[#09090b] transition-colors duration-300 hover:border-[#10b981]/45 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#10b981] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          {/* Match collage 16:9 exactly — no object-cover crop, no hover-scale clip */}
-          <div className="relative aspect-video w-full overflow-hidden bg-[#09090b]">
-            <img
-              src="/images/demo-preview.jpg"
-              alt={copy.previewAlt}
-              className="block h-full w-full object-contain object-center"
-            />
+          {/* Mobile: one clear photo. Desktop: full nine-trade collage. */}
+          <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#09090b] sm:aspect-video">
+            <picture>
+              <source media="(min-width: 640px)" srcSet="/images/demo-preview.jpg" />
+              <img
+                src="/images/demo-preview-mobile.jpg"
+                alt={copy.previewAlt}
+                className="absolute inset-0 h-full w-full object-cover object-[center_35%] sm:object-contain sm:object-center"
+              />
+            </picture>
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950/70 via-transparent to-transparent sm:hidden" />
           </div>
 
-          <div className="flex items-center justify-between gap-4 border-t border-[#27272A] bg-zinc-950/90 px-5 py-4 sm:px-8 sm:py-5">
-            <span className="hidden text-sm font-medium text-zinc-400 sm:inline">
-              {lang === "en" ? "HVAC · Plumbing · Electrical · +6 more" : "HVAC · Plomería · Eléctrico · +6 más"}
-            </span>
-            <span className="inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors group-hover:bg-[#0ea672] sm:w-auto">
-              {copy.cta}
-              <ExternalLink className="h-4 w-4" />
-            </span>
+          <div className="space-y-4 border-t border-[#27272A] bg-zinc-950 px-5 py-5 sm:space-y-0 sm:px-8 sm:py-5">
+            <p className="text-center text-[13px] font-semibold leading-relaxed tracking-wide text-zinc-300 sm:hidden">
+              {copy.trades}
+            </p>
+            <div className="flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <span className="hidden text-sm font-medium text-zinc-400 sm:inline">
+                {copy.trades}
+              </span>
+              <span className="inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-xl bg-[#10b981] px-6 py-3.5 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors group-hover:bg-[#0ea672] sm:w-auto">
+                {copy.cta}
+                <ExternalLink className="h-4 w-4" />
+              </span>
+            </div>
           </div>
         </a>
       </motion.div>
