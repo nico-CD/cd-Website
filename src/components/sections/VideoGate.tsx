@@ -18,22 +18,22 @@ const VideoGate = () => {
       ? {
           titleLead: "Test-drive our",
           titleAccent: "engines.",
-          body: "Nine live trade engines. Open one and click through like a real job.",
+          body: "Eleven live trade engines. Open one and click through like a real job.",
           cta: "Open demos",
           trades:
-            "HVAC · Plumbing · Electrical · Waste · Roofing · Towing · Landscaping · Cleaning · Custom",
+            "HVAC · Plumbing · Electrical · Waste · Roofing · Construction · Towing · Landscaping · Cleaning · Barber · Beauty",
           previewAlt:
-            "Collage of nine live trade engines: HVAC, plumbing, electrical, waste, roofing, towing, landscaping, cleaning, and custom",
+            "Collage of eleven live trade engines: HVAC, plumbing, electrical, waste, roofing, construction, towing, landscaping, cleaning, barber, and beauty",
         }
       : {
           titleLead: "Pruebe nuestros",
           titleAccent: "motores.",
-          body: "Nueve motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
+          body: "Once motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
           cta: "Abrir demos",
           trades:
-            "HVAC · Plomería · Eléctrico · Residuos · Techado · Grúas · Paisajismo · Limpieza · A medida",
+            "HVAC · Plomería · Eléctrico · Residuos · Techado · Construcción · Grúas · Paisajismo · Limpieza · Barbería · Belleza",
           previewAlt:
-            "Collage de nueve motores en vivo: HVAC, plomería, eléctrico, residuos, techado, grúas, paisajismo, limpieza y a medida",
+            "Collage de once motores en vivo: HVAC, plomería, eléctrico, residuos, techado, construcción, grúas, paisajismo, limpieza, barbería y belleza",
         };
 
   return (

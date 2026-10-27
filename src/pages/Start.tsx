@@ -56,7 +56,7 @@ const Start = () => {
           bookPrimary: "Book a 15-min strategy call",
           demosEyebrow: "Want to click around first?",
           demosBody:
-            "Open CD Engine Demos and drive nine live trade engines yourself.",
+            "Open CD Engine Demos and drive eleven live trade engines yourself.",
           openHub: "Open CD Engine Demos",
           bookTitleLead: "Book Your",
           bookTitleAccent: "Strategy Session",
@@ -73,7 +73,7 @@ const Start = () => {
           bookPrimary: "Agendar llamada de 15 min",
           demosEyebrow: "¿Prefiere explorar primero?",
           demosBody:
-            "Abra CD Engine Demos y pruebe nueve motores de oficios en vivo.",
+            "Abra CD Engine Demos y pruebe once motores de oficios en vivo.",
           openHub: "Abrir CD Engine Demos",
           bookTitleLead: "Agende Su",
           bookTitleAccent: "Sesión de Estrategia",
