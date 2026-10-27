@@ -49,7 +49,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="text-[#10b981] transition-colors hover:text-[#0ea672]"
           >
-            {lang === "en" ? "CD Engine Demos" : "Demos CD Engine"}
+            {lang === "en" ? "CD Demos" : "Demos CD"}
           </a>
           <Link to="/book" className="transition-colors hover:text-foreground">
             {t.nav.strategy}

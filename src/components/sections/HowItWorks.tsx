@@ -12,8 +12,8 @@ const HowItWorks = () => {
             icon: ClipboardCheck,
             title: lang === 'en' ? "Test-Drive, Then Book" : "Pruebe, Luego Agende",
             description: lang === 'en'
-                ? "Open the live trade engines, then grab 15 minutes so we can map an engine for your shop."
-                : "Abra los motores de oficios en vivo y reserve 15 minutos para trazar un motor para su taller."
+                ? "Open the live trade demos, then grab 15 minutes so we can map a site and owner board for your shop."
+                : "Abra los demos de oficios en vivo y reserve 15 minutos para trazar un sitio y tablero de dueño para su taller."
         },
         {
             badge: lang === 'en' ? "Step 2" : "Paso 2",

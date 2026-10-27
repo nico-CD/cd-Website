@@ -51,34 +51,32 @@ const Start = () => {
           title: "Watch the demo.",
           titleAccent: "Book a call.",
           subtitle:
-            "A short walk-through of the engines we build for local trades. Then book 15 minutes or open the live demos.",
+            "A short walk-through of the trade sites we build for local shops. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a 15-min strategy call",
           demosEyebrow: "Want to click around first?",
-          demosBody:
-            "Open CD Engine Demos and drive eleven live trade engines yourself.",
-          openHub: "Open CD Engine Demos",
+          demosBody: "Open CD Demos and try eleven live trade sites yourself.",
+          openHub: "Open CD Demos",
           bookTitleLead: "Book Your",
           bookTitleAccent: "Strategy Session",
           bookBody:
-            "15 minutes to map bottlenecks and sketch an automation engine for your shop.",
+            "15 minutes to map bottlenecks and sketch a site and owner board for your shop.",
           langToggle: "ES",
         }
       : {
           title: "Vea el demo.",
           titleAccent: "Agende una llamada.",
           subtitle:
-            "Un recorrido corto de los motores que construimos para oficios locales. Luego reserve 15 minutos o abra los demos en vivo.",
+            "Un recorrido corto de los sitios de oficios que construimos para talleres locales. Luego reserve 15 minutos o abra los demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agendar llamada de 15 min",
           demosEyebrow: "¿Prefiere explorar primero?",
-          demosBody:
-            "Abra CD Engine Demos y pruebe once motores de oficios en vivo.",
-          openHub: "Abrir CD Engine Demos",
+          demosBody: "Abra Demos CD y pruebe once sitios de oficios en vivo.",
+          openHub: "Abrir Demos CD",
           bookTitleLead: "Agende Su",
           bookTitleAccent: "Sesión de Estrategia",
           bookBody:
-            "15 minutos para mapear cuellos de botella y bosquejar un motor de automatización para su taller.",
+            "15 minutos para mapear cuellos de botella y bosquejar un sitio y tablero de dueño para su taller.",
           langToggle: "EN",
         };
 

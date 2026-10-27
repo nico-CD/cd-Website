@@ -125,7 +125,7 @@ const Book = () => {
                                 {lang === 'en' ? "2. The Plan" : "2. El Plan"}
                             </h3>
                             <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We sketch a custom automation engine for your shop." : "Bosquejamos un motor de automatización a la medida de su taller."}
+                                {lang === 'en' ? "We sketch a custom site and owner board for your shop." : "Bosquejamos un sitio y tablero de dueño a la medida de su taller."}
                             </p>
                         </div>
                         

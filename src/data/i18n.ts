@@ -118,8 +118,8 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "We build the engines that help service businesses scale. Get more jobs. Automate the busywork. Cut the headaches.",
-            cta: "Test our engines",
+            subtitle: "We build the websites that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches.",
+            cta: "Book a 15-min call",
             audit: "Book a Call",
             badge1: "TRUSTED LOCALLY",
             badge2: "FAST & RELIABLE",
@@ -168,7 +168,7 @@ export const i18nData: Record<Language, I18nContent> = {
                 },
                 {
                     title: "05. Demo and portfolio sites",
-                    content: "The trade sites hosted on subdomains such as hvac.carrillodynamics.com, plumbing.carrillodynamics.com, and related demo URLs are demonstration and portfolio engines built by Carrillo Dynamics. They are not live customer businesses. Phone numbers shown on those demos are fictional (for example 555 numbers). Booking links and engineering@carrillodynamics.com contact Carrillo Dynamics, not an independent trade company."
+                    content: "The trade sites hosted on subdomains such as hvac.carrillodynamics.com, plumbing.carrillodynamics.com, and related demo URLs are demonstration and portfolio demos built by Carrillo Dynamics. They are not live customer businesses. Phone numbers shown on those demos are fictional (for example 555 numbers). Booking links and engineering@carrillodynamics.com contact Carrillo Dynamics, not an independent trade company."
                 },
                 {
                     title: "06. Cookies and analytics",
@@ -212,7 +212,7 @@ export const i18nData: Record<Language, I18nContent> = {
                 },
                 {
                     title: "03. Demo and portfolio sites",
-                    content: "Trade demo sites (including but not limited to HVAC, plumbing, electrical, waste, roofing, towing, and landscaping subdomains under carrillodynamics.com) are samples of engines we can build. They are not websites of independent operating companies unless we expressly say otherwise. Fictional business names, reviews, addresses, and 555 phone numbers are for demonstration only. Do not rely on demo content as real service offerings, licensing, or insurance claims."
+                    content: "Trade demo sites (including but not limited to HVAC, plumbing, electrical, waste, roofing, towing, and landscaping subdomains under carrillodynamics.com) are samples of sites we can build. They are not websites of independent operating companies unless we expressly say otherwise. Fictional business names, reviews, addresses, and 555 phone numbers are for demonstration only. Do not rely on demo content as real service offerings, licensing, or insurance claims."
                 },
                 {
                     title: "04. No professional advice on demos",
@@ -251,7 +251,7 @@ export const i18nData: Record<Language, I18nContent> = {
         faqs: [
             {
                 q: "What is the real cost of missed leads?",
-                a: "For busy shops, even a small leak - after-hours calls, slow follow-up, jobs that never get booked - can cost tens of thousands a year. We build engines that catch those jobs before they go to a competitor."
+                a: "For busy shops, even a small leak (after-hours calls, slow follow-up, jobs that never get booked) can cost tens of thousands a year. We build websites and owner boards that catch those jobs before they go to a competitor."
             },
             {
                 q: "How does the \"60-Second Rule\" impact ROI?",
@@ -271,7 +271,7 @@ export const i18nData: Record<Language, I18nContent> = {
             },
             {
                 q: "What does Carrillo Dynamics actually do?",
-                a: "We're ops and automation engineers for local service businesses. We don't just advise - we build and ship the systems. Book a 15-minute strategy call and we'll map what an engine for your trade would look like."
+                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute strategy call and we'll map a site and owner board for your trade."
             },
             {
                 q: "Do you work in English and Spanish?",
@@ -325,7 +325,7 @@ Is your marketing budget leaking through cracks in your process? Most busy shops
 
 ### What We Build
 
-We tighten intake, speed up response, and make sure follow-ups actually happen - so leads get captured and routed before they go cold. Not just a pretty website: an engine that helps you keep the jobs you already paid to attract.`,
+We tighten intake, speed up response, and make sure follow-ups actually happen, so leads get captured and routed before they go cold. Not just a pretty website: a site and owner board that help you keep the jobs you already paid to attract.`,
                 date: "2026-04-07",
                 readTime: "6 min"
             },
@@ -379,7 +379,7 @@ While earning my Engineering degree at Illinois Tech, I learned how to build rel
 
 ### Building What Works
 
-That's why I started Carrillo Dynamics. I'm not here to sell you just a "pretty website" or pitch abstract tech buzzwords. I'm here to build engines - websites and systems - that help trade businesses run cleaner and take more work without the headaches.
+That's why I started Carrillo Dynamics. I'm not here to sell you just a "pretty website" or pitch abstract tech buzzwords. I'm here to build websites and systems that help trade businesses run cleaner and take more work without the headaches.
 
 ### The Bottom Line
 
@@ -427,8 +427,8 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Construimos los motores que ayudan a las empresas de servicios a escalar. Consiga más trabajos. Automatice el trabajo manual. Reduzca los dolores de cabeza.",
-            cta: "Prueba nuestros motores",
+            subtitle: "Construimos los sitios web que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza.",
+            cta: "Agendar llamada de 15 min",
             audit: "Sesión de Estrategia",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
             badge2: "SIN RETRASOS DE CARGA",
@@ -477,7 +477,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
                 },
                 {
                     title: "05. Sitios demo y de portafolio",
-                    content: "Los sitios de oficios en subdominios como hvac.carrillodynamics.com, plumbing.carrillodynamics.com y demos relacionados son motores de demostración y portafolio hechos por Carrillo Dynamics. No son negocios de clientes en operación. Los teléfonos en esos demos son ficticios (por ejemplo números 555). Los enlaces de reserva y engineering@carrillodynamics.com contactan a Carrillo Dynamics, no a una empresa de oficio independiente."
+                    content: "Los sitios de oficios en subdominios como hvac.carrillodynamics.com, plumbing.carrillodynamics.com y demos relacionados son demos de demostración y portafolio hechos por Carrillo Dynamics. No son negocios de clientes en operación. Los teléfonos en esos demos son ficticios (por ejemplo números 555). Los enlaces de reserva y engineering@carrillodynamics.com contactan a Carrillo Dynamics, no a una empresa de oficio independiente."
                 },
                 {
                     title: "06. Cookies y analítica",
@@ -521,7 +521,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
                 },
                 {
                     title: "03. Sitios demo y de portafolio",
-                    content: "Los sitios demo de oficios (incluyendo HVAC, plomería, eléctrico, residuos, techado, grúas y paisajismo bajo carrillodynamics.com) son ejemplos de motores que podemos construir. No son sitios de empresas independientes en operación, salvo que indiquemos lo contrario. Nombres, reseñas, direcciones y teléfonos 555 son solo para demostración. No confíe en ese contenido como oferta real de servicio, licencias o seguros."
+                    content: "Los sitios demo de oficios (incluyendo HVAC, plomería, eléctrico, residuos, techado, grúas y paisajismo bajo carrillodynamics.com) son ejemplos de sitios que podemos construir. No son sitios de empresas independientes en operación, salvo que indiquemos lo contrario. Nombres, reseñas, direcciones y teléfonos 555 son solo para demostración. No confíe en ese contenido como oferta real de servicio, licencias o seguros."
                 },
                 {
                     title: "04. Sin servicio real en demos",
@@ -560,7 +560,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         faqs: [
             {
                 q: "¿Cuál es el costo real de perder leads?",
-                a: "Para talleres ocupados, incluso una fuga pequeña - llamadas fuera de horario, seguimiento lento, trabajos que nunca se agendan - puede costar decenas de miles al año. Construimos motores que atrapan esos trabajos antes de que se vayan con la competencia."
+                a: "Para talleres ocupados, incluso una fuga pequeña (llamadas fuera de horario, seguimiento lento, trabajos que nunca se agendan) puede costar decenas de miles al año. Construimos sitios web y tableros de dueño que atrapan esos trabajos antes de que se vayan con la competencia."
             },
             {
                 q: "¿Cómo impacta la \"Regla de los 60 Segundos\" en el ROI?",
@@ -580,7 +580,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Qué hace realmente Carrillo Dynamics?",
-                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos - construimos y entregamos los sistemas. Reserve una llamada de estrategia de 15 minutos y mapeamos cómo se vería un motor para su oficio."
+                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de estrategia de 15 minutos y mapeamos un sitio y tablero de dueño para su oficio."
             },
             {
                 q: "¿Trabajan en inglés y español?",
@@ -634,7 +634,7 @@ Los errores manuales son el impuesto oculto en su ROI. Nuestros sistemas asegura
 
 ### Lo Que Construimos
 
-Ajustamos el intake, aceleramos la respuesta y hacemos que los seguimientos realmente ocurran - para capturar y enrutar leads antes de que se enfríen. No solo un sitio bonito: un motor que le ayuda a conservar los trabajos que ya pagó por atraer.`,
+Ajustamos el intake, aceleramos la respuesta y hacemos que los seguimientos realmente ocurran, para capturar y enrutar leads antes de que se enfríen. No solo un sitio bonito: un sitio y tablero de dueño que le ayudan a conservar los trabajos que ya pagó por atraer.`,
                 date: "2026-04-07",
                 readTime: "6 min"
             },
@@ -688,7 +688,7 @@ Mientras obtenía mi título de Ingeniería en Illinois Tech, aprendí a constru
 
 ### Construyendo lo que Funciona
 
-Por eso comencé Carrillo Dynamics. No estoy aquí para venderle solo un "sitio bonito" ni palabras de moda. Estoy aquí para construir motores - sitios y sistemas - que ayuden a los oficios a operar más limpio y tomar más trabajo sin los dolores de cabeza.
+Por eso comencé Carrillo Dynamics. No estoy aquí para venderle solo un "sitio bonito" ni palabras de moda. Estoy aquí para construir sitios y sistemas que ayuden a los oficios a operar más limpio y tomar más trabajo sin los dolores de cabeza.
 
 ### En Conclusión
 

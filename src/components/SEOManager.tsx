@@ -31,8 +31,8 @@ const SEOManager: React.FC<SEOManagerProps> = ({
         : `${brandName} | ${tagline}`;
         
     const siteDescription = lang === 'en' 
-        ? 'We build the engines that help service businesses scale. Get more jobs. Automate the busywork. Cut the headaches. Chicago-based. English and Spanish.'
-        : 'Construimos los motores que ayudan a las empresas de servicios a escalar. Consiga más trabajos. Automatice el trabajo manual. Reduzca los dolores de cabeza. Con sede en Chicago. Inglés y español.';
+        ? 'We build the websites that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches. Chicago-based. English and Spanish.'
+        : 'Construimos los sitios web que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza. Con sede en Chicago. Inglés y español.';
     
     const baseUrl = 'https://carrillodynamics.com';
     

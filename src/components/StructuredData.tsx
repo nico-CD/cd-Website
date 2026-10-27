@@ -4,16 +4,16 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Carrillo Dynamics builds websites and automation engines for local service businesses in the Chicago area and beyond. Get more jobs, automate busywork, cut headaches. Book a 15-minute strategy call. English and Spanish.";
+        "Carrillo Dynamics builds websites and automation systems for local service businesses in the Chicago area and beyond. Get more jobs, automate busywork, cut headaches. Book a 15-minute strategy call. English and Spanish.";
     const descriptionEs =
-        "Carrillo Dynamics construye sitios web y motores de automatización para negocios de servicios locales en el área de Chicago y más allá. Consiga más trabajos, automatice el trabajo manual, reduzca dolores de cabeza. Reserve una llamada de 15 minutos. Inglés y español.";
+        "Carrillo Dynamics construye sitios web y sistemas de automatización para negocios de servicios locales en el área de Chicago y más allá. Consiga más trabajos, automatice el trabajo manual, reduzca dolores de cabeza. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "Carrillo Dynamics LLC",
         "url": "https://carrillodynamics.com",
-        "alternateName": ["Carrillo Dynamics", "CD Engine Demos"],
+        "alternateName": ["Carrillo Dynamics", "CD Demos"],
         "description": lang === "en" ? descriptionEn : descriptionEs,
         "inLanguage": ["en", "es"],
         "publisher": {
@@ -83,7 +83,7 @@ const StructuredData = () => {
                 "name": "What does Carrillo Dynamics do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Carrillo Dynamics builds websites and automation engines for local service businesses so shops get more jobs, automate busywork, and cut headaches. Book a 15-minute strategy call to map an engine for your trade.",
+                    "text": "Carrillo Dynamics builds websites and automation systems for local service businesses so shops get more jobs, automate busywork, and cut headaches. Book a 15-minute strategy call to map a site and owner board for your trade.",
                 },
             },
             {
