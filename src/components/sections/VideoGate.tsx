@@ -18,22 +18,22 @@ const VideoGate = () => {
       ? {
           titleLead: "Test-drive our",
           titleAccent: "engines.",
-          body: "Eleven live trade engines. Open one and click through like a real job.",
-          cta: "Open demos",
+          body: "Eleven live trade engines—intake, schedule, money, follow-up. Open a demo, book like a customer, then flip to Owner. Strategy call when you're ready.",
+          cta: "Try a live demo",
           trades:
-            "HVAC · Plumbing · Electrical · Waste · Roofing · Construction · Towing · Landscaping · Cleaning · Barber · Beauty",
+            "Construction · HVAC · Plumbing · Roofing · Electrical · Waste · Towing · Landscaping · Cleaning · Barber · Beauty",
           previewAlt:
-            "Collage of eleven live trade engines: HVAC, plumbing, electrical, waste, roofing, construction, towing, landscaping, cleaning, barber, and beauty",
+            "Collage of eleven live trade engines: construction, HVAC, plumbing, roofing, electrical, waste, towing, landscaping, cleaning, barber, and beauty",
         }
       : {
           titleLead: "Pruebe nuestros",
           titleAccent: "motores.",
-          body: "Once motores de oficios en vivo. Abra uno y haga clic como en un trabajo real.",
-          cta: "Abrir demos",
+          body: "Once motores en vivo—intake, agenda, cobro, seguimiento. Abra una demo, reserve como cliente y pase a Owner. Luego la llamada de estrategia.",
+          cta: "Probar demo en vivo",
           trades:
-            "HVAC · Plomería · Eléctrico · Residuos · Techado · Construcción · Grúas · Paisajismo · Limpieza · Barbería · Belleza",
+            "Construcción · HVAC · Plomería · Techado · Eléctrico · Residuos · Grúas · Paisajismo · Limpieza · Barbería · Belleza",
           previewAlt:
-            "Collage de once motores en vivo: HVAC, plomería, eléctrico, residuos, techado, construcción, grúas, paisajismo, limpieza, barbería y belleza",
+            "Collage de once motores en vivo: construcción, HVAC, plomería, techado, eléctrico, residuos, grúas, paisajismo, limpieza, barbería y belleza",
         };
 
   return (
