@@ -148,22 +148,19 @@ const Book = () => {
                     className="w-full max-w-5xl px-4 mx-auto relative z-10 mt-8 mb-12"
                     {...revealProps}
                 >
-                    <div className="bg-zinc-950/50 backdrop-blur-xl border border-[#10b981]/30 p-8 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_-10px_rgba(16,185,129,0.2)]">
-                        <div className="text-center md:text-left">
-                            <h3 className="text-xl md:text-2xl font-black uppercase text-foreground">
-                                {lang === 'en' ? "Want to see it in action?" : "¿Quieres verlo en acción?"}
-                            </h3>
-                            <p className="text-muted-foreground font-medium mt-2">
-                                {lang === 'en' ? "Test-drive the live trade engines built for local shops." : "Pruebe los motores en vivo diseñados para talleres locales."}
-                            </p>
-                        </div>
-                        <a 
-                            href={DEMO_HUB_URL} 
-                            target="_blank" 
+                    <div className="border border-[#27272A] bg-zinc-950/40 p-6 text-center md:p-8">
+                        <p className="text-base font-medium text-zinc-300 md:text-lg">
+                            {lang === "en"
+                              ? "Curious to see it in action? Check out our 11 demos."
+                              : "¿Curioso de verlo en acción? Mira nuestras 11 demos."}
+                        </p>
+                        <a
+                            href={DEMO_HUB_URL}
+                            target="_blank"
                             rel="noopener noreferrer"
-                            className="shrink-0 flex items-center justify-center gap-2 h-14 px-8 bg-[#10b981] hover:bg-[#0ea672] text-black font-black uppercase tracking-widest text-sm transition-all hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] rounded-none"
+                            className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#10b981] underline-offset-4 hover:underline"
                         >
-                            {lang === 'en' ? "Launch Demo" : "Lanza Demo"} <ArrowRight className="h-5 w-5" />
+                            {lang === "en" ? "Open demos" : "Abrir demos"} <ArrowRight className="h-4 w-4" />
                         </a>
                     </div>
                 </motion.div>

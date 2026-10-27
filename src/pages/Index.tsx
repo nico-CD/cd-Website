@@ -33,7 +33,7 @@ const Index = () => {
 
             {/* SEGMENT 1: HERO */}
             <section className="border-b border-foreground/5">
-                <Hero onContactClick={scrollToEngines} />
+                <Hero />
             </section>
 
             {/* SEGMENT 2 & 3: BELOW THE FOLD */}
