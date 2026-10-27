@@ -25,29 +25,35 @@ const VideoGate = () => {
       className="relative z-10 border-t border-[#27272A] bg-background px-6 py-16 transition-colors duration-300 md:py-24"
     >
       <motion.div
-        className="relative z-10 mx-auto max-w-4xl"
+        className="relative z-10 mx-auto max-w-5xl"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="overflow-hidden border border-[#27272A] bg-[#09090b]">
+        <div className="relative overflow-hidden border border-[#27272A] bg-[#09090b]">
           <img
             src="/images/curiosity-strip.jpg"
             alt={copy.alt}
             className="aspect-[21/9] w-full object-cover object-center"
           />
-        </div>
-        <div className="mt-8 text-center">
-          <p className="text-lg font-medium leading-relaxed text-zinc-300 md:text-xl">{copy.line}</p>
-          <a
-            href={DEMO_HUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-flex text-sm font-bold text-[#10b981] underline-offset-4 hover:underline"
-          >
-            {copy.link}
-          </a>
+          <div
+            className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"
+            aria-hidden
+          />
+          <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-8 pt-16 text-center sm:px-10 sm:pb-10">
+            <p className="text-lg font-medium leading-relaxed text-white drop-shadow md:text-2xl">
+              {copy.line}
+            </p>
+            <a
+              href={DEMO_HUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-flex text-sm font-bold text-[#10b981] underline-offset-4 hover:underline md:text-base"
+            >
+              {copy.link}
+            </a>
+          </div>
         </div>
       </motion.div>
     </section>

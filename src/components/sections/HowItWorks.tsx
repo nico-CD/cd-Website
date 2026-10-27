@@ -12,15 +12,15 @@ const HowItWorks = () => {
             icon: ClipboardCheck,
             title: lang === 'en' ? "Test-Drive, Then Book" : "Pruebe, Luego Agende",
             description: lang === 'en'
-                ? "Open the live trade demos, then grab 15 minutes so we can map a site and owner board for your shop."
-                : "Abra los demos de oficios en vivo y reserve 15 minutos para trazar un sitio y tablero de dueño para su taller."
+                ? "Open the live demos, then grab 15 minutes so we can map a website for your shop."
+                : "Abra los demos en vivo y reserve 15 minutos para trazar un sitio web para su taller."
         },
         {
             badge: lang === 'en' ? "Step 2" : "Paso 2",
             icon: LineChart,
             title: lang === 'en' ? "Get a Custom Plan" : "Obtenga un Plan",
             description: lang === 'en'
-                ? "We provide a straightforward, no-nonsense strategy to get you more leads and automate the boring stuff."
+                ? "We provide a straightforward strategy to get you more leads and automate the boring stuff."
                 : "Le proporcionamos una estrategia directa para obtener más clientes y automatizar las tareas repetitivas."
         },
         {
@@ -91,8 +91,8 @@ const HowItWorks = () => {
                     })}
                 </div>
 
-                <div className="mt-16 md:mt-20 text-center">
-                    <p className="mb-4 text-base md:text-lg font-medium text-muted-foreground">
+                <div className="mt-28 md:mt-36 text-center">
+                    <p className="mb-6 text-2xl md:text-4xl font-black tracking-tight text-foreground">
                         {lang === 'en'
                             ? "Ready for a custom build?"
                             : "¿Listo para un build a medida?"}

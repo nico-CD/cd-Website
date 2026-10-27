@@ -43,17 +43,20 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-wrap gap-x-6 gap-y-3 text-[10px] font-black uppercase tracking-widest text-muted-foreground md:justify-end">
+          <Link
+            to="/book"
+            className="text-[#10b981] transition-colors hover:text-[#0ea672]"
+          >
+            {t.nav.strategy}
+          </Link>
           <a
             href={DEMO_HUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[#10b981] transition-colors hover:text-[#0ea672]"
+            className="transition-colors hover:text-foreground"
           >
             {lang === "en" ? "CD Demos" : "Demos CD"}
           </a>
-          <Link to="/book" className="transition-colors hover:text-foreground">
-            {t.nav.strategy}
-          </Link>
           <Link to="/faq" className="transition-colors hover:text-foreground">
             FAQ
           </Link>
