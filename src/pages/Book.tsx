@@ -55,7 +55,7 @@ const Book = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none mb-6 text-foreground">
                         {lang === 'en' ? 'Book Your ' : 'Agende Su '} <br className="md:hidden" />
                         <span className="italic text-[#10b981]">
-                            {lang === 'en' ? 'Strategy Session' : 'Sesión de Estrategia'}
+                            {lang === 'en' ? '15-Min Call' : 'Llamada de 15 Min'}
                         </span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">

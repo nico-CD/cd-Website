@@ -120,7 +120,7 @@ export const i18nData: Record<Language, I18nContent> = {
             title: "Stop losing clients to",
             subtitle: "We build the websites that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches.",
             cta: "Book a 15-min call",
-            audit: "Book a Call",
+            audit: "Book a 15-min call",
             badge1: "TRUSTED LOCALLY",
             badge2: "FAST & RELIABLE",
             badge3: "MOBILE FRIENDLY"
@@ -429,7 +429,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             title: "Su negocio está perdiendo clientes por",
             subtitle: "Construimos los sitios web que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza.",
             cta: "Agendar llamada de 15 min",
-            audit: "Sesión de Estrategia",
+            audit: "Llamada de 15 min",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
             badge2: "SIN RETRASOS DE CARGA",
             badge3: "OPTIMIZADO PARA MÓVILES"

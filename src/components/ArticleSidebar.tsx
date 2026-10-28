@@ -40,7 +40,7 @@ const ArticleSidebar = () => {
                             to="/book"
                             className="block px-4 text-xs font-black uppercase tracking-[0.1em] text-[#10b981] hover:text-[#0ea672] transition-colors"
                         >
-                            {lang === 'en' ? 'Book Strategy Session' : 'Sesión de Estrategia'}
+                            {lang === 'en' ? 'Book a 15-min call' : 'Agendar llamada de 15 min'}
                         </Link>
                         <Link to="/faq" className="block px-4 text-xs font-black uppercase tracking-[0.1em] text-muted-foreground hover:text-[#10b981] transition-colors">
                             {t.nav.faq}

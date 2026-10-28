@@ -58,7 +58,7 @@ const Start = () => {
           demosBody: "Open CD Demos and try eleven live trade sites yourself.",
           openHub: "Open CD Demos",
           bookTitleLead: "Book Your",
-          bookTitleAccent: "Strategy Session",
+          bookTitleAccent: "15-Min Call",
           bookBody:
             "15 minutes to map bottlenecks and sketch a site and owner board for your shop.",
           langToggle: "ES",
@@ -74,7 +74,7 @@ const Start = () => {
           demosBody: "Abra Demos CD y pruebe once sitios de oficios en vivo.",
           openHub: "Abrir Demos CD",
           bookTitleLead: "Agende Su",
-          bookTitleAccent: "Sesión de Estrategia",
+          bookTitleAccent: "Llamada de 15 Min",
           bookBody:
             "15 minutos para mapear cuellos de botella y bosquejar un sitio y tablero de dueño para su taller.",
           langToggle: "EN",
