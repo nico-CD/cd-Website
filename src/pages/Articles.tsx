@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Clock } from "lucide-react";
 import SEOManager from "@/components/SEOManager";
 
-const insightImages: Record<string, string> = {
-    '60-second-lead-rule': '/insights/insight-1.png',
-    'scaling-without-hiring': '/insights/insight-2.png',
-    'stop-losing-leads': '/insights/insight-3.png',
-    'true-cost-manual-entry': '/insights/insight-4.png',
-    'audit-your-operations': '/insights/insight-5.png',
-    'engineering-philosophy': '/insights/insight-6.png'
+const insightImages: Record<string, { webp: string; png: string }> = {
+    '60-second-lead-rule': { webp: '/insights/insight-1.webp', png: '/insights/insight-1.png' },
+    'scaling-without-hiring': { webp: '/insights/insight-2.webp', png: '/insights/insight-2.png' },
+    'stop-losing-leads': { webp: '/insights/insight-3.webp', png: '/insights/insight-3.png' },
+    'true-cost-manual-entry': { webp: '/insights/insight-4.webp', png: '/insights/insight-4.png' },
+    'audit-your-operations': { webp: '/insights/insight-5.webp', png: '/insights/insight-5.png' },
+    'engineering-philosophy': { webp: '/insights/insight-6.webp', png: '/insights/insight-6.png' },
 };
 
 const ArticlesPage = () => {
@@ -67,11 +67,18 @@ const ArticlesPage = () => {
                                 <div className="space-y-6">
                                     {insightImages[article.id] && (
                                         <div className="w-full h-48 md:h-56 bg-black rounded-xl overflow-hidden border border-border/50">
-                                            <img 
-                                                src={insightImages[article.id]} 
-                                                alt={article.title} 
-                                                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                                            />
+                                            <picture>
+                                                <source srcSet={insightImages[article.id].webp} type="image/webp" />
+                                                <img
+                                                    src={insightImages[article.id].png}
+                                                    alt={article.title}
+                                                    width={1200}
+                                                    height={630}
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                                />
+                                            </picture>
                                         </div>
                                     )}
                                     <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight group-hover:text-[#10b981] transition-colors leading-tight text-foreground">

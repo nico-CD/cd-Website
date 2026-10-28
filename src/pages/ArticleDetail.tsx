@@ -10,13 +10,13 @@ import Footer from "../components/Footer";
 import SEOManager from "../components/SEOManager";
 import { Button } from "../components/ui/button";
 
-const insightImages: Record<string, string> = {
-    '60-second-lead-rule': '/insights/insight-1.png',
-    'scaling-without-hiring': '/insights/insight-2.png',
-    'stop-losing-leads': '/insights/insight-3.png',
-    'true-cost-manual-entry': '/insights/insight-4.png',
-    'audit-your-operations': '/insights/insight-5.png',
-    'engineering-philosophy': '/insights/insight-6.png'
+const insightImages: Record<string, { webp: string; png: string }> = {
+    '60-second-lead-rule': { webp: '/insights/insight-1.webp', png: '/insights/insight-1.png' },
+    'scaling-without-hiring': { webp: '/insights/insight-2.webp', png: '/insights/insight-2.png' },
+    'stop-losing-leads': { webp: '/insights/insight-3.webp', png: '/insights/insight-3.png' },
+    'true-cost-manual-entry': { webp: '/insights/insight-4.webp', png: '/insights/insight-4.png' },
+    'audit-your-operations': { webp: '/insights/insight-5.webp', png: '/insights/insight-5.png' },
+    'engineering-philosophy': { webp: '/insights/insight-6.webp', png: '/insights/insight-6.png' },
 };
 
 const ArticleDetail = () => {
@@ -134,11 +134,18 @@ const ArticleDetail = () => {
                                     {/* GENERATED VISUAL DIAGRAM */}
                                     {insightImages[article.id] && (
                                         <div className="w-full rounded-2xl overflow-hidden border border-border/50 bg-black mb-12 shadow-2xl">
-                                            <img
-                                                src={insightImages[article.id]}
-                                                alt={article.title}
-                                                className="w-full h-auto object-contain max-h-[550px] mx-auto"
-                                            />
+                                            <picture>
+                                                <source srcSet={insightImages[article.id].webp} type="image/webp" />
+                                                <img
+                                                    src={insightImages[article.id].png}
+                                                    alt={article.title}
+                                                    width={1200}
+                                                    height={630}
+                                                    loading="lazy"
+                                                    decoding="async"
+                                                    className="w-full h-auto object-contain max-h-[550px] mx-auto"
+                                                />
+                                            </picture>
                                         </div>
                                     )}
 

@@ -32,11 +32,18 @@ const VideoGate = () => {
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="relative overflow-hidden border border-[#27272A] bg-[#09090b]">
-          <img
-            src="/images/curiosity-strip.jpg"
-            alt={copy.alt}
-            className="aspect-[21/9] w-full object-cover object-center"
-          />
+          <picture>
+            <source srcSet="/images/curiosity-strip.webp" type="image/webp" />
+            <img
+              src="/images/curiosity-strip.jpg"
+              alt={copy.alt}
+              width={1280}
+              height={549}
+              loading="lazy"
+              decoding="async"
+              className="aspect-[21/9] w-full object-cover object-center"
+            />
+          </picture>
           <div
             className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"
             aria-hidden
