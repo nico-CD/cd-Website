@@ -5,8 +5,7 @@ import SEOManager from '@/components/SEOManager';
 import { useTranslation } from '@/components/LanguageProvider';
 import { motion } from 'framer-motion';
 import { InlineWidget } from 'react-calendly';
-import { ArrowRight, Search, PenTool, Rocket } from "lucide-react";
-import { DEMO_HUB_URL } from "@/data/trades";
+import { Search, PenTool, Rocket } from "lucide-react";
 
 const Book = () => {
     const { lang } = useTranslation();
@@ -144,26 +143,6 @@ const Book = () => {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    className="w-full max-w-5xl px-4 mx-auto relative z-10 mt-8 mb-12"
-                    {...revealProps}
-                >
-                    <div className="border border-[#27272A] bg-zinc-950/40 p-6 text-center md:p-8">
-                        <p className="text-base font-medium text-zinc-300 md:text-lg">
-                            {lang === "en"
-                              ? "Curious to see it in action? Check out our 11 demos."
-                              : "¿Curioso de verlo en acción? Mira nuestras 11 demos."}
-                        </p>
-                        <a
-                            href={DEMO_HUB_URL}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-[#10b981] underline-offset-4 hover:underline"
-                        >
-                            {lang === "en" ? "Open demos" : "Abrir demos"} <ArrowRight className="h-4 w-4" />
-                        </a>
-                    </div>
-                </motion.div>
             </section>
 
             <Footer />

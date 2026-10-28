@@ -20,8 +20,8 @@ const HowItWorks = () => {
             icon: LineChart,
             title: lang === 'en' ? "Get a Custom Plan" : "Obtenga un Plan",
             description: lang === 'en'
-                ? "We make a custom plan to get you more leads and automate the boring stuff."
-                : "Hacemos un plan a medida para obtener más clientes y automatizar las tareas repetitivas."
+                ? "We make you a custom plan to get you more leads and automate the boring stuff."
+                : "Le hacemos un plan a medida para obtener más clientes y automatizar las tareas repetitivas."
         },
         {
             badge: lang === 'en' ? "Step 3" : "Paso 3",
