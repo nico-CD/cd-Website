@@ -44,14 +44,13 @@ const VideoGate = () => {
               className="aspect-[5/4] w-full object-cover object-[78%_center] sm:aspect-[21/9] sm:object-center"
             />
           </picture>
-          {/* Mobile needs a heavier scrim — white type sits on the light bull mark otherwise. */}
           <div
-            className="pointer-events-none absolute inset-0 bg-black/70 sm:bg-gradient-to-t sm:from-black/85 sm:via-black/40 sm:to-transparent sm:bg-transparent"
+            className="pointer-events-none absolute inset-0 bg-black/65 sm:bg-black/55"
             aria-hidden
           />
-          <div className="absolute inset-0 z-10 flex flex-col items-center justify-end px-5 pb-7 pt-16 text-center sm:px-10 sm:pb-10">
-            <div className="mx-auto w-full max-w-2xl rounded-xl bg-black/55 px-4 py-4 backdrop-blur-[2px] sm:bg-transparent sm:px-0 sm:py-0 sm:backdrop-blur-none">
-              <p className="text-center text-base font-semibold leading-snug text-white sm:text-lg sm:font-medium sm:leading-relaxed md:text-2xl">
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-end px-5 pb-7 pt-16 text-center sm:justify-center sm:px-10 sm:pb-10 sm:pt-10">
+            <div className="mx-auto w-full max-w-2xl rounded-xl bg-black/60 px-4 py-4 backdrop-blur-[2px] sm:px-8 sm:py-6">
+              <p className="text-center text-base font-semibold leading-snug text-white sm:text-xl sm:leading-relaxed md:text-2xl">
                 {copy.line}
               </p>
               <a
