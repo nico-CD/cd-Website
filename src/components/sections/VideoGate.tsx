@@ -41,15 +41,15 @@ const VideoGate = () => {
             className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent"
             aria-hidden
           />
-          <div className="absolute inset-x-0 bottom-0 z-10 px-6 pb-8 pt-16 text-center sm:px-10 sm:pb-10">
-            <p className="text-lg font-medium leading-relaxed text-white drop-shadow md:text-2xl">
+          <div className="absolute inset-0 z-10 flex flex-col items-center justify-end px-6 pb-8 pt-16 text-center sm:px-10 sm:pb-10">
+            <p className="mx-auto w-full max-w-2xl text-center text-lg font-medium leading-relaxed text-white drop-shadow md:text-2xl">
               {copy.line}
             </p>
             <a
               href={DEMO_HUB_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-flex text-sm font-bold text-[#10b981] underline-offset-4 hover:underline md:text-base"
+              className="mx-auto mt-4 inline-flex text-sm font-bold text-[#10b981] underline-offset-4 hover:underline md:text-base"
             >
               {copy.link}
             </a>
