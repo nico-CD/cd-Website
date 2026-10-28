@@ -53,7 +53,7 @@ const Start = () => {
           subtitle:
             "A short walk-through of the trade sites we build for local shops. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
-          bookPrimary: "Book a 15-min strategy call",
+          bookPrimary: "Book a 15-min call",
           demosEyebrow: "Want to click around first?",
           demosBody: "Open CD Demos and try eleven live trade sites yourself.",
           openHub: "Open CD Demos",

@@ -221,8 +221,8 @@ const ArticleDetail = () => {
                                     </h2>
                                     <p className="font-bold max-w-2xl text-lg md:text-xl text-zinc-400">
                                         {lang === 'en'
-                                            ? 'Book a 15-minute strategy call and we\'ll map a site and owner board for your shop, not just a pretty website.'
-                                            : 'Reserve una llamada de estrategia de 15 minutos y mapearemos un motor para su taller, no solo un sitio bonito.'}
+                                            ? 'Book a 15-minute call and we\'ll map a site and owner board for your shop, not just a pretty website.'
+                                            : 'Reserve una llamada de 15 minutos y mapearemos un motor para su taller, no solo un sitio bonito.'}
                                     </p>
                                 </div>
                                 <div className="flex flex-col sm:flex-row gap-6 relative z-10 w-full md:w-auto pt-8">
@@ -230,7 +230,7 @@ const ArticleDetail = () => {
                                         onClick={() => navigate('/book')}
                                         className="h-20 px-12 bg-[#10b981] text-black font-black uppercase tracking-[0.2em] rounded-none hover:bg-white transition-all flex items-center group"
                                     >
-                                        {lang === 'en' ? 'Book a strategy call' : 'Agendar sesión'}
+                                        {lang === 'en' ? 'Book a 15-min call' : 'Agendar llamada de 15 min'}
                                         <ArrowRight className="ml-4 h-6 w-6 group-hover:translate-x-2 transition-transform" />
                                     </Button>
                                 </div>

@@ -103,7 +103,7 @@ export const i18nData: Record<Language, I18nContent> = {
             blueprint: "GET STARTED",
             privacy: "Privacy",
             terms: "Terms",
-            strategy: "Book a Call"
+            strategy: "Book a 15-min call"
         },
         success: {
             title: "Request ",
@@ -139,7 +139,7 @@ export const i18nData: Record<Language, I18nContent> = {
             scaleMonitor: "Scalability Monitor",
             growthPotential: "Growth Potential",
             summaryTemplate: "Reclaiming {ftu} FTU means winning back the actual capacity of over {wholeFtu} additional full-time operator(s). We don't just save time; we recover your team's productive capacity without adding a single dollar to your payroll.",
-            bookStrategy: "Strategy Session",
+            bookStrategy: "15-min call",
             successTitle: "Analysis Complete.",
             successSub: "Your custom ROI breakdown has been engineered. Download the PDF and book your session below.",
             operationalStress: "Operational Stress"
@@ -160,7 +160,7 @@ export const i18nData: Record<Language, I18nContent> = {
                 },
                 {
                     title: "03. How we use information",
-                    content: "We use your information to respond to inquiries, schedule strategy calls, deliver project work, improve our sites, and meet legal obligations. We do not sell your personal information."
+                    content: "We use your information to respond to inquiries, schedule 15-min calls, deliver project work, improve our sites, and meet legal obligations. We do not sell your personal information."
                 },
                 {
                     title: "04. Sharing",
@@ -208,7 +208,7 @@ export const i18nData: Record<Language, I18nContent> = {
                 },
                 {
                     title: "02. What we do",
-                    content: "Carrillo Dynamics LLC designs and builds websites and automation systems for service businesses. Project scope, fees, and timelines are set in a separate proposal or agreement for each engagement. A free strategy call does not create a paid project until both parties agree in writing (including email)."
+                    content: "Carrillo Dynamics LLC designs and builds websites and automation systems for service businesses. Project scope, fees, and timelines are set in a separate proposal or agreement for each engagement. A free 15-min call does not create a paid project until both parties agree in writing (including email)."
                 },
                 {
                     title: "03. Demo and portfolio sites",
@@ -271,7 +271,7 @@ export const i18nData: Record<Language, I18nContent> = {
             },
             {
                 q: "What does Carrillo Dynamics actually do?",
-                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute strategy call and we'll map a site and owner board for your trade."
+                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute call and we'll map a site and owner board for your trade."
             },
             {
                 q: "Do you work in English and Spanish?",
@@ -321,7 +321,7 @@ Manual errors are the hidden tax on your ROI. Our systems ensure total data inte
                 description: "Fix the invisible revenue loss between the first call and a booked job.",
                 content: `### Identifying the Void
 
-Is your marketing budget leaking through cracks in your process? Most busy shops have blind spots where leads quietly die before they ever reach a truck. On a strategy call we walk the path of a lead through your shop and find where jobs fall off.
+Is your marketing budget leaking through cracks in your process? Most busy shops have blind spots where leads quietly die before they ever reach a truck. On a 15-min call we walk the path of a lead through your shop and find where jobs fall off.
 
 ### What We Build
 
@@ -412,7 +412,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             blueprint: "EMPIEZA AHORA",
             privacy: "Privacidad",
             terms: "Términos",
-            strategy: "Sesión de Estrategia"
+            strategy: "Llamada de 15 min"
         },
         success: {
             title: "Solicitud ",
@@ -448,7 +448,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             scaleMonitor: "Monitor de Escalabilidad",
             growthPotential: "Potencial de Crecimiento",
             summaryTemplate: "Recuperar {ftu} FTU significa liberar la capacidad real de más de {wholeFtu} operador(es) adicional(es) a tiempo completo. No solo ahorramos tiempo; recuperamos la capacidad productiva de su equipo sin añadir un solo dólara su nómina.",
-            bookStrategy: "Sesión de Estrategia",
+            bookStrategy: "Llamada de 15 min",
             successTitle: "Análisis Completado.",
             successSub: "Su desglose de ROI personalizado ha sido diseñado. Descargue el PDF y reserve su sesión a continuación.",
             operationalStress: "Estrés Operativo"
@@ -469,7 +469,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
                 },
                 {
                     title: "03. Cómo usamos la información",
-                    content: "Usamos su información para responder consultas, agendar llamadas de estrategia, entregar proyectos, mejorar los sitios y cumplir obligaciones legales. No vendemos su información personal."
+                    content: "Usamos su información para responder consultas, agendar llamadas de 15 min, entregar proyectos, mejorar los sitios y cumplir obligaciones legales. No vendemos su información personal."
                 },
                 {
                     title: "04. Compartir datos",
@@ -517,7 +517,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
                 },
                 {
                     title: "02. Qué hacemos",
-                    content: "Carrillo Dynamics LLC diseña y construye sitios web y sistemas de automatización para negocios de servicios. El alcance, honorarios y plazos se definen en una propuesta o acuerdo por proyecto. Una llamada de estrategia gratuita no crea un proyecto de pago hasta que ambas partes acuerden por escrito (incluido el correo)."
+                    content: "Carrillo Dynamics LLC diseña y construye sitios web y sistemas de automatización para negocios de servicios. El alcance, honorarios y plazos se definen en una propuesta o acuerdo por proyecto. Una llamada gratuita de 15 min no crea un proyecto de pago hasta que ambas partes acuerden por escrito (incluido el correo)."
                 },
                 {
                     title: "03. Sitios demo y de portafolio",
@@ -580,7 +580,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Qué hace realmente Carrillo Dynamics?",
-                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de estrategia de 15 minutos y mapeamos un sitio y tablero de dueño para su oficio."
+                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de 15 minutos y mapeamos un sitio y tablero de dueño para su oficio."
             },
             {
                 q: "¿Trabajan en inglés y español?",
@@ -630,7 +630,7 @@ Los errores manuales son el impuesto oculto en su ROI. Nuestros sistemas asegura
                 description: "Detenga la pérdida invisible de ingresos entre la primera llamada y el trabajo agendado.",
                 content: `### Identificando el Vacío
 
-¿Se está fugando su presupuesto de marketing a través de grietas en su proceso? La mayoría de los talleres tienen puntos ciegos donde los prospectos mueren antes de llegar a un camión. En una llamada de estrategia recorremos el camino de un lead por su taller y encontramos dónde se caen los trabajos.
+¿Se está fugando su presupuesto de marketing a través de grietas en su proceso? La mayoría de los talleres tienen puntos ciegos donde los prospectos mueren antes de llegar a un camión. En Una llamada de 15 min recorremos el camino de un lead por su taller y encontramos dónde se caen los trabajos.
 
 ### Lo Que Construimos
 
