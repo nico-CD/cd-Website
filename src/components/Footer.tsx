@@ -33,7 +33,7 @@ const Footer = () => {
               className="flex items-center gap-2 transition-colors hover:text-foreground"
             >
               <Mail className="h-3 w-3 opacity-60" />
-              engineering@carrillodynamics.com
+              {lang === "en" ? "Email Us" : "Escríbanos"}
             </a>
             <div className="flex items-center gap-2 opacity-60">
               <MapPin className="h-3 w-3" />

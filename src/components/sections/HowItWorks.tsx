@@ -20,16 +20,16 @@ const HowItWorks = () => {
             icon: LineChart,
             title: lang === 'en' ? "Get a Custom Plan" : "Obtenga un Plan",
             description: lang === 'en'
-                ? "We provide a straightforward strategy to get you more leads and automate the boring stuff."
-                : "Le proporcionamos una estrategia directa para obtener más clientes y automatizar las tareas repetitivas."
+                ? "We make a custom plan to get you more leads and automate the boring stuff."
+                : "Hacemos un plan a medida para obtener más clientes y automatizar las tareas repetitivas."
         },
         {
             badge: lang === 'en' ? "Step 3" : "Paso 3",
             icon: Handshake,
             title: lang === 'en' ? "Grow Your Business" : "Haga Crecer su Negocio",
             description: lang === 'en'
-                ? "We implement the system. You focus on running your business and serving your new clients."
-                : "Implementamos el sistema. Usted se enfoca en administrar su negocio y atender a sus nuevos clientes."
+                ? "We start the system. You focus on running your business and serving your new clients."
+                : "Ponemos el sistema en marcha. Usted se enfoca en administrar su negocio y atender a sus nuevos clientes."
         }
     ];
 
