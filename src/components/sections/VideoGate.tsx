@@ -11,12 +11,12 @@ const VideoGate = () => {
       ? {
           line: "Curious to see it in action? Check out our 11 demos.",
           link: "Open demos →",
-          alt: "Abstract emerald light paths on a dark industrial field",
+          alt: "Carrillo Dynamics bull mark with an emerald motion trail",
         }
       : {
           line: "¿Curioso de verlo en acción? Mira nuestras 11 demos.",
           link: "Abrir demos →",
-          alt: "Caminos de luz esmeralda abstractos sobre un campo industrial oscuro",
+          alt: "Marca del toro de Carrillo Dynamics con estela esmeralda",
         };
 
   return (
