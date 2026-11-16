@@ -118,7 +118,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "We build the websites that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches.",
+            subtitle: "We build the systems and automations that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches.",
             cta: "Book a 15-min call",
             audit: "Book a 15-min call",
             badge1: "TRUSTED LOCALLY",
@@ -152,7 +152,7 @@ export const i18nData: Record<Language, I18nContent> = {
             sections: [
                 {
                     title: "01. Who we are",
-                    content: "Carrillo Dynamics LLC (\"Carrillo Dynamics,\" \"we,\" \"us\") builds websites and automation systems for local service businesses. We are based in Chicago, Illinois. Contact: engineering@carrillodynamics.com."
+                    content: "Carrillo Dynamics LLC (\"Carrillo Dynamics,\" \"we,\" \"us\") builds systems and automations for local service businesses. We are based in Chicago, Illinois. Contact: engineering@carrillodynamics.com."
                 },
                 {
                     title: "02. What we collect",
@@ -208,11 +208,11 @@ export const i18nData: Record<Language, I18nContent> = {
                 },
                 {
                     title: "02. What we do",
-                    content: "Carrillo Dynamics LLC designs and builds websites and automation systems for service businesses. Project scope, fees, and timelines are set in a separate proposal or agreement for each engagement. A free 15-min call does not create a paid project until both parties agree in writing (including email)."
+                    content: "Carrillo Dynamics LLC designs and builds systems and automations for service businesses. Project scope, fees, and timelines are set in a separate proposal or agreement for each engagement. A free 15-min call does not create a paid project until both parties agree in writing (including email)."
                 },
                 {
                     title: "03. Demo and portfolio sites",
-                    content: "Trade demo sites (including but not limited to HVAC, plumbing, electrical, waste, roofing, towing, and landscaping subdomains under carrillodynamics.com) are samples of sites we can build. They are not websites of independent operating companies unless we expressly say otherwise. Fictional business names, reviews, addresses, and 555 phone numbers are for demonstration only. Do not rely on demo content as real service offerings, licensing, or insurance claims."
+                    content: "Trade demos (including but not limited to HVAC, plumbing, electrical, waste, roofing, towing, and landscaping subdomains under carrillodynamics.com) are samples of systems we can build. They are not live businesses of independent operating companies unless we expressly say otherwise. Fictional business names, reviews, addresses, and 555 phone numbers are for demonstration only. Do not rely on demo content as real service offerings, licensing, or insurance claims."
                 },
                 {
                     title: "04. No professional advice on demos",
@@ -251,7 +251,7 @@ export const i18nData: Record<Language, I18nContent> = {
         faqs: [
             {
                 q: "What is the real cost of missed leads?",
-                a: "For busy shops, even a small leak (after-hours calls, slow follow-up, jobs that never get booked) can cost tens of thousands a year. We build websites and owner boards that catch those jobs before they go to a competitor."
+                a: "For busy shops, even a small leak (after-hours calls, slow follow-up, jobs that never get booked) can cost tens of thousands a year. We build systems and owner boards that catch those jobs before they go to a competitor."
             },
             {
                 q: "How does the \"60-Second Rule\" impact ROI?",
@@ -271,11 +271,11 @@ export const i18nData: Record<Language, I18nContent> = {
             },
             {
                 q: "What does Carrillo Dynamics actually do?",
-                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute call and we'll map a site and owner board for your trade."
+                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute call and we'll map a system and owner board for your trade."
             },
             {
                 q: "Do you work in English and Spanish?",
-                a: "Yes. Sites, flows, and conversations can run in English, Spanish, or both - a real advantage for many local trade markets."
+                a: "Yes. Systems, flows, and conversations can run in English, Spanish, or both - a real advantage for many local trade markets."
             }
         ],
         articles: [
@@ -325,7 +325,7 @@ Is your marketing budget leaking through cracks in your process? Most busy shops
 
 ### What We Build
 
-We tighten intake, speed up response, and make sure follow-ups actually happen, so leads get captured and routed before they go cold. Not just a pretty website: a site and owner board that help you keep the jobs you already paid to attract.`,
+We tighten intake, speed up response, and make sure follow-ups actually happen, so leads get captured and routed before they go cold. Not just a pretty website: a system and owner board that help you keep the jobs you already paid to attract.`,
                 date: "2026-04-07",
                 readTime: "6 min"
             },
@@ -379,7 +379,7 @@ While earning my Engineering degree at Illinois Tech, I learned how to build rel
 
 ### Building What Works
 
-That's why I started Carrillo Dynamics. I'm not here to sell you just a "pretty website" or pitch abstract tech buzzwords. I'm here to build websites and systems that help trade businesses run cleaner and take more work without the headaches.
+That's why I started Carrillo Dynamics. I'm not here to sell you just a "pretty website" or pitch abstract tech buzzwords. I'm here to build systems and automations that help trade businesses run cleaner and take more work without the headaches.
 
 ### The Bottom Line
 
@@ -427,7 +427,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Construimos los sitios web que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza.",
+            subtitle: "Construimos los sistemas y automatizaciones que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza.",
             cta: "Agendar llamada de 15 min",
             audit: "Llamada de 15 min",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
@@ -461,7 +461,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             sections: [
                 {
                     title: "01. Quiénes somos",
-                    content: "Carrillo Dynamics LLC (\"Carrillo Dynamics,\" \"nosotros\") construye sitios web y sistemas de automatización para negocios de servicios locales. Estamos en Chicago, Illinois. Contacto: engineering@carrillodynamics.com."
+                    content: "Carrillo Dynamics LLC (\"Carrillo Dynamics,\" \"nosotros\") construye sistemas y automatizaciones para negocios de servicios locales. Estamos en Chicago, Illinois. Contacto: engineering@carrillodynamics.com."
                 },
                 {
                     title: "02. Qué recopilamos",
@@ -517,11 +517,11 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
                 },
                 {
                     title: "02. Qué hacemos",
-                    content: "Carrillo Dynamics LLC diseña y construye sitios web y sistemas de automatización para negocios de servicios. El alcance, honorarios y plazos se definen en una propuesta o acuerdo por proyecto. Una llamada gratuita de 15 min no crea un proyecto de pago hasta que ambas partes acuerden por escrito (incluido el correo)."
+                    content: "Carrillo Dynamics LLC diseña y construye sistemas y automatizaciones para negocios de servicios. El alcance, honorarios y plazos se definen en una propuesta o acuerdo por proyecto. Una llamada gratuita de 15 min no crea un proyecto de pago hasta que ambas partes acuerden por escrito (incluido el correo)."
                 },
                 {
                     title: "03. Sitios demo y de portafolio",
-                    content: "Los sitios demo de oficios (incluyendo HVAC, plomería, eléctrico, residuos, techado, grúas y paisajismo bajo carrillodynamics.com) son ejemplos de sitios que podemos construir. No son sitios de empresas independientes en operación, salvo que indiquemos lo contrario. Nombres, reseñas, direcciones y teléfonos 555 son solo para demostración. No confíe en ese contenido como oferta real de servicio, licencias o seguros."
+                    content: "Los demos de oficios (incluyendo HVAC, plomería, eléctrico, residuos, techado, grúas y paisajismo bajo carrillodynamics.com) son ejemplos de sistemas que podemos construir. No son negocios en operación de empresas independientes, salvo que indiquemos lo contrario. Nombres, reseñas, direcciones y teléfonos 555 son solo para demostración. No confíe en ese contenido como oferta real de servicio, licencias o seguros."
                 },
                 {
                     title: "04. Sin servicio real en demos",
@@ -560,7 +560,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         faqs: [
             {
                 q: "¿Cuál es el costo real de perder leads?",
-                a: "Para talleres ocupados, incluso una fuga pequeña (llamadas fuera de horario, seguimiento lento, trabajos que nunca se agendan) puede costar decenas de miles al año. Construimos sitios web y tableros de dueño que atrapan esos trabajos antes de que se vayan con la competencia."
+                a: "Para talleres ocupados, incluso una fuga pequeña (llamadas fuera de horario, seguimiento lento, trabajos que nunca se agendan) puede costar decenas de miles al año. Construimos sistemas y tableros de dueño que atrapan esos trabajos antes de que se vayan con la competencia."
             },
             {
                 q: "¿Cómo impacta la \"Regla de los 60 Segundos\" en el ROI?",
@@ -572,7 +572,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Reemplazan nuestro CRM o herramientas actuales?",
-                a: "Por lo general no. Conectamos y automatizamos alrededor de lo que ya usa para que las herramientas coincidan con cómo opera su taller - no solo un sitio bonito encima."
+                a: "Por lo general no. Conectamos y automatizamos alrededor de lo que ya usa para que las herramientas coincidan con cómo opera su taller - no solo un sitio web bonito encima."
             },
             {
                 q: "¿Qué tan pronto veremos resultados?",
@@ -580,11 +580,11 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Qué hace realmente Carrillo Dynamics?",
-                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de 15 minutos y mapeamos un sitio y tablero de dueño para su oficio."
+                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de 15 minutos y mapeamos un sistema y tablero de dueño para su oficio."
             },
             {
                 q: "¿Trabajan en inglés y español?",
-                a: "Sí. Sitios, flujos y conversaciones pueden ir en inglés, español o ambos - una ventaja real en muchos mercados de oficios locales."
+                a: "Sí. Sistemas, flujos y conversaciones pueden ir en inglés, español o ambos - una ventaja real en muchos mercados de oficios locales."
             }
         ],
         articles: [
@@ -634,7 +634,7 @@ Los errores manuales son el impuesto oculto en su ROI. Nuestros sistemas asegura
 
 ### Lo Que Construimos
 
-Ajustamos el intake, aceleramos la respuesta y hacemos que los seguimientos realmente ocurran, para capturar y enrutar leads antes de que se enfríen. No solo un sitio bonito: un sitio y tablero de dueño que le ayudan a conservar los trabajos que ya pagó por atraer.`,
+Ajustamos el intake, aceleramos la respuesta y hacemos que los seguimientos realmente ocurran, para capturar y enrutar leads antes de que se enfríen. No solo un sitio web bonito: un sistema y tablero de dueño que le ayudan a conservar los trabajos que ya pagó por atraer.`,
                 date: "2026-04-07",
                 readTime: "6 min"
             },
@@ -688,7 +688,7 @@ Mientras obtenía mi título de Ingeniería en Illinois Tech, aprendí a constru
 
 ### Construyendo lo que Funciona
 
-Por eso comencé Carrillo Dynamics. No estoy aquí para venderle solo un "sitio bonito" ni palabras de moda. Estoy aquí para construir sitios y sistemas que ayuden a los oficios a operar más limpio y tomar más trabajo sin los dolores de cabeza.
+Por eso comencé Carrillo Dynamics. No estoy aquí para venderle solo un "sitio web bonito" ni palabras de moda. Estoy aquí para construir sistemas y automatizaciones que ayuden a los oficios a operar más limpio y tomar más trabajo sin los dolores de cabeza.
 
 ### En Conclusión
 

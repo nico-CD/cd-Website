@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Carrillo Dynamics builds websites and automation systems for local service businesses in the Chicago area and beyond. Get more jobs, automate busywork, cut headaches. Book a 15-minute call. English and Spanish.";
+        "Carrillo Dynamics builds systems and automations for local service businesses in the Chicago area and beyond. Get more jobs, automate busywork, cut headaches. Book a 15-minute call. English and Spanish.";
     const descriptionEs =
-        "Carrillo Dynamics construye sitios web y sistemas de automatización para negocios de servicios locales en el área de Chicago y más allá. Consiga más trabajos, automatice el trabajo manual, reduzca dolores de cabeza. Reserve una llamada de 15 minutos. Inglés y español.";
+        "Carrillo Dynamics construye sistemas y automatizaciones para negocios de servicios locales en el área de Chicago y más allá. Consiga más trabajos, automatice el trabajo manual, reduzca dolores de cabeza. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
@@ -83,7 +83,7 @@ const StructuredData = () => {
                 "name": "What does Carrillo Dynamics do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Carrillo Dynamics builds websites and automation systems for local service businesses so shops get more jobs, automate busywork, and cut headaches. Book a 15-minute call to map a site and owner board for your trade.",
+                    "text": "Carrillo Dynamics builds systems and automations for local service businesses so shops get more jobs, automate busywork, and cut headaches. Book a 15-minute call to map a system and owner board for your trade.",
                 },
             },
             {

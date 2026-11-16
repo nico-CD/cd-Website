@@ -60,8 +60,8 @@ const Book = () => {
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
                         {lang === 'en' 
-                            ? "Let's discuss your business, find the bottlenecks, and see how our automation systems can help you scale." 
-                            : "Hablemos sobre su negocio, identifiquemos los cuellos de botella y veamos cómo nuestros sistemas de automatización pueden ayudarle a escalar."}
+                            ? "Let's discuss your business, find the bottlenecks, and see how our automations can help you scale." 
+                            : "Hablemos sobre su negocio, identifiquemos los cuellos de botella y veamos cómo nuestras automatizaciones pueden ayudarle a escalar."}
                     </p>
                 </motion.div>
 
