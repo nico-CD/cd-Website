@@ -367,27 +367,27 @@ Measure the time it takes for a new lead to receive a response. Measure the time
             },
             {
                 id: "engineering-philosophy",
-                title: "The Engineering Philosophy",
-                description: "Why I built Carrillo Dynamics: deterministic logic for service businesses.",
-                content: `### Real World Operations
+                title: "Why I Built This",
+                description: "Field work taught me the chaos. Engineering taught me how to cut it. Here's why Carrillo Dynamics exists.",
+                content: `### I grew up in the work
 
-I didn't start my career sitting behind a desk. My background is in the field, from landscaping and automotive work, to managing high-rise tenant improvement projects. I know what physical work actually entails. I also know how chaotic the back-office gets when you're juggling dispatch, inventory, and demanding clients all at once.
+I didn't start behind a laptop. I've done landscaping, automotive work, and high-rise tenant improvement. I know what it feels like when the phone won't stop, the truck is already late, and the office is holding the day together with sticky notes.
 
-### Systems Thinking
+### Chaos is expensive
 
-While earning my Engineering degree at Illinois Tech, I learned how to build reliable systems out of chaos. Whether you're rebuilding an engine or managing a complex project, guesswork doesn't cut it. You need exact tolerances and disciplined execution. Too many local service businesses are running on manual effort and sticky notes when they should be running like a well-tuned machine.
+Most shops don't fail because the crews can't work. They fail because intake, follow-up, and handoffs leak money every week. Jobs slip. Time burns. The owner becomes the glue holding a broken process together.
 
-### Building What Works
+### Build systems that earn their keep
 
-That's why I started Carrillo Dynamics. I'm not here to sell you just a "pretty website" or pitch abstract tech buzzwords. I'm here to build systems and automations that help trade businesses run cleaner and take more work without the headaches.
+I started Carrillo Dynamics to build the boring stuff that keeps shops paid: intake that secures the job, boards that give you the day back, and flows that cut busywork without turning your business into a science project.
 
-### The Bottom Line
+### The point
 
-Technology shouldn't complicate your life; it should amplify the hard work you've already put into your business. When we streamline your operations, we aren't changing who you are, we're just freeing you and your team up to do the real work that pays the bills.
+I'm not here to sell you a pretty website or a buzzword deck. I'm here to help you make more money, save time, and run with less chaos so you can focus on the work that actually pays.
 
- -  Nico Carrillo, Owner/Engineer`,
+ - Nico Carrillo, Owner`,
                 date: "2026-04-24",
-                readTime: "6 min"
+                readTime: "4 min"
             }
         ],
         articleLabels: {
@@ -676,27 +676,27 @@ Mida el tiempo que tarda un nuevo lead en recibir una respuesta. Mida el tiempo 
             },
             {
                 id: "engineering-philosophy",
-                title: "Por Qué Construí Carrillo Dynamics",
-                description: "Desde desarmar motores y lanzar béisbol universitario hasta diseñar sistemas empresariales.",
-                content: `### Operaciones en el Mundo Real
+                title: "Por Qué Construí Esto",
+                description: "El campo me enseñó el caos. La ingeniería me enseñó a cortarlo. Por eso existe Carrillo Dynamics.",
+                content: `### Crecí en el trabajo
 
-No comencé mi carrera detrás de un escritorio. Mi experiencia está en el campo: desde paisajismo y mecánica automotriz, hasta la gestión de proyectos en rascacielos. Sé lo que realmente implica el trabajo físico. También sé lo caótica que se vuelve la oficina cuando estás haciendo malabarismos con despachos, inventario y clientes exigentes al mismo tiempo.
+No empecé detrás de una laptop. He hecho paisajismo, mecánica y mejoras en rascacielos. Sé lo que se siente cuando el teléfono no para, el camión ya va tarde y la oficina sostiene el día con notas adhesivas.
 
-### Pensamiento Sistémico
+### El caos sale caro
 
-Mientras obtenía mi título de Ingeniería en Illinois Tech, aprendí a construir sistemas confiables a partir del caos. Ya sea que estés reconstruyendo un motor o gestionando un proyecto complejo, adivinar no sirve. Necesitas tolerancias exactas y una ejecución disciplinada. Demasiadas empresas de servicios locales funcionan con esfuerzo manual y notas adhesivas cuando deberían funcionar como una máquina bien afinada.
+La mayoría de los talleres no fallan porque las cuadrillas no sepan trabajar. Fallan porque la captación, el seguimiento y los traspasos se fugan dinero cada semana. Se escapan trabajos. Se quema tiempo. El dueño termina siendo el pegamento de un proceso roto.
 
-### Construyendo lo que Funciona
+### Sistemas que se ganan su lugar
 
-Por eso comencé Carrillo Dynamics. No estoy aquí para venderle solo un "sitio web bonito" ni palabras de moda. Estoy aquí para construir sistemas y automatizaciones que ayuden a los oficios a operar más limpio y tomar más trabajo sin los dolores de cabeza.
+Empecé Carrillo Dynamics para construir lo aburrido que mantiene a los talleres pagados: captación que asegura el trabajo, tableros que le devuelven el día y flujos que recortan lo repetitivo sin convertir su negocio en un proyecto de laboratorio.
 
-### En Conclusión
+### El punto
 
-La tecnología no debería complicar tu vida; debería amplificar el arduo trabajo que ya has puesto en tu negocio. Cuando optimizamos tus operaciones, no estamos cambiando quién eres, solo te estamos liberando a ti y a tu equipo para hacer el trabajo real que paga las cuentas.
+No estoy aquí para venderle un sitio bonito ni un pitch de moda. Estoy aquí para ayudarle a ganar más dinero, ahorrar tiempo y operar con menos caos, para que se enfoque en el trabajo que sí paga.
 
- -  Nico Carrillo, Owner/Engineer`,
+ - Nico Carrillo, Owner`,
                 date: "2026-04-24",
-                readTime: "6 min"
+                readTime: "4 min"
             }
         ],
         articleLabels: {

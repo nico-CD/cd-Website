@@ -22,7 +22,7 @@ const Start = () => {
 
   useEffect(() => {
     const syncHeight = () => {
-      setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
+      setCalendlyHeight(window.innerWidth < 640 ? 920 : window.innerWidth < 768 ? 780 : 655);
     };
     syncHeight();
     window.addEventListener("resize", syncHeight);
@@ -47,12 +47,13 @@ const Start = () => {
             "A short walk-through of the systems we engineer for local operators. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a call",
-          demosEyebrow: "Want to click around first?",
-          demosBody: "Open CD Demos and try eleven live demos yourself.",
+          demosEyebrow: "Prefer to try it live?",
+          demosBody: "Eleven live shops. Pick your trade, click around, then book if it clicks.",
           openHub: "Try a demo",
           bookTitleLead: "Book your",
           bookTitleAccent: "15-min call",
-          bookBody: "15 minutes to map bottlenecks and lock a system baseline for your trade.",
+          bookBody:
+            "We'll map the bottlenecks and lock a system baseline for your trade: from intake to owner board to money in your pocket.",
           langToggle: "ES",
         }
       : {
@@ -62,13 +63,13 @@ const Start = () => {
             "Un recorrido corto de los sistemas que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agende su llamada",
-          demosEyebrow: "¿Prefiere explorar primero?",
-          demosBody: "Abra Demos CD y pruebe once demos en vivo.",
+          demosEyebrow: "¿Prefiere probarlo en vivo?",
+          demosBody: "Once talleres en vivo. Elija su oficio, explore y agende si le conviene.",
           openHub: "Prueba un demo",
           bookTitleLead: "Agende su",
           bookTitleAccent: "llamada de 15 min",
           bookBody:
-            "15 minutos para mapear cuellos de botella y fijar el baseline del sistema para su oficio.",
+            "Mapearemos los cuellos de botella y fijaremos el baseline del sistema para su oficio: de la captación al tablero de dueño al dinero en el bolsillo.",
           langToggle: "EN",
         };
 
@@ -161,11 +162,12 @@ const Start = () => {
               </p>
             </div>
 
-            <div className="overflow-hidden border border-[#27272A] bg-[#09090b]">
+            <div className="border border-[#27272A] bg-[#09090b] leading-[0] [&_iframe]:block">
               <InlineWidget
                 url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang === "en" ? "en" : "es"}`}
                 styles={{
                   height: `${calendlyHeight}px`,
+                  minWidth: "100%",
                   width: "100%",
                   border: "none",
                   overflow: "hidden",
@@ -183,22 +185,50 @@ const Start = () => {
         </section>
 
         <section className="relative z-10 border-t border-[#27272A] px-4 py-14 sm:px-6 sm:py-16">
-          <div className="relative z-10 mx-auto max-w-3xl overflow-hidden border border-[#10b981]/25 bg-gradient-to-br from-[#10251c] via-[#0c0c0e] to-[#0c0c0e] px-6 py-10 text-center sm:px-10">
-            <p className="text-sm font-bold uppercase tracking-[0.14em] text-zinc-200">
-              {copy.demosEyebrow}
-            </p>
-            <p className="mx-auto mt-3 max-w-md text-base font-medium leading-relaxed text-zinc-400">
-              {copy.demosBody}
-            </p>
-            <a
-              href={hubHome}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-md border border-white/15 bg-white/[0.03] px-6 py-3.5 text-sm font-semibold uppercase tracking-wide text-zinc-100 transition-colors hover:border-[#10b981]/50 hover:text-white sm:w-auto"
-            >
-              {copy.openHub}
-              <ExternalLink className="h-4 w-4" />
-            </a>
+          <div className="relative z-10 mx-auto grid max-w-4xl overflow-hidden border border-[#10b981]/25 bg-gradient-to-br from-[#10251c] via-[#0c0c0e] to-[#0c0c0e] md:grid-cols-[1.2fr_0.8fr]">
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/70 to-transparent" />
+            <div className="pointer-events-none absolute -right-6 bottom-[-20%] opacity-[0.08]">
+              <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-48 w-48 object-contain" decoding="async" />
+            </div>
+            <div className="relative z-10 space-y-5 px-6 py-10 text-center sm:px-10 md:text-left">
+              <h2 className="font-display text-3xl font-black uppercase tracking-tighter text-white sm:text-4xl">
+                {copy.demosEyebrow}
+              </h2>
+              <p className="mx-auto max-w-md text-base font-medium leading-relaxed text-zinc-400 md:mx-0">
+                {copy.demosBody}
+              </p>
+              <a
+                href={hubHome}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-md bg-[#10b981] px-6 py-3.5 text-sm font-bold uppercase tracking-wide text-zinc-950 transition-colors hover:bg-[#0ea672] sm:w-auto"
+              >
+                {copy.openHub}
+                <ExternalLink className="h-4 w-4" />
+              </a>
+            </div>
+            <div className="relative z-10 border-t border-white/10 px-6 py-8 md:border-l md:border-t-0 md:px-8 md:py-10">
+              <p className="mb-4 text-center text-xs font-bold uppercase tracking-[0.14em] text-zinc-300 md:text-left">
+                {lang === "en" ? "Available trades" : "Oficios disponibles"}
+              </p>
+              <ul className="grid grid-cols-2 gap-2 text-sm font-semibold text-zinc-200">
+                {(lang === "en"
+                  ? ["HVAC", "Plumbing", "Electrical", "Waste", "Roofing", "More"]
+                  : ["HVAC", "Plomería", "Eléctrico", "Residuos", "Techado", "Más"]
+                ).map((trade) => (
+                  <li key={trade}>
+                    <a
+                      href={hubHome}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex min-h-[40px] items-center justify-center rounded-md border border-white/15 bg-[#121214]/92 px-2 py-2 transition-colors hover:border-[#10b981]/45 hover:text-white"
+                    >
+                      {trade}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
       </main>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "../components/LanguageProvider";
 import { ArrowLeft, ArrowRight, Clock, Calendar, Printer, Share2 } from "lucide-react";
@@ -23,6 +24,7 @@ const ArticleDetail = () => {
   const { id } = useParams();
   const { t, lang } = useTranslation();
   const navigate = useNavigate();
+  const [eggPressed, setEggPressed] = useState(false);
 
   const articleIndex = t.articles.findIndex((a) => a.id === id);
   const article = articleIndex >= 0 ? t.articles[articleIndex] : undefined;
@@ -31,6 +33,11 @@ const ArticleDetail = () => {
     articleIndex >= 0 && articleIndex < t.articles.length - 1
       ? t.articles[articleIndex + 1]
       : null;
+  const isPhilosophy = article?.id === "engineering-philosophy";
+
+  useEffect(() => {
+    setEggPressed(false);
+  }, [id]);
 
   const handlePrint = () => window.print();
 
@@ -176,14 +183,48 @@ const ArticleDetail = () => {
                   </div>
 
                   <div className="space-y-4 border border-[#27272A] bg-[#0c0c0e]/90 p-6">
-                    <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-200">
-                      {t.articleLabels.technicalSpecs}
-                    </h4>
-                    <p className="text-sm font-medium leading-relaxed text-zinc-400">
-                      {lang === "en"
-                        ? "Read it once. Apply one fix in your shop this week. Then book a call if you want us to build it."
-                        : "Léalo una vez. Aplique un arreglo en su taller esta semana. Luego agende si quiere que lo construyamos."}
-                    </p>
+                    {isPhilosophy ? (
+                      <>
+                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-200">
+                          {lang === "en" ? "Do not press" : "No pulse"}
+                        </h4>
+                        {!eggPressed ? (
+                          <button
+                            type="button"
+                            onClick={() => setEggPressed(true)}
+                            className="inline-flex w-full items-center justify-center rounded-md border border-[#10b981]/40 bg-[#10b981]/10 px-4 py-3 text-sm font-bold uppercase tracking-wide text-[#34d399] transition-colors hover:border-[#10b981]/70 hover:bg-[#10b981]/18"
+                          >
+                            {lang === "en" ? "Press this anyway" : "Púlselo igual"}
+                          </button>
+                        ) : (
+                          <div className="space-y-3">
+                            <p className="text-sm font-medium leading-relaxed text-zinc-300">
+                              {lang === "en"
+                                ? "Nice. You ignore bad instructions. Operators do that. Now go secure some jobs."
+                                : "Bien. Ignora instrucciones malas. Los operadores hacen eso. Ahora vaya a asegurar trabajos."}
+                            </p>
+                            <button
+                              type="button"
+                              onClick={() => navigate("/book")}
+                              className="inline-flex w-full items-center justify-center rounded-md bg-[#10b981] px-4 py-3 text-sm font-bold uppercase tracking-wide text-zinc-950 transition-colors hover:bg-[#0ea672]"
+                            >
+                              {lang === "en" ? "Book a call" : "Agende su llamada"}
+                            </button>
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-200">
+                          {t.articleLabels.technicalSpecs}
+                        </h4>
+                        <p className="text-sm font-medium leading-relaxed text-zinc-400">
+                          {lang === "en"
+                            ? "Read it once. Apply one fix in your shop this week. Then book a call if you want us to build it."
+                            : "Léalo una vez. Aplique un arreglo en su taller esta semana. Luego agende si quiere que lo construyamos."}
+                        </p>
+                      </>
+                    )}
                   </div>
 
                   <div className="flex flex-col gap-3">

@@ -9,11 +9,12 @@ import { ArrowRight } from "lucide-react";
 
 const Book = () => {
   const { lang } = useTranslation();
-  const [calendlyHeight, setCalendlyHeight] = useState(900);
+  const [calendlyHeight, setCalendlyHeight] = useState(700);
 
   useEffect(() => {
     const syncHeight = () => {
-      setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
+      // Calendly's chrome is taller on small screens; keep the frame tight on desktop.
+      setCalendlyHeight(window.innerWidth < 640 ? 920 : window.innerWidth < 768 ? 780 : 655);
     };
     syncHeight();
     window.addEventListener("resize", syncHeight);
@@ -57,15 +58,16 @@ const Book = () => {
           },
         ];
 
+  const bookLine =
+    lang === "en"
+      ? "We'll map the bottlenecks and lock a system baseline for your trade: from intake to owner board to money in your pocket."
+      : "Mapearemos los cuellos de botella y fijaremos el baseline del sistema para su oficio: de la captación al tablero de dueño al dinero en el bolsillo.";
+
   return (
     <div className="min-h-screen overflow-x-hidden bg-background font-sans text-foreground selection:bg-[#10b981]/10">
       <SEOManager
         title={lang === "en" ? "Book a call" : "Agende su llamada"}
-        description={
-          lang === "en"
-            ? "Book a 15-minute call. We map bottlenecks and lock a system baseline for your trade."
-            : "Agende una llamada de 15 minutos. Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio."
-        }
+        description={bookLine}
       />
       <Navbar />
 
@@ -94,9 +96,7 @@ const Book = () => {
             </span>
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-zinc-400 md:text-xl">
-            {lang === "en"
-              ? "We map bottlenecks and lock a system baseline for your trade: intake to owner board."
-              : "Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio: captación hasta tablero de dueño."}
+            {bookLine}
           </p>
         </motion.div>
 
@@ -104,12 +104,13 @@ const Book = () => {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative z-10 w-full max-w-4xl overflow-hidden border border-[#27272A] bg-[#09090b]"
+          className="relative z-10 w-full max-w-4xl border border-[#27272A] bg-[#09090b] leading-[0] [&_iframe]:block"
         >
           <InlineWidget
             url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang}`}
             styles={{
               height: `${calendlyHeight}px`,
+              minWidth: "100%",
               width: "100%",
               border: "none",
               overflow: "hidden",
@@ -128,9 +129,15 @@ const Book = () => {
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative z-10 mx-auto mt-20 w-full max-w-5xl"
+          className="relative z-10 mx-auto mt-20 w-full max-w-5xl overflow-hidden border border-[#10b981]/25 bg-gradient-to-br from-[#10251c] via-[#0c0c0e] to-[#0c0c0e] px-6 py-12 sm:px-10 sm:py-14"
         >
-          <div className="mb-12 text-center">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/70 to-transparent" />
+          <div className="pointer-events-none absolute -right-8 bottom-[-18%] opacity-[0.07]">
+            <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-56 w-56 object-contain" decoding="async" />
+          </div>
+          <div className="pointer-events-none absolute -left-16 top-1/4 h-56 w-56 rounded-full bg-[#10b981]/15 blur-3xl" />
+
+          <div className="relative mb-12 text-center">
             <h2 className="font-display text-3xl font-black uppercase tracking-tight text-foreground md:text-5xl">
               {lang === "en" ? (
                 <>
@@ -142,19 +149,19 @@ const Book = () => {
                 </>
               )}
             </h2>
-            <p className="mt-3 text-base font-medium text-zinc-400">
+            <p className="mt-3 text-base font-medium text-zinc-400 md:text-lg">
               {lang === "en" ? "Simple path. No bull." : "Camino simple. Sin bull."}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:gap-4">
+          <div className="relative grid grid-cols-1 items-stretch gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:gap-3">
             {steps.map((step, index) => (
               <div key={step.n} className="contents">
-                <article className="flex flex-col border border-[#27272A] bg-gradient-to-b from-[#10b981]/[0.07] to-transparent px-6 py-8 text-center">
-                  <span className="mb-4 font-display text-4xl font-black tracking-tighter text-[#10b981]/90">
+                <article className="flex flex-col border border-white/10 bg-[#121214]/90 px-6 py-8 text-center backdrop-blur-[1px]">
+                  <span className="mb-4 font-display text-4xl font-black tracking-tighter text-[#10b981] md:text-5xl">
                     {step.n}
                   </span>
-                  <h3 className="font-display text-xl font-black uppercase tracking-tight text-zinc-100">
+                  <h3 className="font-display text-xl font-black uppercase tracking-tight text-zinc-50">
                     {step.title}
                   </h3>
                   <p className="mt-3 text-base font-medium leading-relaxed text-zinc-400">
@@ -163,7 +170,7 @@ const Book = () => {
                 </article>
                 {index < steps.length - 1 && (
                   <div className="hidden items-center justify-center self-center text-[#10b981]/80 md:flex" aria-hidden>
-                    <span className="h-px w-5 bg-[#10b981]/35" />
+                    <span className="h-px w-5 bg-[#10b981]/40" />
                     <ArrowRight className="h-5 w-5 shrink-0" />
                   </div>
                 )}
