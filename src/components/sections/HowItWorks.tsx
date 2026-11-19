@@ -12,16 +12,16 @@ const HowItWorks = () => {
             icon: ClipboardCheck,
             title: lang === 'en' ? "Test-Drive, Then Book" : "Pruebe, Luego Agende",
             description: lang === 'en'
-                ? "Open the live demos, then grab 15 minutes so we can map a system for your shop."
-                : "Abra los demos en vivo y reserve 15 minutos para trazar un sistema para su taller."
+                ? "Open the live demos, then book a call so we can map a system for your shop."
+                : "Abra los demos en vivo y agende una llamada para trazar un sistema para su taller."
         },
         {
             badge: lang === 'en' ? "Step 2" : "Paso 2",
             icon: LineChart,
             title: lang === 'en' ? "Get a Custom Plan" : "Obtenga un Plan",
             description: lang === 'en'
-                ? "We make you a custom plan to get you more leads and automate the boring stuff."
-                : "Le hacemos un plan a medida para obtener más clientes y automatizar las tareas repetitivas."
+                ? "We map a custom plan to keep more jobs and cut the busywork."
+                : "Mapeamos un plan a medida para conservar más trabajos y recortar lo repetitivo."
         },
         {
             badge: lang === 'en' ? "Step 3" : "Paso 3",
@@ -61,7 +61,7 @@ const HowItWorks = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.2 }}
-                                    className="group flex flex-col bg-[#18181B] border border-[#27272A] rounded-2xl p-8 md:p-10 text-center transition-all duration-300 hover:border-[#10b981]/50 hover:shadow-[0_20px_50px_-15px_rgba(16,185,129,0.35)]"
+                                    className="group flex flex-col border border-white/10 bg-white/[0.03] p-8 md:p-10 text-center transition-colors duration-300 hover:border-[#10b981]/40"
                                 >
                                     <span className="self-center mb-6 text-base md:text-lg font-black uppercase tracking-wide text-[#10b981]">
                                         {step.badge}

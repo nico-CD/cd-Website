@@ -43,10 +43,8 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
   }
-
-
 
   /* Industrial Slim Scrollbar (Monochrome) */
   ::-webkit-scrollbar {
@@ -63,8 +61,12 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-black tracking-tight;
-    font-family: 'Inter', sans-serif;
+    @apply font-bold tracking-tight;
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .font-display {
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   /* Technical labeling & numerical data */
@@ -121,5 +123,55 @@
     animation: border-scan 8s linear infinite;
     pointer-events: none;
     z-index: 50;
+  }
+
+  /* Bull hero arc: stressed → calm (CSS only) */
+  @keyframes bull-arc-swap {
+    0%, 38% { opacity: 1; }
+    48%, 90% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes bull-arc-reveal {
+    0%, 38% { opacity: 0; }
+    48%, 90% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+  .bull-arc__pane--before {
+    animation: bull-arc-swap 7.5s ease-in-out infinite;
+  }
+
+  .bull-arc__pane--after {
+    animation: bull-arc-reveal 7.5s ease-in-out infinite;
+  }
+
+  .bull-arc__bull--before {
+    filter: grayscale(1) brightness(0.85) sepia(0.35) hue-rotate(-20deg) saturate(1.4);
+    transform: scale(0.96) rotate(-2deg);
+  }
+
+  .bull-arc__bull--after {
+    filter: none;
+    transform: scale(1);
+  }
+
+  .bull-arc__ring--before {
+    box-shadow: inset 0 0 40px rgba(239, 68, 68, 0.08);
+  }
+
+  .bull-arc__ring--after {
+    box-shadow: inset 0 0 40px rgba(16, 185, 129, 0.12);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bull-arc__pane--before {
+      animation: none;
+      opacity: 0;
+    }
+    .bull-arc__pane--after {
+      animation: none;
+      opacity: 1;
+    }
   }
 }
