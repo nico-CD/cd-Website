@@ -118,7 +118,7 @@ const VideoGate = () => {
             </div>
 
             <div className="relative z-10 border-t border-white/10 pt-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
-              <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500 md:text-left">
+              <p className="mb-4 text-center text-sm font-bold uppercase tracking-[0.14em] text-zinc-200 md:text-left">
                 {copy.tradesLabel}
               </p>
               <ul className="grid grid-cols-2 gap-2 sm:gap-2.5">
@@ -133,8 +133,8 @@ const VideoGate = () => {
                         rel="noopener noreferrer"
                         className={`group flex min-h-[44px] items-center justify-center rounded-md border px-3 py-2.5 text-center text-sm font-semibold tracking-wide transition-colors sm:text-[15px] ${
                           isCustom
-                            ? "border-[#10b981]/35 bg-[#10b981]/10 text-zinc-50 hover:border-[#10b981]/60 hover:bg-[#10b981]/18"
-                            : "border-white/10 bg-[#0c0c0e]/55 text-zinc-100 backdrop-blur-[1px] hover:border-[#10b981]/40 hover:bg-[#10b981]/12 hover:text-white"
+                            ? "border-[#10b981]/45 bg-[#10251c]/95 text-zinc-50 hover:border-[#10b981]/70 hover:bg-[#123028]"
+                            : "border-white/15 bg-[#121214]/92 text-zinc-50 hover:border-[#10b981]/45 hover:bg-[#16181a] hover:text-white"
                         }`}
                       >
                         {label}
