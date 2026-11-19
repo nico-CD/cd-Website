@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Less chaos, more capacity. Carrillo Dynamics engineers Shop Systems so after-hours leads land on your owner board — on your domain. Book a 15-minute call. English and Spanish.";
+        "Get your time back. Keep the money. Carrillo Dynamics builds CD Systems so more customers lock in and the owner board runs the day. Book a 15-minute call. English and Spanish.";
     const descriptionEs =
-        "Menos caos, más capacidad. Carrillo Dynamics diseña Shop Systems para que los leads fuera de horario lleguen a su tablero de dueño — en su dominio. Reserve una llamada de 15 minutos. Inglés y español.";
+        "Recupere su tiempo. Cuide su dinero. Carrillo Dynamics construye CD Systems para asegurar más clientes y correr el día desde el tablero de dueño. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
@@ -83,7 +83,7 @@ const StructuredData = () => {
                 "name": "What does Carrillo Dynamics do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Carrillo Dynamics engineers and ships Shop Systems for local service businesses — intake to owner board — not slide decks. Book a 15-minute call to map the baseline for your trade.",
+                    "text": "Carrillo Dynamics builds CD Systems for local service businesses: intake to owner board, not slide decks. Book a 15-minute call to map the baseline for your trade.",
                 },
             },
             {

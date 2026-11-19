@@ -26,10 +26,10 @@ const Hero = (_props: HeroProps) => {
       >
         <h1 className="uppercase leading-[0.95]">
           <span className="block text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl md:whitespace-nowrap">
-            {lang === "en" ? "Less chaos. More capacity." : "Menos caos. Más capacidad."}
+            {lang === "en" ? "You're buying leads you never close." : "Está pagando leads que nunca cierra."}
           </span>
-          <span className="mt-1 block text-4xl font-black tracking-tight text-[#10b981] sm:text-6xl lg:text-7xl md:mt-2 md:whitespace-nowrap">
-            {lang === "en" ? "Keep the jobs you win." : "Quédese con los trabajos."}
+          <span className="mt-1 block text-4xl font-black tracking-tight text-[#10b981] sm:text-6xl lg:text-7xl md:mt-2">
+            {lang === "en" ? "Get your time back. Keep the money." : "Recupere su tiempo. Cuide su dinero."}
           </span>
         </h1>
 

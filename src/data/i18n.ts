@@ -118,7 +118,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "Nights and weekends stop dumping leads into voicemail. We engineer a Shop System so intake lands on your owner board — on your domain.",
+            subtitle: "More customers in the door, locked before they bounce. And an owner board that runs the day so you take more jobs without living in your phone. That's a CD System.",
             cta: "Book a 15-min call",
             audit: "Book a 15-min call",
             badge1: "TRUSTED LOCALLY",
@@ -427,7 +427,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Las noches y fines de semana dejan de mandar leads al buzón. Diseñamos un Shop System para que la captación llegue a su tablero de dueño — en su dominio.",
+            subtitle: "Más clientes a la puerta, asegurados antes de que se vayan. Y un tablero de dueño que corre el día para que tome más trabajos sin vivir en el teléfono. Eso es un CD System.",
             cta: "Agendar llamada de 15 min",
             audit: "Llamada de 15 min",
             badge1: "INGENIERÍA BASADA EN CHICAGO",

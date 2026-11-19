@@ -31,8 +31,8 @@ const SEOManager: React.FC<SEOManagerProps> = ({
         : `${brandName} | ${tagline}`;
         
     const siteDescription = lang === 'en' 
-        ? 'Less chaos, more capacity. We engineer Shop Systems so after-hours leads land on your owner board — on your domain. Chicago-based. English and Spanish.'
-        : 'Menos caos, más capacidad. Diseñamos Shop Systems para que los leads fuera de horario lleguen a su tablero de dueño — en su dominio. Con sede en Chicago. Inglés y español.';
+        ? 'Get your time back. Keep the money. More customers locked before they bounce, run from an owner board. That is a CD System. Chicago-based. English and Spanish.'
+        : 'Recupere su tiempo. Cuide su dinero. Más clientes asegurados antes de que se vayan, desde un tablero de dueño. Eso es un CD System. Con sede en Chicago. Inglés y español.';
     
     const baseUrl = 'https://carrillodynamics.com';
     
