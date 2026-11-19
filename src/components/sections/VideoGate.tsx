@@ -35,7 +35,7 @@ function hubTradeUrl(trade: string | null) {
   return `${DEMO_HUB_URL}/?trade=${trade}`;
 }
 
-/** Closer with quiet brand + live trade links. Book is the main funnel. */
+/** Closer with quiet brand + live trade tiles. Book is the main funnel. */
 const VideoGate = () => {
   const { lang } = useTranslation();
 
@@ -78,20 +78,20 @@ const VideoGate = () => {
         <div className="relative overflow-hidden border border-[#10b981]/25 bg-gradient-to-br from-[#10251c] via-[#0c0c0e] to-[#0c0c0e]">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/80 to-transparent" />
           <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-[#10b981]/55 via-[#10b981]/20 to-transparent" />
-          <div className="pointer-events-none absolute -left-16 bottom-[-10%] flex h-[70%] w-[42%] items-center justify-center opacity-[0.05] md:left-auto md:-right-6 md:bottom-[-8%] md:h-[85%] md:w-[38%]">
+          <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-4 md:items-center md:justify-end md:pr-6">
             <img
               src="/bull_PNGs/vect.bull.svg"
               alt=""
               width={420}
               height={420}
-              className="h-full w-full object-contain"
+              className="h-[55%] max-h-[420px] w-auto object-contain opacity-[0.08] md:h-[70%] md:opacity-[0.09]"
               decoding="async"
             />
           </div>
           <div className="pointer-events-none absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-[#10b981]/15 blur-3xl" />
           <div className="pointer-events-none absolute bottom-0 left-1/3 h-48 w-48 rounded-full bg-[#10b981]/10 blur-3xl" />
 
-          <div className="relative grid gap-10 px-6 py-12 sm:px-10 sm:py-14 md:grid-cols-[1.2fr_0.8fr] md:items-center md:gap-14 md:px-12 md:py-16">
+          <div className="relative grid gap-10 px-6 py-12 sm:px-10 sm:py-14 md:grid-cols-[1.15fr_0.85fr] md:items-center md:gap-12 md:px-12 md:py-16">
             <div className="text-center md:text-left">
               <h2 className="font-display text-4xl font-black uppercase tracking-tighter text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 {copy.line}
@@ -117,38 +117,32 @@ const VideoGate = () => {
               </div>
             </div>
 
-            <div className="relative z-10 border-t border-[#27272A] pt-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
-              <div className="rounded-lg bg-[#0c0c0e]/80 px-3 py-4 backdrop-blur-[2px] md:bg-[#0c0c0e]/75 md:px-4 md:py-5">
-                <p className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
-                  {copy.tradesLabel}
-                </p>
-                <ul className="grid grid-cols-1 gap-1.5 text-left sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-                  {TRADES.map((trade) => {
-                    const label = lang === "es" ? trade.labelEs : trade.labelEn;
-                    const isCustom = trade.id === "custom";
-                    return (
-                      <li key={trade.id} className={isCustom ? "sm:col-span-2 lg:col-span-2" : undefined}>
-                        <a
-                          href={hubTradeUrl(trade.hubTrade)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`group inline-flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-sm font-semibold tracking-wide transition-colors sm:text-[15px] ${
-                            isCustom
-                              ? "text-zinc-50 hover:bg-[#10b981]/15 hover:text-[#34d399]"
-                              : "text-zinc-100 hover:bg-[#10b981]/10 hover:text-white"
-                          }`}
-                        >
-                          <span
-                            className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#10b981] transition-transform group-hover:scale-125 group-hover:bg-[#34d399]"
-                            aria-hidden
-                          />
-                          {label}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
+            <div className="relative z-10 border-t border-white/10 pt-8 md:border-l md:border-t-0 md:pl-10 md:pt-0">
+              <p className="mb-4 text-center text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500 md:text-left">
+                {copy.tradesLabel}
+              </p>
+              <ul className="grid grid-cols-2 gap-2 sm:gap-2.5">
+                {TRADES.map((trade) => {
+                  const label = lang === "es" ? trade.labelEs : trade.labelEn;
+                  const isCustom = trade.id === "custom";
+                  return (
+                    <li key={trade.id} className={isCustom ? "col-span-2" : undefined}>
+                      <a
+                        href={hubTradeUrl(trade.hubTrade)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group flex min-h-[44px] items-center justify-center rounded-md border px-3 py-2.5 text-center text-sm font-semibold tracking-wide transition-colors sm:text-[15px] ${
+                          isCustom
+                            ? "border-[#10b981]/35 bg-[#10b981]/10 text-zinc-50 hover:border-[#10b981]/60 hover:bg-[#10b981]/18"
+                            : "border-white/10 bg-[#0c0c0e]/55 text-zinc-100 backdrop-blur-[1px] hover:border-[#10b981]/40 hover:bg-[#10b981]/12 hover:text-white"
+                        }`}
+                      >
+                        {label}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
           </div>
         </div>
