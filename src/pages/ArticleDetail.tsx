@@ -99,14 +99,14 @@ const ArticleDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               className="space-y-14"
             >
-              <div className="print-brand mb-6 hidden items-center justify-between border-b-2 border-[#10b981] pb-3 print:flex">
-                <div className="flex items-center gap-2">
-                  <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-7 w-7" />
-                  <p className="font-display text-sm font-black uppercase tracking-tight text-[#067a4f]">
+              <div className="print-brand mb-3 hidden items-center justify-between border-b-2 border-[#10b981] pb-1.5 print:flex">
+                <div className="flex items-center gap-1.5">
+                  <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-5 w-5" />
+                  <p className="font-display text-xs font-black uppercase tracking-tight text-[#067a4f]">
                     Carrillo <span className="text-[#10b981]">Dynamics</span>
                   </p>
                 </div>
-                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-[#067a4f]">
+                <p className="font-mono text-[8px] font-bold uppercase tracking-[0.14em] text-[#067a4f]">
                   carrillodynamics.com/resources
                 </p>
               </div>

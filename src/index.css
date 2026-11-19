@@ -285,9 +285,19 @@
     border: 1px solid #10b981 !important;
   }
 
+  .print-brand {
+    margin-bottom: 6pt !important;
+    padding-bottom: 4pt !important;
+  }
+
   .print-brand img {
-    max-height: 0.35in !important;
+    max-height: 0.22in !important;
     border: none !important;
+  }
+
+  .print-brand p {
+    margin: 0 !important;
+    font-size: 9pt !important;
   }
 
   h1 {
