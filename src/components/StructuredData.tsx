@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Carrillo Dynamics is an operations & automation engineering firm. We build Shop Systems for local operators — after-hours intake to an owner board on your domain. Book a 15-minute call. English and Spanish.";
+        "Less chaos, more capacity. Carrillo Dynamics engineers Shop Systems so after-hours leads land on your owner board — on your domain. Book a 15-minute call. English and Spanish.";
     const descriptionEs =
-        "Carrillo Dynamics es una firma de ingeniería de operaciones y automatización. Construimos Shop Systems para operadores locales: captación fuera de horario hasta un tablero de dueño en su dominio. Reserve una llamada de 15 minutos. Inglés y español.";
+        "Menos caos, más capacidad. Carrillo Dynamics diseña Shop Systems para que los leads fuera de horario lleguen a su tablero de dueño — en su dominio. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
