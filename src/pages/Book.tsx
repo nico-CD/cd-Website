@@ -1,153 +1,181 @@
-import React, { useEffect, useState } from 'react';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import SEOManager from '@/components/SEOManager';
-import { useTranslation } from '@/components/LanguageProvider';
-import { motion } from 'framer-motion';
-import { InlineWidget } from 'react-calendly';
-import { Search, PenTool, Rocket } from "lucide-react";
+import { useEffect, useState } from "react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import SEOManager from "@/components/SEOManager";
+import { useTranslation } from "@/components/LanguageProvider";
+import { motion } from "framer-motion";
+import { InlineWidget } from "react-calendly";
+import { ArrowRight } from "lucide-react";
 
 const Book = () => {
-    const { lang } = useTranslation();
-    const [calendlyHeight, setCalendlyHeight] = useState(900);
+  const { lang } = useTranslation();
+  const [calendlyHeight, setCalendlyHeight] = useState(900);
 
-    useEffect(() => {
-        const syncHeight = () => {
-            setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
-        };
-        syncHeight();
-        window.addEventListener("resize", syncHeight);
-        return () => window.removeEventListener("resize", syncHeight);
-    }, []);
-
-    const revealProps = {
-        initial: { opacity: 0, y: 20 },
-        whileInView: { opacity: 1, y: 0 },
-        viewport: { once: true, margin: "-100px" },
-        transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] as any }
+  useEffect(() => {
+    const syncHeight = () => {
+      setCalendlyHeight(window.innerWidth < 640 ? 980 : window.innerWidth < 768 ? 860 : 700);
     };
+    syncHeight();
+    window.addEventListener("resize", syncHeight);
+    return () => window.removeEventListener("resize", syncHeight);
+  }, []);
 
-    return (
-        <div className="bg-background min-h-screen overflow-x-hidden text-foreground selection:bg-[#10b981]/10 font-sans">
-            <SEOManager />
-            <Navbar />
-            
-            <section className="pt-28 pb-24 px-4 sm:px-6 min-h-screen bg-zinc-950 relative overflow-hidden flex flex-col items-center">
-                {/* Engineering Graph Paper Background */}
-                <div 
-                    className="absolute inset-0 pointer-events-none opacity-[0.4]"
-                    style={{
-                        backgroundImage: `url("data:image/svg+xml,%3Csvg width='20' height='20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 20 0 L 0 0 0 20' fill='none' stroke='%2310b981' stroke-width='0.5' stroke-opacity='0.8'/%3E%3C/svg%3E")`
-                    }}
-                />
-                
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl h-full pointer-events-none opacity-20">
-                    <div className="absolute top-1/4 left-0 w-[40rem] h-[40rem] bg-[#10b981]/15 rounded-full blur-[120px]" />
-                    <div className="absolute bottom-1/4 right-0 w-[30rem] h-[30rem] bg-[#10b981]/10 rounded-full blur-[100px]" />
-                </div>
+  const steps =
+    lang === "en"
+      ? [
+          {
+            n: "01",
+            title: "The audit",
+            description: "We map your current bottlenecks and workflows.",
+          },
+          {
+            n: "02",
+            title: "The plan",
+            description: "We map a system for your trade: demo baseline, skin, and owner board.",
+          },
+          {
+            n: "03",
+            title: "The build",
+            description: "We engineer, test, and launch on your domain after kickoff.",
+          },
+        ]
+      : [
+          {
+            n: "01",
+            title: "La auditoría",
+            description: "Mapeamos sus flujos de trabajo y cuellos de botella actuales.",
+          },
+          {
+            n: "02",
+            title: "El plan",
+            description: "Mapeamos un sistema para su oficio: baseline del demo, marca y tablero de dueño.",
+          },
+          {
+            n: "03",
+            title: "El build",
+            description: "Ingeniería, pruebas y lanzamiento en su dominio después del kickoff.",
+          },
+        ];
 
-                <motion.div 
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="w-full max-w-full px-4 mx-auto md:max-w-4xl text-center relative z-10 mb-4"
-                >
-                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-black uppercase tracking-tight leading-none mb-6 text-foreground">
-                        {lang === 'en' ? 'Book Your ' : 'Agende Su '} <br className="md:hidden" />
-                        <span className="italic text-[#10b981]">
-                            {lang === 'en' ? '15-Min Call' : 'Llamada de 15 Min'}
-                        </span>
-                    </h1>
-                    <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
-                        {lang === 'en' 
-                            ? "We map bottlenecks and lock a system baseline for your trade: intake to owner board." 
-                            : "Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio: captación hasta tablero de dueño."}
-                    </p>
-                </motion.div>
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-background font-sans text-foreground selection:bg-[#10b981]/10">
+      <SEOManager
+        title={lang === "en" ? "Book a call" : "Agende su llamada"}
+        description={
+          lang === "en"
+            ? "Book a 15-minute call. We map bottlenecks and lock a system baseline for your trade."
+            : "Agende una llamada de 15 minutos. Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio."
+        }
+      />
+      <Navbar />
 
-                <motion.div
-                    className="w-full max-w-full px-4 mx-auto md:max-w-4xl relative z-10"
-                    {...revealProps}
-                >
-                    <InlineWidget 
-                        url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang}`}
-                        styles={{
-                            height: `${calendlyHeight}px`,
-                            width: '100%',
-                            border: 'none',
-                            overflow: 'hidden'
-                        }}
-                        pageSettings={{
-                            backgroundColor: '09090b',
-                            hideEventTypeDetails: true,
-                            hideLandingPageDetails: true,
-                            primaryColor: '10b981',
-                            textColor: 'ffffff'
-                        }}
-                    />
-                </motion.div>
-
-                <motion.div
-                    className="w-full max-w-5xl mx-auto px-4 relative z-10 mt-16 mb-8"
-                    {...revealProps}
-                >
-                    <div className="mb-12 text-center space-y-4">
-                        <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tight text-foreground">
-                            {lang === 'en' ? (
-                                <>What Happens <span className="text-[#10b981]">Next?</span></>
-                            ) : (
-                                <>¿Qué Pasa <span className="text-[#10b981]">Después?</span></>
-                            )}
-                        </h2>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {/* Step 1 */}
-                        <div className="bg-zinc-950/50 backdrop-blur-xl border border-border p-8 rounded-2xl flex flex-col items-center text-center shadow-[0_0_30px_-15px_rgba(16,185,129,0.1)]">
-                            <div className="w-16 h-16 rounded-full bg-[#10b981]/10 flex items-center justify-center mb-6 border border-[#10b981]/20">
-                                <Search className="w-8 h-8 text-[#10b981]" />
-                            </div>
-                            <h3 className="text-xl font-black uppercase text-foreground mb-3">
-                                {lang === 'en' ? "1. The Audit" : "1. La Auditoría"}
-                            </h3>
-                            <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We map out your current business bottlenecks and workflows." : "Mapeamos sus flujos de trabajo y cuellos de botella actuales."}
-                            </p>
-                        </div>
-                        
-                        {/* Step 2 */}
-                        <div className="bg-zinc-950/50 backdrop-blur-xl border border-border p-8 rounded-2xl flex flex-col items-center text-center shadow-[0_0_30px_-15px_rgba(16,185,129,0.1)]">
-                            <div className="w-16 h-16 rounded-full bg-[#10b981]/10 flex items-center justify-center mb-6 border border-[#10b981]/20">
-                                <PenTool className="w-8 h-8 text-[#10b981]" />
-                            </div>
-                            <h3 className="text-xl font-black uppercase text-foreground mb-3">
-                                {lang === 'en' ? "2. The Plan" : "2. El Plan"}
-                            </h3>
-                            <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We map a system for your trade: demo baseline, skin, and owner board." : "Mapeamos un sistema para su oficio: baseline del demo, marca y tablero de dueño."}
-                            </p>
-                        </div>
-                        
-                        {/* Step 3 */}
-                        <div className="bg-zinc-950/50 backdrop-blur-xl border border-border p-8 rounded-2xl flex flex-col items-center text-center shadow-[0_0_30px_-15px_rgba(16,185,129,0.1)]">
-                            <div className="w-16 h-16 rounded-full bg-[#10b981]/10 flex items-center justify-center mb-6 border border-[#10b981]/20">
-                                <Rocket className="w-8 h-8 text-[#10b981]" />
-                            </div>
-                            <h3 className="text-xl font-black uppercase text-foreground mb-3">
-                                {lang === 'en' ? "3. The Deployment" : "3. El Despliegue"}
-                            </h3>
-                            <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We engineer, test, and launch on your domain after kickoff." : "Ingeniería, pruebas y lanzamiento en su dominio después del kickoff."}
-                            </p>
-                        </div>
-                    </div>
-                </motion.div>
-
-            </section>
-
-            <Footer />
+      <section className="relative flex min-h-screen flex-col items-center overflow-hidden bg-background px-4 pb-24 pt-28 sm:px-6">
+        <div
+          className="pointer-events-none absolute inset-0 opacity-[0.28]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 24 0 L 0 0 0 24' fill='none' stroke='%2310b981' stroke-width='0.6' stroke-opacity='0.5'/%3E%3C/svg%3E")`,
+          }}
+        />
+        <div className="pointer-events-none absolute left-1/2 top-24 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-[#10b981]/12 blur-[100px]" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.04]">
+          <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-[560px] w-[560px] object-contain" decoding="async" />
         </div>
-    );
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="relative z-10 mx-auto mb-6 w-full max-w-4xl px-2 text-center"
+        >
+          <h1 className="font-display text-5xl font-black uppercase leading-[0.9] tracking-tighter text-foreground sm:text-6xl md:text-7xl">
+            {lang === "en" ? "Book your" : "Agende su"}{" "}
+            <span className="text-[#10b981]">
+              {lang === "en" ? "15-min call" : "llamada de 15 min"}
+            </span>
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-zinc-400 md:text-xl">
+            {lang === "en"
+              ? "We map bottlenecks and lock a system baseline for your trade: intake to owner board."
+              : "Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio: captación hasta tablero de dueño."}
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative z-10 w-full max-w-4xl overflow-hidden border border-[#27272A] bg-[#09090b]"
+        >
+          <InlineWidget
+            url={`https://calendly.com/nico-carrillodynamics/15-minute-strategy-session?hide_event_type_details=1&hide_gdpr_banner=1&locale=${lang}`}
+            styles={{
+              height: `${calendlyHeight}px`,
+              width: "100%",
+              border: "none",
+              overflow: "hidden",
+            }}
+            pageSettings={{
+              backgroundColor: "09090b",
+              hideEventTypeDetails: true,
+              hideLandingPageDetails: true,
+              primaryColor: "10b981",
+              textColor: "ffffff",
+            }}
+          />
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative z-10 mx-auto mt-20 w-full max-w-5xl"
+        >
+          <div className="mb-12 text-center">
+            <h2 className="font-display text-3xl font-black uppercase tracking-tight text-foreground md:text-5xl">
+              {lang === "en" ? (
+                <>
+                  What happens <span className="text-[#10b981]">next?</span>
+                </>
+              ) : (
+                <>
+                  ¿Qué pasa <span className="text-[#10b981]">después?</span>
+                </>
+              )}
+            </h2>
+            <p className="mt-3 text-base font-medium text-zinc-400">
+              {lang === "en" ? "Simple path. No bull." : "Camino simple. Sin bull."}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:gap-4">
+            {steps.map((step, index) => (
+              <div key={step.n} className="contents">
+                <article className="flex flex-col border border-[#27272A] bg-gradient-to-b from-[#10b981]/[0.07] to-transparent px-6 py-8 text-center">
+                  <span className="mb-4 font-display text-4xl font-black tracking-tighter text-[#10b981]/90">
+                    {step.n}
+                  </span>
+                  <h3 className="font-display text-xl font-black uppercase tracking-tight text-zinc-100">
+                    {step.title}
+                  </h3>
+                  <p className="mt-3 text-base font-medium leading-relaxed text-zinc-400">
+                    {step.description}
+                  </p>
+                </article>
+                {index < steps.length - 1 && (
+                  <div className="hidden items-center justify-center self-center text-[#10b981]/80 md:flex" aria-hidden>
+                    <span className="h-px w-5 bg-[#10b981]/35" />
+                    <ArrowRight className="h-5 w-5 shrink-0" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+      </section>
+
+      <Footer />
+    </div>
+  );
 };
 
 export default Book;

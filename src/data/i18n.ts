@@ -114,7 +114,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         pageTitles: {
             faq: { main: "Frequently Asked", accent: "Questions" },
-            articles: { main: "Our", accent: "Resources" }
+            articles: { main: "Shop", accent: "Resources" }
         },
         hero: {
             title: "Stop losing clients to",
@@ -317,7 +317,7 @@ Manual errors are the hidden tax on your ROI. Our systems ensure total data inte
             },
             {
                 id: "stop-losing-leads",
-                title: "Stop Losing Leads",
+                title: "Stop Losing Jobs",
                 description: "Fix the invisible revenue loss between the first call and a booked job.",
                 content: `### Identifying the Void
 
@@ -391,17 +391,17 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             }
         ],
         articleLabels: {
-            abstract: "Summary",
-            technicalSpecs: "Key Takeaways",
+            abstract: "What's at stake",
+            technicalSpecs: "Fix this week",
             integrity: "FOCUS",
-            integrityValue: "GROWTH",
+            integrityValue: "JOBS",
             protocol: "APPROACH",
-            protocolValue: "SYSTEMATIC",
+            protocolValue: "SYSTEM",
             latency: "RESULT",
-            latencyValue: "EFFICIENCY",
-            downloadPdf: "Download PDF",
-            shareEntry: "Share Resource",
-            backToArchive: "BACK TO RESOURCES"
+            latencyValue: "LESS CHAOS",
+            downloadPdf: "Print",
+            shareEntry: "Share",
+            backToArchive: "Back to resources"
         }
     },
     es: {
@@ -423,7 +423,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         pageTitles: {
             faq: { main: "Operaciones", accent: "FAQ" },
-            articles: { main: "Nuestros", accent: "Recursos" }
+            articles: { main: "Recursos", accent: "del taller" }
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
@@ -626,7 +626,7 @@ Los errores manuales son el impuesto oculto en su ROI. Nuestros sistemas asegura
             },
             {
                 id: "stop-losing-leads",
-                title: "Deje de Perder Clientes",
+                title: "Deje de Perder Trabajos",
                 description: "Detenga la pérdida invisible de ingresos entre la primera llamada y el trabajo agendado.",
                 content: `### Identificando el Vacío
 
@@ -700,17 +700,17 @@ La tecnología no debería complicar tu vida; debería amplificar el arduo traba
             }
         ],
         articleLabels: {
-            abstract: "Resumen",
-            technicalSpecs: "Puntos Clave",
+            abstract: "Qué está en juego",
+            technicalSpecs: "Arregle esta semana",
             integrity: "ENFOQUE",
-            integrityValue: "CRECIMIENTO",
+            integrityValue: "TRABAJOS",
             protocol: "MÉTODO",
-            protocolValue: "SISTEMÁTICO",
+            protocolValue: "SISTEMA",
             latency: "RESULTADO",
-            latencyValue: "EFICIENCIA",
-            downloadPdf: "Descargar PDF",
+            latencyValue: "MENOS CAOS",
+            downloadPdf: "Imprimir",
             shareEntry: "Compartir",
-            backToArchive: "VOLVER A RECURSOS"
+            backToArchive: "Volver a recursos"
         }
     }
 };
