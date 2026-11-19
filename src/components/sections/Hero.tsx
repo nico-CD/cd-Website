@@ -29,7 +29,7 @@ const Hero = (_props: HeroProps) => {
             {lang === "en" ? "Less chaos. More capacity." : "Menos caos. Más capacidad."}
           </span>
           <span className="mt-1 block text-4xl font-black tracking-tight text-[#10b981] sm:text-6xl lg:text-7xl md:mt-2 md:whitespace-nowrap">
-            {lang === "en" ? "Engineer your Shop System." : "Ingeniería de su Shop System."}
+            {lang === "en" ? "Keep the jobs you win." : "Quédese con los trabajos."}
           </span>
         </h1>
 

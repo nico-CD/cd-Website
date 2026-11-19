@@ -118,7 +118,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "We're operations & automation engineers. We build Shop Systems for local operators — after-hours intake to an owner board on your domain.",
+            subtitle: "Nights and weekends stop dumping leads into voicemail. We engineer a Shop System so intake lands on your owner board — on your domain.",
             cta: "Book a 15-min call",
             audit: "Book a 15-min call",
             badge1: "TRUSTED LOCALLY",
@@ -427,7 +427,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Somos ingenieros de operaciones y automatización. Construimos Shop Systems para operadores locales: captación fuera de horario hasta un tablero de dueño en su dominio.",
+            subtitle: "Las noches y fines de semana dejan de mandar leads al buzón. Diseñamos un Shop System para que la captación llegue a su tablero de dueño — en su dominio.",
             cta: "Agendar llamada de 15 min",
             audit: "Llamada de 15 min",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
