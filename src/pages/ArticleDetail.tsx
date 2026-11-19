@@ -17,6 +17,7 @@ const insightImages: Record<string, { webp: string; png: string }> = {
   "stop-losing-leads": { webp: "/insights/insight-3.webp", png: "/insights/insight-3.png" },
   "true-cost-manual-entry": { webp: "/insights/insight-4.webp", png: "/insights/insight-4.png" },
   "audit-your-operations": { webp: "/insights/insight-5.webp", png: "/insights/insight-5.png" },
+  "after-hours-jobs": { webp: "/insights/insight-7.webp", png: "/insights/insight-7.png" },
   "engineering-philosophy": { webp: "/insights/insight-6.webp", png: "/insights/insight-6.png" },
 };
 
@@ -80,12 +81,12 @@ const ArticleDetail = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-background font-sans selection:bg-[#10b981]/10">
       <div
-        className="pointer-events-none absolute inset-0 z-0 bg-repeat opacity-[0.22]"
+        className="pointer-events-none absolute inset-0 z-0 bg-repeat opacity-[0.22] print:hidden"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 24 0 L 0 0 0 24' fill='none' stroke='%2310b981' stroke-width='0.6' stroke-opacity='0.45'/%3E%3C/svg%3E")`,
         }}
       />
-      <SEOManager title={article.title} description={article.description} />
+      <SEOManager title={article.title} description={article.description} type="article" />
       <Navbar />
 
       <div className="relative flex min-h-screen flex-col bg-background pt-20 lg:flex-row">
@@ -101,7 +102,7 @@ const ArticleDetail = () => {
               <div className="space-y-6 border-l-4 border-[#10b981] pl-6 md:pl-8">
                 <Link
                   to="/resources"
-                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#10b981] transition-colors hover:text-foreground"
+                  className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#10b981] transition-colors hover:text-foreground print:hidden"
                 >
                   <ArrowLeft className="h-3.5 w-3.5" />
                   {t.articleLabels.backToArchive}

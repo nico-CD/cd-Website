@@ -44,11 +44,11 @@ const Start = () => {
           title: "Watch the demo.",
           titleAccent: "Book a call.",
           subtitle:
-            "A short walk-through of the systems we engineer for local operators. Then book 15 minutes or open the live demos.",
+            "70-second walkthrough of the systems we engineer for local operators. Then book a call or try our live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a call",
           demosEyebrow: "Prefer to try it live?",
-          demosBody: "Eleven live shops. Pick your trade, click around, then book if it clicks.",
+          demosBody: "Eleven live shops. Pick your trade, look around, then book if it clicks.",
           openHub: "Try a demo",
           bookTitleLead: "Book your",
           bookTitleAccent: "15-min call",
@@ -60,11 +60,11 @@ const Start = () => {
           title: "Vea el demo.",
           titleAccent: "Agende una llamada.",
           subtitle:
-            "Un recorrido corto de los sistemas que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
+            "Recorrido de 70 segundos de los sistemas que diseñamos para operadores locales. Luego agende una llamada o pruebe nuestros demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agende su llamada",
           demosEyebrow: "¿Prefiere probarlo en vivo?",
-          demosBody: "Once talleres en vivo. Elija su oficio, explore y agende si le conviene.",
+          demosBody: "Once talleres en vivo. Elija su oficio, mire alrededor y agende si le conviene.",
           openHub: "Prueba un demo",
           bookTitleLead: "Agende su",
           bookTitleAccent: "llamada de 15 min",
@@ -111,9 +111,9 @@ const Start = () => {
 
         <section className="relative px-4 pb-10 pt-10 sm:px-6 sm:pb-14 sm:pt-14">
           <div className="relative z-10 mx-auto max-w-3xl text-center">
-            <h1 className="font-display text-4xl font-black uppercase tracking-tighter sm:text-5xl md:text-6xl">
-              {copy.title}{" "}
-              <span className="text-[#10b981]">{copy.titleAccent}</span>
+            <h1 className="font-display text-5xl font-black uppercase leading-[0.92] tracking-tighter sm:text-6xl md:text-7xl">
+              <span className="block text-foreground">{copy.title}</span>
+              <span className="mt-2 block text-[#10b981]">{copy.titleAccent}</span>
             </h1>
             <p className="mx-auto mt-5 max-w-lg text-base font-medium leading-relaxed text-zinc-400 sm:text-lg">
               {copy.subtitle}
@@ -153,9 +153,9 @@ const Start = () => {
             className="relative z-10 mx-auto w-full max-w-4xl"
           >
             <div className="mb-5 space-y-3 text-center">
-              <h2 className="font-display text-3xl font-black uppercase leading-none tracking-tighter sm:text-4xl md:text-5xl">
-                {copy.bookTitleLead}{" "}
-                <span className="text-[#10b981]">{copy.bookTitleAccent}</span>
+              <h2 className="font-display text-4xl font-black uppercase leading-[0.92] tracking-tighter sm:text-5xl md:text-6xl">
+                <span className="block text-foreground">{copy.bookTitleLead}</span>
+                <span className="mt-2 block text-[#10b981]">{copy.bookTitleAccent}</span>
               </h2>
               <p className="mx-auto max-w-xl text-base font-medium text-zinc-400">
                 {copy.bookBody}

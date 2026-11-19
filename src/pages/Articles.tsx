@@ -12,6 +12,7 @@ const insightImages: Record<string, { webp: string; png: string }> = {
   "stop-losing-leads": { webp: "/insights/insight-3.webp", png: "/insights/insight-3.png" },
   "true-cost-manual-entry": { webp: "/insights/insight-4.webp", png: "/insights/insight-4.png" },
   "audit-your-operations": { webp: "/insights/insight-5.webp", png: "/insights/insight-5.png" },
+  "after-hours-jobs": { webp: "/insights/insight-7.webp", png: "/insights/insight-7.png" },
   "engineering-philosophy": { webp: "/insights/insight-6.webp", png: "/insights/insight-6.png" },
 };
 

@@ -282,88 +282,110 @@ export const i18nData: Record<Language, I18nContent> = {
             {
                 id: "60-second-lead-rule",
                 title: "The 60-Second Rule",
-                description: "In high-volume service, response velocity is the single most critical variable for your bottom line.",
-                content: `### Operational Velocity
+                description: "The faster you answer, the more jobs you book. Here's why the first minute matters.",
+                content: `### Speed wins jobs
 
-In the service industry, seconds are dollars. A lead contacted in under 60 seconds closes at a rate higher than one contacted even five minutes later. Most firms suffer from what we call Human Latency, which is the costly gap between a lead arriving and your team actually noticing it. We replace this inconsistent gap with automated workflows designed to respond immediately.
+When a homeowner needs a plumber, HVAC tech, or tow, they rarely wait patiently. They call the next shop. Shops that answer in under a minute book more work than shops that call back later.
 
-### The Math of Friction
+### Where minutes get lost
 
-Manual dispatch is inherently slow and prone to failure. By the time a dispatcher dials, the customer has often already called two competitors. Our engineered approach minimizes this friction by injecting lead data directly into your communication pipeline in under 200ms, positioning your team to respond ahead of competitors.
+The gap is usually boring: someone has to notice the lead, open a screen, type details, then dial. By the time that happens, the customer already talked to someone else.
 
-### Industrial Execution
+### What to do this week
 
-We implement immediate connect protocols to maintain this speed. This includes instant CRM injection to automate manual typing, real-time priority alerts for your best leads, and automated engagement touch-points that hit the customer's phone the moment they hit submit.`,
+Track how long it takes from first call or form submit to a real human response. If it regularly drifts past a minute, fix intake first. Automate the handoff so your team gets the details instantly and can answer while the customer is still deciding.`,
                 date: "2026-04-01",
                 readTime: "4 min"
             },
             {
                 id: "scaling-without-hiring",
-                title: "Scaling Without Hiring",
-                description: "Increase your service volume without adding to your administrative overhead.",
-                content: `### The Staffing Trap
+                title: "Scale Without Hiring More Office Staff",
+                description: "Take more jobs without drowning the office in paperwork and follow-ups.",
+                content: `### More trucks shouldn't mean more chaos
 
-Traditional growth usually leads to heavy overhead. Historically, every new technician requires a corresponding increase in office staff to manage the resulting paperwork. This linear growth model effectively kills your margins over time. We help firms shift to an exponential logic model where your infrastructure does the heavy lifting.
+A lot of shops grow by adding technicians, then realize the office can't keep up. Quotes pile up. Follow-ups slip. Scheduling turns into a daily fire drill.
 
-### Digital Infrastructure
+### Busywork is the tax
 
-To scale without reducing your profitability, you must automate low-value repetitive tasks. We replace manual data entry, quote follow-ups, and scheduling verification with automated flows built to eliminate repetitive manual steps and minimize human error. This allows your team to focus on high-value strategy rather than data management.
+Copying details between screens, chasing confirmations, and rebuilding the same updates by hand eats the day. That work doesn't make money. It just keeps the shop from falling over.
 
-### Operational Integrity
+### Grow the work, not the overhead
 
-Manual errors are the hidden tax on your ROI. Our systems ensure total data integrity from the initial intake all the way to the final invoice. This operational efficiency allows your team to handle significantly higher job volume without proportionally increasing office overhead.`,
+Automate the repetitive pieces: intake, reminders, status updates, and handoffs to the field. Your crew stays busy on paid jobs. Your office stays lean. You get capacity without hiring another full-time admin just to keep the lights on.`,
                 date: "2026-04-07",
-                readTime: "5 min"
+                readTime: "4 min"
             },
             {
                 id: "stop-losing-leads",
                 title: "Stop Losing Jobs",
-                description: "Fix the invisible revenue loss between the first call and a booked job.",
-                content: `### Identifying the Void
+                description: "Most shops already pay for the demand. The leak is what happens after the first call.",
+                content: `### You paid for the lead. Did you keep the job?
 
-Is your marketing budget leaking through cracks in your process? Most busy shops have blind spots where leads quietly die before they ever reach a truck. On a 15-min call we walk the path of a lead through your shop and find where jobs fall off.
+Marketing gets blamed when revenue is soft. Often the real problem is quieter: the call came in, then nothing solid happened. No booked window. No follow-up. No owner visibility.
 
-### What We Build
+### Find the drop-off
 
-We tighten intake, speed up response, and make sure follow-ups actually happen, so leads get captured and routed before they go cold. Not just a pretty website: a system and owner board that help you keep the jobs you already paid to attract.`,
+Walk one job from first contact to paid invoice. Note every handoff. Missed after-hours calls, unfinished quotes, and forgotten follow-ups are usually where money disappears.
+
+### Close the gap
+
+Tighten intake so every request becomes a tracked job. Make follow-ups automatic. Give yourself an owner board so you can see what's open, what's stuck, and what's ready to invoice. Keep the jobs you already paid to attract.`,
                 date: "2026-04-07",
-                readTime: "6 min"
-            },
-            {
-                id: "true-cost-manual-entry",
-                title: "The True Cost of Manual Data Entry",
-                description: "Why paying a human to copy-paste data is destroying your margins.",
-                content: `### The Hidden Tax
-
-Every time an employee copies a customer's address from an email into your CRM, you are bleeding money. It's not just the 30 seconds of labor: it's the context switching, the inevitable typos, and the compounding delay across hundreds of tickets a week.
-
-### Error Propagation
-
-A single typo in an address or phone number doesn't just waste office time; it sends a $150/hr field crew to the wrong location. Manual data re-entry introduces risk and unnecessary delay into every ticket. 
-
-### Clean Data Flow
-
-By bypassing manual data entry, we build direct API connections that eliminate transcription errors. Lead info flows straight from your web form into your CRM and onto your technician's phone instantly. The result: faster dispatching, zero data loss, and higher field efficiency.`,
-                date: "2026-04-12",
                 readTime: "5 min"
             },
             {
+                id: "true-cost-manual-entry",
+                title: "The Real Cost of Copy-Paste",
+                description: "Manual retyping looks cheap until a wrong address sends a truck across town.",
+                content: `### It looks like 30 seconds
+
+Copying a name, phone, and address from a form into another screen feels harmless. Multiply it by every ticket, every day, and it becomes hours of unpaid admin work.
+
+### Typos are expensive
+
+One wrong digit can send a crew to the wrong street. Now you're burning truck time, customer patience, and payroll on a mistake nobody meant to make.
+
+### Stop retyping the same job
+
+Push details once and let them travel: form to board to tech. Cleaner data means faster dispatch, fewer callbacks, and less chaos between office and field.`,
+                date: "2026-04-12",
+                readTime: "4 min"
+            },
+            {
                 id: "audit-your-operations",
-                title: "How to Audit Your Own Operations for Leaks",
-                description: "A framework for identifying the bottlenecks in your service business.",
-                content: `### Map the Flow
+                title: "Audit Your Shop for Leaks",
+                description: "A simple walkthrough to find where jobs, time, and money fall through the cracks.",
+                content: `### Map one job end to end
 
-The first step in any engineering audit is mapping the existing state. You must document the exact lifecycle of a lead, from the moment they click your ad to the moment the final invoice is paid. Most business owners are shocked to realize how many manual steps are actually involved in a single job.
+Pick a real job from last week. Write every step from first contact to payment. If you need three people to explain it, the process is already too fragile.
 
-### Identify the Friction
+### Spot the friction
 
-Look for "Swivel Chair Integration": moments where an employee has to look at one screen and manually type the information into another. Look for instances where a technician has to call the office for details that should already be on their device. These are your friction points.
+Look for retyping, waiting on someone to remember a follow-up, or techs calling the office for details that should already be on their phone. Those moments are leaks.
 
-### Calculate the Latency
+### Measure what matters
 
-Measure the time it takes for a new lead to receive a response. Measure the time it takes to generate and send a quote after a site visit. If these metrics rely on a human remembering to do them, you have an operational leak. The solution is automating routine triggers so your team can focus on execution rather than administration.`,
+How long until a new request gets a real response? How long until a quote goes out? How often do open jobs sit with no next step? If the answer depends on memory, automate the trigger and free your team to do the work that pays.`,
                 date: "2026-04-18",
-                readTime: "7 min"
+                readTime: "5 min"
+            },
+            {
+                id: "after-hours-jobs",
+                title: "Stop Missing After-Hours Jobs",
+                description: "Nights and weekends are when many trade customers call. Here's how shops keep those jobs instead of losing them to whoever answers first.",
+                content: `### Demand doesn't clock out
+
+A no-heat call at 9pm and a burst pipe on Sunday don't wait for Monday office hours. If your shop is quiet after 5, someone else is booking the work.
+
+### Voicemail is not intake
+
+A missed call into a full mailbox is not a captured job. Customers move on. By morning you're chasing people who already hired a competitor.
+
+### Cover the hours without living on the phone
+
+Use an after-hours path that captures the request, books or queues it, and notifies the right person. Morning should start with jobs already secured, not a pile of unknowns. That is how you make money while the shop is closed.`,
+                date: "2026-04-28",
+                readTime: "4 min"
             },
             {
                 id: "engineering-philosophy",
@@ -591,88 +613,110 @@ I'm not here to sell you a pretty website or a buzzword deck. I'm here to help y
             {
                 id: "60-second-lead-rule",
                 title: "La Regla de los 60 Segundos",
-                description: "La velocidad de respuesta es la variable más crítica para su rentabilidad.",
-                content: `### Velocidad Operativa
+                description: "Cuanto más rápido responde, más trabajos agenda. Por eso importa el primer minuto.",
+                content: `### La velocidad gana trabajos
 
-En la industria de servicios, los segundos se traducen en dólares. Un cliente potencial contactado en menos de 60 segundos tiene una tasa de cierre superior a la de uno contactado cinco minutos después. La mayoría de las empresas sufren de lo que llamamos Latencia Humana, el costoso lapso entre la llegada de un prospecto y el momento en que su equipo lo detecta. Reemplazamos este lapso inconsistente con flujos de trabajo automatizados diseñados para responder de inmediato.
+Cuando un dueño de casa necesita plomería, HVAC o grúa, rara vez espera con paciencia. Llama al siguiente taller. Los que contestan en menos de un minuto agendan más trabajo que los que devuelven la llamada después.
 
-### La Matemática de la Fricción
+### Dónde se pierden los minutos
 
-El despacho manual es intrínsecamente lento y propenso a errores. Para cuando un despachador marca, el cliente a menudo ya ha llamado a dos competidores. Nuestro enfoque de ingeniería minimiza esta fricción inyectando los datos del prospecto directamente en su flujo de comunicación en menos de 200 ms, posicionando a su equipo para responder antes que la competencia.
+El hueco suele ser aburrido: alguien tiene que notar el pedido, abrir una pantalla, escribir detalles y marcar. Para cuando eso pasa, el cliente ya habló con otro.
 
-### Ejecución Industrial
+### Qué hacer esta semana
 
-Implementamos protocolos de conexión inmediata para mantener esta velocidad. Esto incluye la inyección instantánea en el CRM para automatizar la escritura manual, alertas de prioridad en tiempo real para sus mejores leads y puntos de contacto automatizados que llegan al teléfono del cliente en el momento en que envía su solicitud.`,
+Mida cuánto tarda desde la primera llamada o formulario hasta una respuesta humana real. Si pasa del minuto con frecuencia, arregle primero la captación. Automatice el traspaso para que su equipo reciba los datos al instante y pueda contestar mientras el cliente aún decide.`,
                 date: "2026-04-01",
                 readTime: "4 min"
             },
             {
                 id: "scaling-without-hiring",
-                title: "Escalar sin Contratar",
-                description: "Aumente su volumen de servicios sin añadir carga administrativa.",
-                content: `### La Trampa del Personal
+                title: "Escale Sin Contratar Más Oficina",
+                description: "Tome más trabajos sin ahogar la oficina en papeleo y seguimientos.",
+                content: `### Más camiones no deberían significar más caos
 
-El crecimiento tradicional suele conllevar grandes gastos generales. Históricamente, cada nuevo técnico requiere un aumento correspondiente en el personal de oficina para gestionar el papeleo resultante. Este modelo de crecimiento lineal termina erosionando sus márgenes con el tiempo. Ayudamos a las empresas a cambiar a un modelo de lógica exponencial donde su infraestructura hace el trabajo pesado.
+Muchos talleres crecen sumando técnicos y luego descubren que la oficina no da abasto. Se acumulan cotizaciones. Se caen seguimientos. La agenda se vuelve un incendio diario.
 
-### Infraestructura Digital
+### Lo repetitivo es el impuesto
 
-Para escalar sin reducir su rentabilidad, debe automatizar las tareas repetitivas de bajo valor. Reemplazamos la entrada manual de datos, el seguimiento de cotizaciones y la verificación de programación con flujos automatizados diseñados para eliminar pasos manuales repetitivos y minimizar el error humano. Esto permite que su equipo se concentre en la estrategia de alto valor en lugar de en la gestión de datos.
+Copiar detalles entre pantallas, perseguir confirmaciones y rehacer las mismas actualizaciones a mano se come el día. Ese trabajo no genera dinero. Solo evita que el taller se caiga.
 
-### Integridad Operativa
+### Crezca el trabajo, no la sobrecarga
 
-Los errores manuales son el impuesto oculto en su ROI. Nuestros sistemas aseguran una integridad de datos total desde la admisión inicial hasta la factura final. Esta eficiencia operativa le permite a su equipo gestionar un volumen de trabajo significativamente mayor sin aumentar proporcionalmente la carga administrativa.`,
+Automatice lo repetitivo: captación, recordatorios, estados y traspasos al campo. Su cuadrilla se mantiene en trabajos pagados. Su oficina se mantiene liviana. Gana capacidad sin contratar otra persona solo para sostener el proceso.`,
                 date: "2026-04-07",
-                readTime: "5 min"
+                readTime: "4 min"
             },
             {
                 id: "stop-losing-leads",
                 title: "Deje de Perder Trabajos",
-                description: "Detenga la pérdida invisible de ingresos entre la primera llamada y el trabajo agendado.",
-                content: `### Identificando el Vacío
+                description: "La mayoría ya paga por la demanda. La fuga está en lo que pasa después de la primera llamada.",
+                content: `### Pagó por el lead. ¿Guardó el trabajo?
 
-¿Se está fugando su presupuesto de marketing a través de grietas en su proceso? La mayoría de los talleres tienen puntos ciegos donde los prospectos mueren antes de llegar a un camión. En Una llamada de 15 min recorremos el camino de un lead por su taller y encontramos dónde se caen los trabajos.
+Se culpa al marketing cuando bajan los ingresos. A menudo el problema es más silencioso: entró la llamada y no pasó nada sólido. Sin ventana agendada. Sin seguimiento. Sin visibilidad del dueño.
 
-### Lo Que Construimos
+### Encuentre la caída
 
-Ajustamos el intake, aceleramos la respuesta y hacemos que los seguimientos realmente ocurran, para capturar y enrutar leads antes de que se enfríen. No solo un sitio web bonito: un sistema y tablero de dueño que le ayudan a conservar los trabajos que ya pagó por atraer.`,
+Recorra un trabajo desde el primer contacto hasta la factura pagada. Anote cada traspaso. Llamadas fuera de horario perdidas, cotizaciones a medias y seguimientos olvidados suelen ser donde desaparece el dinero.
+
+### Cierre el hueco
+
+Ajuste la captación para que cada pedido sea un trabajo rastreado. Haga los seguimientos automáticos. Tenga un tablero de dueño para ver qué está abierto, qué está atorado y qué está listo para facturar. Conserve los trabajos que ya pagó por atraer.`,
                 date: "2026-04-07",
-                readTime: "6 min"
-            },
-            {
-                id: "true-cost-manual-entry",
-                title: "El Verdadero Costo del Ingreso Manual de Datos",
-                description: "Por qué pagar a un humano para copiar y pegar datos está destruyendo sus márgenes.",
-                content: `### El Impuesto Oculto
-
-Cada vez que un empleado copia la dirección de un cliente de un correo electrónico a su CRM, usted está perdiendo dinero. No son solo los 30 segundos de trabajo: es el cambio de contexto, los errores tipográficos inevitables y el retraso compuesto en cientos de tickets a la semana.
-
-### Propagación de Errores
-
-Un solo error en una dirección o número de teléfono no solo hace perder tiempo en la oficina; envía a un equipo de campo de $150/hr a la ubicación equivocada. El reingreso manual de datos introduce riesgos y retrasos innecesarios en cada ticket.
-
-### Datos limpios
-
-Al evitar la entrada manual de datos, construimos conexiones API directas que eliminan los errores de transcripción. La información del lead fluye directamente desde su formulario web hacia su CRM y al teléfono de su técnico al instante. El resultado: un despacho más rápido, cero pérdida de datos y mayor eficiencia en el campo.`,
-                date: "2026-04-12",
                 readTime: "5 min"
             },
             {
+                id: "true-cost-manual-entry",
+                title: "El Costo Real de Copiar y Pegar",
+                description: "Retipear a mano parece barato hasta que una dirección mala manda el camión al otro lado de la ciudad.",
+                content: `### Parecen 30 segundos
+
+Copiar nombre, teléfono y dirección de un formulario a otra pantalla se siente inofensivo. Multiplíquelo por cada ticket, cada día, y se vuelve horas de admin sin pagar.
+
+### Los typos salen caros
+
+Un dígito mal puede mandar a la cuadrilla a la calle equivocada. Ahora quema tiempo de camión, paciencia del cliente y nómina por un error que nadie quiso cometer.
+
+### Deje de reescribir el mismo trabajo
+
+Capture los datos una vez y deje que viajen: formulario a tablero a técnico. Datos limpios significan despacho más rápido, menos llamadas de vuelta y menos caos entre oficina y campo.`,
+                date: "2026-04-12",
+                readTime: "4 min"
+            },
+            {
                 id: "audit-your-operations",
-                title: "Cómo Auditar sus Propias Operaciones",
-                description: "Un marco para identificar los cuellos de botella en su empresa de servicios.",
-                content: `### Mapear el Flujo
+                title: "Audite su Taller en Busca de Fugas",
+                description: "Un recorrido simple para encontrar dónde se caen trabajos, tiempo y dinero.",
+                content: `### Mapee un trabajo de punta a punta
 
-El primer paso en cualquier auditoría de ingeniería es mapear el estado actual. Debe documentar el ciclo de vida exacto de un lead, desde el momento en que hace clic en su anuncio hasta el momento en que se paga la factura final. A la mayoría de los dueños de negocios les sorprende darse cuenta de cuántos pasos manuales están realmente involucrados en un solo trabajo.
+Elija un trabajo real de la semana pasada. Escriba cada paso desde el primer contacto hasta el pago. Si necesita tres personas para explicarlo, el proceso ya es demasiado frágil.
 
-### Identificar la Fricción
+### Detecte la fricción
 
-Busque "Integraciones de Silla Giratoria": momentos en los que un empleado tiene que mirar una pantalla y escribir manualmente la información en otra. Busque casos en los que un técnico tenga que llamar a la oficina para obtener detalles que ya deberían estar en su dispositivo. Estos son sus puntos de fricción.
+Busque reescritura, esperas a que alguien recuerde un seguimiento, o técnicos que llaman a la oficina por detalles que ya deberían estar en su teléfono. Esos momentos son fugas.
 
-### Calcular la Latencia
+### Mida lo que importa
 
-Mida el tiempo que tarda un nuevo lead en recibir una respuesta. Mida el tiempo que tarda en generar y enviar una cotización después de una visita al sitio. Si estas métricas dependen de que un humano recuerde hacerlas, tiene una fuga operativa. La solución es automatizar los disparadores rutinarios para que su equipo pueda enfocarse en la ejecución en lugar de la administración.`,
+¿Cuánto tarda una solicitud nueva en tener respuesta real? ¿Cuánto tarda en salir una cotización? ¿Con qué frecuencia quedan trabajos abiertos sin siguiente paso? Si la respuesta depende de la memoria, automatice el disparador y libere a su equipo para el trabajo que sí paga.`,
                 date: "2026-04-18",
-                readTime: "7 min"
+                readTime: "5 min"
+            },
+            {
+                id: "after-hours-jobs",
+                title: "Deje de Perder Trabajos Fuera de Horario",
+                description: "De noche y el fin de semana es cuando muchos clientes llaman. Así los talleres conservan esos trabajos en vez de perdérselos.",
+                content: `### La demanda no cierra a las 5
+
+Una llamada de sin calefacción a las 9pm y una tubería rota el domingo no esperan al lunes. Si su taller queda callado después de las 5, otro está agendando el trabajo.
+
+### El buzón de voz no es captación
+
+Una llamada perdida a un buzón lleno no es un trabajo capturado. El cliente sigue. A la mañana está persiguiendo gente que ya contrató a un competidor.
+
+### Cubra las horas sin vivir pegado al teléfono
+
+Use un camino fuera de horario que capture el pedido, lo agende o lo encole, y avise a la persona correcta. La mañana debería empezar con trabajos ya asegurados, no con una pila de desconocidos. Así se gana dinero mientras el taller está cerrado.`,
+                date: "2026-04-28",
+                readTime: "4 min"
             },
             {
                 id: "engineering-philosophy",
