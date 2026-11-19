@@ -29,16 +29,16 @@ const Hero = (_props: HeroProps) => {
           transition={{ duration: 0.65 }}
           className="flex flex-col items-center text-center lg:items-start lg:text-left"
         >
-          <h1 className="font-display uppercase leading-[0.9]">
-            <span className="block text-5xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
+          <h1 className="font-display uppercase leading-[0.88]">
+            <span className="block text-6xl font-black tracking-tighter text-white sm:text-7xl lg:text-8xl">
               {lang === "en" ? "Losing jobs?" : "¿Perdiendo trabajos?"}
             </span>
-            <span className="mt-2 block text-5xl font-black tracking-tight text-[#10b981] sm:text-6xl lg:text-7xl">
+            <span className="mt-2 block text-6xl font-black tracking-tighter text-[#10b981] sm:text-7xl lg:text-8xl">
               {lang === "en" ? "We got your back." : "Cuenta con nosotros."}
             </span>
           </h1>
 
-          <p className="mt-5 max-w-lg text-lg font-semibold leading-snug text-zinc-200 md:mt-6 md:text-xl">
+          <p className="mt-6 max-w-lg text-xl font-bold leading-snug text-zinc-100 md:mt-7 md:text-2xl">
             {t.hero.subtitle}
           </p>
 
