@@ -17,7 +17,7 @@ const VideoGate = () => {
         }
       : {
           line: "Elija un oficio. Pruébelo en vivo.",
-          support: "Once demos en vivo. Agende cuando le convenza.",
+          support: "Once demos en vivo. Agende si le conviene.",
           book: "Agende su llamada",
           tryDemo: "Prueba un demo",
         };
