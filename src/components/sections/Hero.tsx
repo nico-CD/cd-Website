@@ -29,13 +29,9 @@ const Hero = (_props: HeroProps) => {
           transition={{ duration: 0.65 }}
           className="flex flex-col items-center text-center lg:items-start lg:text-left"
         >
-          <p className="tech-mono mb-4 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#10b981]/90">
-            Carrillo Dynamics
-          </p>
-
           <h1 className="font-display uppercase leading-[0.95]">
             <span className="block text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              {lang === "en" ? "You're losing jobs?" : "¿Está perdiendo trabajos?"}
+              {lang === "en" ? "Losing jobs?" : "¿Perdiendo trabajos?"}
             </span>
             <span className="mt-1 block text-4xl font-bold tracking-tight text-[#10b981] sm:text-5xl lg:text-6xl md:mt-2">
               {lang === "en" ? "We got your back." : "Cuenta con nosotros."}
@@ -59,7 +55,7 @@ const Hero = (_props: HeroProps) => {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-md border border-white/15 bg-white/[0.03] px-6 py-4 text-sm font-semibold uppercase tracking-wide text-zinc-200 transition-colors hover:border-[#10b981]/50 hover:text-white"
             >
-              {lang === "en" ? "Try a live demo" : "Probar un demo"}
+              {lang === "en" ? "Try a demo" : "Prueba un demo"}
             </a>
           </div>
         </motion.div>

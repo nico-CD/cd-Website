@@ -25,7 +25,7 @@ const Footer = () => {
             </span>
           </div>
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-muted-foreground">
-            {lang === "en" ? "Less chaos. More capacity." : "Menos caos. Más capacidad."}
+            {lang === "en" ? "More jobs. Less chaos." : "Más trabajos. Menos caos."}
           </p>
           <div className="space-y-2 text-[10px] font-bold uppercase tracking-widest text-muted-foreground">
             <a

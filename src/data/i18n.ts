@@ -118,7 +118,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "Time back. Money kept. Headaches gone. That's our deal.",
+            subtitle: "Money kept. Time saved. More jobs. Less chaos.",
             cta: "Book a call",
             audit: "Book a call",
             badge1: "TRUSTED LOCALLY",
@@ -427,7 +427,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Tiempo de vuelta. Dinero cuidado. Sin dolores de cabeza. Ese es el trato.",
+            subtitle: "Dinero cuidado. Tiempo ahorrado. Más trabajos. Menos caos.",
             cta: "Agende su llamada",
             audit: "Agende su llamada",
             badge1: "INGENIERÍA BASADA EN CHICAGO",

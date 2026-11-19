@@ -23,16 +23,16 @@ const SEOManager: React.FC<SEOManagerProps> = ({
     
     const brandName = 'Carrillo Dynamics';
     const tagline = lang === 'en' 
-        ? 'Less chaos. More capacity.' 
-        : 'Menos caos. Más capacidad.';
+        ? 'More jobs. Less chaos.' 
+        : 'Más trabajos. Menos caos.';
     
     const fullTitle = title 
         ? `${brandName} | ${title}`
         : `${brandName} | ${tagline}`;
         
     const siteDescription = lang === 'en' 
-        ? "You're losing jobs? We got your back. Time back. Money kept. Headaches gone. That's our deal. Book a call. Chicago-based. English and Spanish."
-        : '¿Está perdiendo trabajos? Cuenta con nosotros. Tiempo de vuelta. Dinero cuidado. Sin dolores de cabeza. Ese es el trato. Agende su llamada. Con sede en Chicago. Inglés y español.';
+        ? "Losing jobs? We got your back. Money kept. Time saved. More jobs. Less chaos. Book a call. Chicago-based. English and Spanish."
+        : '¿Perdiendo trabajos? Cuenta con nosotros. Dinero cuidado. Tiempo ahorrado. Más trabajos. Menos caos. Agende su llamada. Con sede en Chicago. Inglés y español.';
     
     const baseUrl = 'https://carrillodynamics.com';
     

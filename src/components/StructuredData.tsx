@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "You're losing jobs? We got your back. Time back. Money kept. Headaches gone. That's our deal. Book a call. English and Spanish.";
+        "Losing jobs? We got your back. Money kept. Time saved. More jobs. Less chaos. Book a call. English and Spanish.";
     const descriptionEs =
-        "¿Está perdiendo trabajos? Cuenta con nosotros. Tiempo de vuelta. Dinero cuidado. Sin dolores de cabeza. Ese es el trato. Agende su llamada. Inglés y español.";
+        "¿Perdiendo trabajos? Cuenta con nosotros. Dinero cuidado. Tiempo ahorrado. Más trabajos. Menos caos. Agende su llamada. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
@@ -60,7 +60,7 @@ const StructuredData = () => {
         "brand": {
             "@type": "Brand",
             "name": "Carrillo Dynamics",
-            "slogan": lang === "en" ? "Less chaos. More capacity." : "Menos caos. Más capacidad.",
+            "slogan": lang === "en" ? "More jobs. Less chaos." : "Más trabajos. Menos caos.",
         },
         "sameAs": [
             "https://demo.carrillodynamics.com",
