@@ -119,7 +119,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "Money made. Time saved. Less chaos.",
+            subtitle: "Money made. Time saved. Jobs paid.",
             cta: "Book a call",
             audit: "Book a call",
             badge1: "TRUSTED LOCALLY",
@@ -457,7 +457,7 @@ I'm not here to sell you a pretty website or a buzzword deck. I'm here to help y
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Dinero ganado. Tiempo ahorrado. Menos caos.",
+            subtitle: "Dinero ganado. Tiempo ahorrado. Trabajos pagados.",
             cta: "Agende su llamada",
             audit: "Agende su llamada",
             badge1: "INGENIERÍA BASADA EN CHICAGO",

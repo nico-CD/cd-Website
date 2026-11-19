@@ -57,8 +57,8 @@ const ArticlesPage = () => {
             </h1>
             <p className="max-w-2xl text-lg font-medium leading-relaxed text-zinc-400 md:text-xl">
               {lang === "en"
-                ? "Money made. Time saved. Less chaos. Practical reads for shop owners."
-                : "Dinero ganado. Tiempo ahorrado. Menos caos. Lecturas prácticas para dueños de taller."}
+                ? "Money made. Time saved. Jobs paid. Practical reads for shop owners."
+                : "Dinero ganado. Tiempo ahorrado. Trabajos pagados. Lecturas prácticas para dueños de taller."}
             </p>
           </div>
 
