@@ -3,15 +3,15 @@ import { useTranslation } from "@/components/LanguageProvider";
 
 const BEATS = {
   en: [
-    { before: "Money leaking...", after: "Money kept." },
+    { before: "Money leaking...", after: "Money made." },
     { before: "Time burning...", after: "Time saved." },
-    { before: "Jobs slipping...", after: "More jobs." },
+    { before: "Jobs slipping...", after: "Jobs secured." },
     { before: "Chaos rising...", after: "Under control." },
   ],
   es: [
-    { before: "Dinero se fuga...", after: "Dinero cuidado." },
+    { before: "Dinero se fuga...", after: "Dinero ganado." },
     { before: "Tiempo se quema...", after: "Tiempo ahorrado." },
-    { before: "Trabajos se escapan...", after: "Más trabajos." },
+    { before: "Trabajos se escapan...", after: "Trabajos asegurados." },
     { before: "Caos crece...", after: "Bajo control." },
   ],
 } as const;
@@ -49,9 +49,9 @@ export function BullArc({ className = "" }: { className?: string }) {
           <img
             src="/bull_PNGs/vect.bull.svg"
             alt=""
-            width={320}
-            height={320}
-            className="bull-arc__bull bull-arc__bull--before relative z-10 h-[58%] w-[58%] object-contain"
+            width={360}
+            height={360}
+            className="bull-arc__bull bull-arc__bull--before relative z-10 h-[66%] w-[66%] object-contain"
             decoding="async"
           />
           <p className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-red-400/90">
@@ -64,9 +64,9 @@ export function BullArc({ className = "" }: { className?: string }) {
           <img
             src="/bull_PNGs/vect.bull.svg"
             alt=""
-            width={320}
-            height={320}
-            className="bull-arc__bull bull-arc__bull--after relative z-10 h-[58%] w-[58%] object-contain"
+            width={360}
+            height={360}
+            className="bull-arc__bull bull-arc__bull--after relative z-10 h-[66%] w-[66%] object-contain"
             decoding="async"
           />
           <p className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-[#10b981]">

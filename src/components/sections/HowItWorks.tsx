@@ -1,114 +1,120 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, ClipboardCheck, Handshake, LineChart } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useTranslation } from "@/components/LanguageProvider";
 
 const HowItWorks = () => {
-    const { lang } = useTranslation();
+  const { lang } = useTranslation();
 
-    const steps = [
-        {
-            badge: lang === 'en' ? "Step 1" : "Paso 1",
-            icon: ClipboardCheck,
-            title: lang === 'en' ? "Test-Drive, Then Book" : "Pruebe, Luego Agende",
-            description: lang === 'en'
-                ? "Open the live demos, then book a call so we can map a system for your shop."
-                : "Abra los demos en vivo y agende una llamada para trazar un sistema para su taller."
-        },
-        {
-            badge: lang === 'en' ? "Step 2" : "Paso 2",
-            icon: LineChart,
-            title: lang === 'en' ? "Get a Custom Plan" : "Obtenga un Plan",
-            description: lang === 'en'
-                ? "We map a custom plan to keep more jobs and cut the busywork."
-                : "Mapeamos un plan a medida para conservar más trabajos y recortar lo repetitivo."
-        },
-        {
-            badge: lang === 'en' ? "Step 3" : "Paso 3",
-            icon: Handshake,
-            title: lang === 'en' ? "Grow Your Business" : "Haga Crecer su Negocio",
-            description: lang === 'en'
-                ? "We start the system. You focus on running your business and serving your new clients."
-                : "Ponemos el sistema en marcha. Usted se enfoca en administrar su negocio y atender a sus nuevos clientes."
-        }
-    ];
+  const steps =
+    lang === "en"
+      ? [
+          {
+            n: "01",
+            title: "Try a demo",
+            description: "Open a live shop in your trade and see intake and the owner board for yourself.",
+          },
+          {
+            n: "02",
+            title: "Book a call",
+            description: "We map what your shop needs — no pitch deck, just the real gaps.",
+          },
+          {
+            n: "03",
+            title: "We build your system",
+            description: "Money made. Time saved. You run the work; we handle the busywork.",
+          },
+        ]
+      : [
+          {
+            n: "01",
+            title: "Pruebe un demo",
+            description: "Abra un taller en vivo de su oficio y vea la captación y el tablero de dueño.",
+          },
+          {
+            n: "02",
+            title: "Agende su llamada",
+            description: "Mapeamos lo que su taller necesita — sin pitch, solo las fallas reales.",
+          },
+          {
+            n: "03",
+            title: "Construimos su sistema",
+            description: "Dinero ganado. Tiempo ahorrado. Usted corre el trabajo; nosotros lo repetitivo.",
+          },
+        ];
 
-    return (
-        <section className="relative py-40 bg-background border-b border-border overflow-hidden">
-            <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-[0.03] z-0">
-                <img src="/bull_PNGs/vect.bull.svg" alt="" className="w-[800px] h-[800px] object-contain grayscale" />
-            </div>
+  return (
+    <section className="relative overflow-hidden border-b border-border bg-background py-28 md:py-36">
+      <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.04]">
+        <img
+          src="/bull_PNGs/vect.bull.svg"
+          alt=""
+          className="h-[640px] w-[640px] object-contain"
+          decoding="async"
+        />
+      </div>
+      <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[36rem] -translate-x-1/2 rounded-full bg-[#10b981]/12 blur-[100px]" />
 
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-6xl h-full pointer-events-none opacity-20">
-                <div className="absolute top-1/4 left-0 w-[30rem] h-[30rem] bg-[#10b981]/15 rounded-full blur-[100px]" />
-                <div className="absolute bottom-1/4 right-0 w-[40rem] h-[40rem] bg-[#10b981]/10 rounded-full blur-[120px]" />
-            </div>
+      <div className="relative z-10 mx-auto max-w-6xl px-6">
+        <div className="mb-14 text-center md:mb-20">
+          <h2 className="font-display text-4xl font-black uppercase tracking-tight text-foreground md:text-6xl lg:text-7xl">
+            {lang === "en" ? "How we work" : "Cómo trabajamos"}
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl text-base font-medium text-zinc-400 md:text-lg">
+            {lang === "en"
+              ? "Simple path. No theater."
+              : "Camino simple. Sin teatro."}
+          </p>
+        </div>
 
-            <div className="relative max-w-6xl mx-auto px-6 z-10">
-                <div className="text-center mb-16 md:mb-24">
-                    <h2 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-foreground">
-                        {lang === 'en' ? "How It Works" : "Cómo Funciona"}
-                    </h2>
+        <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-[1fr_auto_1fr_auto_1fr] md:gap-4 lg:gap-6">
+          {steps.map((step, index) => (
+            <div key={step.n} className="contents">
+              <motion.article
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.12, duration: 0.45 }}
+                className="relative flex flex-col border border-[#27272A] bg-gradient-to-b from-[#10b981]/[0.07] to-transparent px-7 py-9 text-center md:px-8 md:py-10"
+              >
+                <span className="mb-5 font-display text-4xl font-black tracking-tighter text-[#10b981]/90 md:text-5xl">
+                  {step.n}
+                </span>
+                <h3 className="font-display text-xl font-black uppercase tracking-tight text-zinc-100 md:text-2xl">
+                  {step.title}
+                </h3>
+                <p className="mt-4 text-base font-medium leading-relaxed text-zinc-400 md:text-lg">
+                  {step.description}
+                </p>
+              </motion.article>
+
+              {index < steps.length - 1 && (
+                <div
+                  className="hidden items-center justify-center self-center text-[#10b981]/80 md:flex"
+                  aria-hidden
+                >
+                  <span className="h-px w-5 bg-[#10b981]/35 lg:w-8" />
+                  <ArrowRight className="h-5 w-5 shrink-0" />
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr_auto_1fr] gap-8 lg:gap-6 items-stretch">
-                    {steps.map((step, index) => {
-                        const Icon = step.icon;
-                        return (
-                            <div key={step.badge} className="contents">
-                                <motion.article
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ delay: index * 0.2 }}
-                                    className="group flex flex-col border border-white/10 bg-white/[0.03] p-8 md:p-10 text-center transition-colors duration-300 hover:border-[#10b981]/40"
-                                >
-                                    <span className="self-center mb-6 text-base md:text-lg font-black uppercase tracking-wide text-[#10b981]">
-                                        {step.badge}
-                                    </span>
-                                    <div className="mx-auto mb-6 flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-xl border border-[#27272A] bg-[#18181B] text-[#10b981] transition-colors duration-300 group-hover:border-[#10b981]/40">
-                                        <Icon className="h-8 w-8 md:h-10 md:w-10" />
-                                    </div>
-                                    <h3 className="text-xl md:text-2xl font-black uppercase text-zinc-100 tracking-tight">
-                                        {step.title}
-                                    </h3>
-                                    <p className="mt-4 text-zinc-400 font-medium text-base md:text-lg leading-relaxed">
-                                        {step.description}
-                                    </p>
-                                </motion.article>
-
-                                {index < steps.length - 1 && (
-                                    <div
-                                        className="hidden md:flex items-center justify-center self-center text-[#10b981]/70"
-                                        aria-hidden="true"
-                                    >
-                                        <span className="h-px w-6 lg:w-10 bg-[#10b981]/40" />
-                                        <ArrowRight className="h-5 w-5 shrink-0" />
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}
-                </div>
-
-                <div className="mt-28 md:mt-36 text-center">
-                    <p className="mb-6 text-2xl md:text-4xl font-black tracking-tight text-foreground">
-                        {lang === 'en'
-                            ? "Ready for a custom build?"
-                            : "¿Listo para un build a medida?"}
-                    </p>
-                    <Link
-                        to="/book"
-                        className="inline-flex items-center gap-2 rounded-xl bg-[#10b981] px-8 py-4 text-sm md:text-base font-black uppercase tracking-wider text-zinc-950 transition-colors hover:bg-[#0ea672]"
-                    >
-                        {lang === 'en'
-                            ? "Book a call →"
-                            : "Agende su llamada →"}
-                    </Link>
-                </div>
+              )}
             </div>
-        </section>
-    );
+          ))}
+        </div>
+
+        <div className="mt-20 text-center md:mt-28">
+          <p className="mb-6 font-display text-2xl font-black tracking-tight text-foreground md:text-4xl">
+            {lang === "en" ? "Ready for a custom build?" : "¿Listo para un build a medida?"}
+          </p>
+          <Link
+            to="/book"
+            className="inline-flex items-center gap-2 rounded-md bg-[#10b981] px-8 py-4 text-sm font-black uppercase tracking-wider text-zinc-950 transition-colors hover:bg-[#0ea672] md:text-base"
+          >
+            {lang === "en" ? "Book a call →" : "Agende su llamada →"}
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default HowItWorks;

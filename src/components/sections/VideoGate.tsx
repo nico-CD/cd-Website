@@ -75,10 +75,10 @@ const VideoGate = () => {
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="relative overflow-hidden border border-[#27272A] bg-[#0c0c0e]">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/55 to-transparent" />
-          <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-[#10b981]/40 via-[#10b981]/15 to-transparent" />
-          <div className="pointer-events-none absolute -right-10 bottom-[-20%] flex h-[120%] w-[55%] items-center justify-center opacity-[0.045]">
+        <div className="relative overflow-hidden border border-[#10b981]/25 bg-gradient-to-br from-[#10251c] via-[#0c0c0e] to-[#0c0c0e]">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/80 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-[#10b981]/55 via-[#10b981]/20 to-transparent" />
+          <div className="pointer-events-none absolute -right-8 bottom-[-18%] flex h-[125%] w-[58%] items-center justify-center opacity-[0.07]">
             <img
               src="/bull_PNGs/vect.bull.svg"
               alt=""
@@ -88,7 +88,8 @@ const VideoGate = () => {
               decoding="async"
             />
           </div>
-          <div className="pointer-events-none absolute -left-24 top-1/3 h-64 w-64 rounded-full bg-[#10b981]/[0.07] blur-3xl" />
+          <div className="pointer-events-none absolute -left-20 top-1/4 h-72 w-72 rounded-full bg-[#10b981]/15 blur-3xl" />
+          <div className="pointer-events-none absolute bottom-0 right-1/4 h-48 w-48 rounded-full bg-[#10b981]/10 blur-3xl" />
 
           <div className="relative grid gap-10 px-6 py-12 sm:px-10 sm:py-14 md:grid-cols-[1.2fr_0.8fr] md:items-center md:gap-14 md:px-12 md:py-16">
             <div className="text-center md:text-left">
@@ -130,14 +131,14 @@ const VideoGate = () => {
                         href={hubTradeUrl(trade.hubTrade)}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className={`group inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium tracking-wide transition-colors sm:text-[15px] ${
+                        className={`group inline-flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-sm font-medium tracking-wide transition-colors sm:text-[15px] ${
                           isCustom
-                            ? "text-zinc-200 hover:bg-[#10b981]/10 hover:text-[#10b981]"
-                            : "text-zinc-300 hover:bg-white/[0.04] hover:text-white"
+                            ? "text-zinc-100 hover:bg-[#10b981]/15 hover:text-[#34d399]"
+                            : "text-zinc-300 hover:bg-[#10b981]/10 hover:text-white"
                         }`}
                       >
                         <span
-                          className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#10b981]/50 transition-colors group-hover:bg-[#10b981]"
+                          className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#10b981]/70 transition-transform group-hover:scale-125 group-hover:bg-[#34d399]"
                           aria-hidden
                         />
                         {label}
