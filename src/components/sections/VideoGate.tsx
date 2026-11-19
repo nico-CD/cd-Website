@@ -10,14 +10,14 @@ const VideoGate = () => {
   const copy =
     lang === "en"
       ? {
-          line: "See how shops keep them.",
-          support: "Eleven live demos. Same system behind each one.",
+          line: "Pick a trade. Watch it run.",
+          support: "Eleven live demos. Book a call when it clicks.",
           book: "Book a call",
           tryDemo: "Try a demo",
         }
       : {
-          line: "Vea cómo los talleres los retienen.",
-          support: "Once demos en vivo. El mismo sistema detrás de cada uno.",
+          line: "Elija un oficio. Véalo correr.",
+          support: "Once demos en vivo. Agende cuando le convenza.",
           book: "Agende su llamada",
           tryDemo: "Prueba un demo",
         };
