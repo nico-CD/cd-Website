@@ -10,14 +10,14 @@ const VideoGate = () => {
   const copy =
     lang === "en"
       ? {
-          line: "See it on your trade.",
-          support: "Eleven live shops. Same system.",
+          line: "See how shops keep them.",
+          support: "Eleven live demos. Same system behind each one.",
           book: "Book a call",
           tryDemo: "Try a demo",
         }
       : {
-          line: "Véalo en su oficio.",
-          support: "Once talleres en vivo. El mismo sistema.",
+          line: "Vea cómo los talleres los retienen.",
+          support: "Once demos en vivo. El mismo sistema detrás de cada uno.",
           book: "Agende su llamada",
           tryDemo: "Prueba un demo",
         };
@@ -35,20 +35,24 @@ const VideoGate = () => {
       />
 
       <motion.div
-        className="relative z-10 mx-auto max-w-3xl"
+        className="relative z-10 mx-auto max-w-4xl"
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       >
-        <div className="border border-[#27272A] bg-[#09090b] px-6 py-12 text-center sm:px-10 sm:py-14">
-          <h2 className="font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl md:text-5xl">
+        <div className="relative overflow-hidden border border-[#27272A] bg-[#09090b] px-6 py-14 text-center sm:px-12 sm:py-16">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/70 to-transparent" />
+          <div className="pointer-events-none absolute -left-24 top-1/2 h-56 w-56 -translate-y-1/2 rounded-full bg-[#10b981]/10 blur-3xl" />
+          <div className="pointer-events-none absolute -right-24 top-1/2 h-56 w-56 -translate-y-1/2 rounded-full bg-[#10b981]/[0.07] blur-3xl" />
+
+          <h2 className="relative font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl md:text-6xl">
             {copy.line}
           </h2>
-          <p className="mx-auto mt-4 max-w-lg text-base font-medium text-zinc-400 sm:text-lg">
+          <p className="relative mx-auto mt-5 max-w-xl text-base font-medium text-zinc-400 sm:text-lg">
             {copy.support}
           </p>
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
+          <div className="relative mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">
             <Link
               to="/book"
               className="inline-flex items-center justify-center rounded-md bg-[#10b981] px-8 py-4 text-base font-bold uppercase text-zinc-950 transition-colors hover:bg-[#0ea672]"
