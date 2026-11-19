@@ -12,34 +12,40 @@ const HowItWorks = () => {
           {
             n: "01",
             title: "Try a demo",
-            description: "Open a live shop in your trade and see intake and the owner board for yourself.",
+            description:
+              "Try a live shop in your trade to see the intake and owner board for yourself.",
           },
           {
             n: "02",
             title: "Book a call",
-            description: "We map what your shop needs — no pitch deck, just the real gaps.",
+            description:
+              "We map what your shop wants and needs. No pitch deck, just the real gaps.",
           },
           {
             n: "03",
             title: "We build your system",
-            description: "Money made. Time saved. You run the work; we handle the busywork.",
+            description:
+              "Money made. Time saved. You run the business; we handle the busywork.",
           },
         ]
       : [
           {
             n: "01",
             title: "Pruebe un demo",
-            description: "Abra un taller en vivo de su oficio y vea la captación y el tablero de dueño.",
+            description:
+              "Pruebe un taller en vivo de su oficio para ver la captación y el tablero de dueño.",
           },
           {
             n: "02",
             title: "Agende su llamada",
-            description: "Mapeamos lo que su taller necesita — sin pitch, solo las fallas reales.",
+            description:
+              "Mapeamos lo que su taller quiere y necesita. Sin pitch, solo las fallas reales.",
           },
           {
             n: "03",
             title: "Construimos su sistema",
-            description: "Dinero ganado. Tiempo ahorrado. Usted corre el trabajo; nosotros lo repetitivo.",
+            description:
+              "Dinero ganado. Tiempo ahorrado. Usted corre el negocio; nosotros lo repetitivo.",
           },
         ];
 
@@ -61,9 +67,7 @@ const HowItWorks = () => {
             {lang === "en" ? "How we work" : "Cómo trabajamos"}
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base font-medium text-zinc-400 md:text-lg">
-            {lang === "en"
-              ? "Simple path. No theater."
-              : "Camino simple. Sin teatro."}
+            {lang === "en" ? "Simple path. No bull." : "Camino simple. Sin bull."}
           </p>
         </div>
 

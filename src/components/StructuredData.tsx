@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Losing jobs? We got your back. Money made. Time saved. Jobs secured. Less chaos. Book a call. English and Spanish.";
+        "Losing jobs? We got your back. Money made. Time saved. Less chaos. Book a call. English and Spanish.";
     const descriptionEs =
-        "¿Perdiendo trabajos? Cuenta con nosotros. Dinero ganado. Tiempo ahorrado. Trabajos asegurados. Menos caos. Agende su llamada. Inglés y español.";
+        "¿Perdiendo trabajos? Cuenta con nosotros. Dinero ganado. Tiempo ahorrado. Menos caos. Agende su llamada. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",

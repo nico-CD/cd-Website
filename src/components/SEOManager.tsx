@@ -31,8 +31,8 @@ const SEOManager: React.FC<SEOManagerProps> = ({
         : `${brandName} | ${tagline}`;
         
     const siteDescription = lang === 'en' 
-        ? "Losing jobs? We got your back. Money made. Time saved. Jobs secured. Less chaos. Book a call. Chicago-based. English and Spanish."
-        : '¿Perdiendo trabajos? Cuenta con nosotros. Dinero ganado. Tiempo ahorrado. Trabajos asegurados. Menos caos. Agende su llamada. Con sede en Chicago. Inglés y español.';
+        ? "Losing jobs? We got your back. Money made. Time saved. Less chaos. Book a call. Chicago-based. English and Spanish."
+        : '¿Perdiendo trabajos? Cuenta con nosotros. Dinero ganado. Tiempo ahorrado. Menos caos. Agende su llamada. Con sede en Chicago. Inglés y español.';
     
     const baseUrl = 'https://carrillodynamics.com';
     
