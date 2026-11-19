@@ -51,32 +51,32 @@ const Start = () => {
           title: "Watch the demo.",
           titleAccent: "Book a call.",
           subtitle:
-            "A short walk-through of the Shop Systems we engineer for local operators. Then book 15 minutes or open the live demos.",
+            "A short walk-through of the systems we engineer for local operators. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a call",
           demosEyebrow: "Want to click around first?",
-          demosBody: "Open CD Demos and try eleven live Shop System demos yourself.",
+          demosBody: "Open CD Demos and try eleven live demos yourself.",
           openHub: "Open CD Demos",
           bookTitleLead: "Book Your",
           bookTitleAccent: "15-Min Call",
           bookBody:
-            "15 minutes to map bottlenecks and lock a Shop System baseline for your trade.",
+            "15 minutes to map bottlenecks and lock a system baseline for your trade.",
           langToggle: "ES",
         }
       : {
           title: "Vea el demo.",
           titleAccent: "Agende una llamada.",
           subtitle:
-            "Un recorrido corto de los Shop Systems que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
+            "Un recorrido corto de los sistemas que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agende su llamada",
           demosEyebrow: "¿Prefiere explorar primero?",
-          demosBody: "Abra Demos CD y pruebe once demos de Shop System en vivo.",
+          demosBody: "Abra Demos CD y pruebe once demos en vivo.",
           openHub: "Abrir Demos CD",
           bookTitleLead: "Agende Su",
           bookTitleAccent: "Llamada de 15 Min",
           bookBody:
-            "15 minutos para mapear cuellos de botella y fijar el baseline de Shop System para su oficio.",
+            "15 minutos para mapear cuellos de botella y fijar el baseline del sistema para su oficio.",
           langToggle: "EN",
         };
 

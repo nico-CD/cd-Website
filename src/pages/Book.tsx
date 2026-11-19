@@ -60,8 +60,8 @@ const Book = () => {
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
                         {lang === 'en' 
-                            ? "We map bottlenecks and lock a Shop System baseline for your trade — intake to owner board." 
-                            : "Mapeamos cuellos de botella y fijamos el baseline de Shop System para su oficio: captación hasta tablero de dueño."}
+                            ? "We map bottlenecks and lock a system baseline for your trade: intake to owner board." 
+                            : "Mapeamos cuellos de botella y fijamos el baseline del sistema para su oficio: captación hasta tablero de dueño."}
                     </p>
                 </motion.div>
 
@@ -124,7 +124,7 @@ const Book = () => {
                                 {lang === 'en' ? "2. The Plan" : "2. El Plan"}
                             </h3>
                             <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We map a Shop System for your trade — demo baseline, skin, and owner board." : "Mapeamos un Shop System para su oficio: baseline del demo, marca y tablero de dueño."}
+                                {lang === 'en' ? "We map a system for your trade: demo baseline, skin, and owner board." : "Mapeamos un sistema para su oficio: baseline del demo, marca y tablero de dueño."}
                             </p>
                         </div>
                         

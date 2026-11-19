@@ -83,7 +83,7 @@ const StructuredData = () => {
                 "name": "What does Carrillo Dynamics do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Carrillo Dynamics builds CD Systems for local service businesses: intake to owner board, not slide decks. Book a 15-minute call to map the baseline for your trade.",
+                    "text": "Carrillo Dynamics engineers systems for local service businesses: intake to owner board, not slide decks. Book a 15-minute call to map the baseline for your trade.",
                 },
             },
             {

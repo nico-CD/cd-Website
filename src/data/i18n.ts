@@ -271,7 +271,7 @@ export const i18nData: Record<Language, I18nContent> = {
             },
             {
                 q: "What does Carrillo Dynamics actually do?",
-                a: "We're operations & automation engineers. We engineer and ship Shop Systems for local service businesses — intake to owner board — not slide decks. Book 15 minutes and we'll map the baseline for your trade."
+                a: "We're operations and automation engineers. We engineer and ship systems for local service businesses: intake to owner board, not slide decks. Book 15 minutes and we'll map the baseline for your trade."
             },
             {
                 q: "Do you work in English and Spanish?",
@@ -580,7 +580,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Qué hace realmente Carrillo Dynamics?",
-                a: "Somos ingenieros de operaciones y automatización. Diseñamos y entregamos Shop Systems para negocios de servicios locales — de la captación al tablero de dueño — no presentaciones. Reserve 15 minutos y mapeamos el baseline de su oficio."
+                a: "Somos ingenieros de operaciones y automatización. Diseñamos y entregamos sistemas para negocios de servicios locales: de la captación al tablero de dueño, no presentaciones. Reserve 15 minutos y mapeamos el baseline de su oficio."
             },
             {
                 q: "¿Trabajan en inglés y español?",
