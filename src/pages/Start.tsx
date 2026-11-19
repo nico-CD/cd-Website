@@ -113,9 +113,9 @@ const Start = () => {
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="font-display text-5xl font-black uppercase leading-[0.92] tracking-tighter sm:text-6xl md:text-7xl">
               <span className="block text-foreground">{copy.title}</span>
-              <span className="mt-2 block text-[#10b981]">{copy.titleAccent}</span>
+              <span className="mt-3 block text-[#10b981]">{copy.titleAccent}</span>
             </h1>
-            <p className="mx-auto mt-5 max-w-lg text-base font-medium leading-relaxed text-zinc-400 sm:text-lg">
+            <p className="mx-auto mt-10 max-w-lg text-base font-medium leading-relaxed text-zinc-400 sm:mt-12 sm:text-lg">
               {copy.subtitle}
             </p>
 
@@ -152,12 +152,12 @@ const Start = () => {
             viewport={{ once: true }}
             className="relative z-10 mx-auto w-full max-w-4xl"
           >
-            <div className="mb-5 space-y-3 text-center">
+            <div className="mb-5 text-center">
               <h2 className="font-display text-4xl font-black uppercase leading-[0.92] tracking-tighter sm:text-5xl md:text-6xl">
                 <span className="block text-foreground">{copy.bookTitleLead}</span>
-                <span className="mt-2 block text-[#10b981]">{copy.bookTitleAccent}</span>
+                <span className="mt-3 block text-[#10b981]">{copy.bookTitleAccent}</span>
               </h2>
-              <p className="mx-auto max-w-xl text-base font-medium text-zinc-400">
+              <p className="mx-auto mt-10 max-w-xl text-base font-medium text-zinc-400 sm:mt-12">
                 {copy.bookBody}
               </p>
             </div>

@@ -10,6 +10,7 @@ export interface ArticleEntry {
     title: string;
     description: string;
     content: string;
+    takeaway: string;
     date: string;
     readTime: string;
 }
@@ -294,6 +295,7 @@ The gap is usually boring: someone has to notice the lead, open a screen, type d
 ### What to do this week
 
 Track how long it takes from first call or form submit to a real human response. If it regularly drifts past a minute, fix intake first. Automate the handoff so your team gets the details instantly and can answer while the customer is still deciding.`,
+                takeaway: "Time your next 10 leads from first contact to a real human answer. If most are over 60 seconds, fix intake handoff before anything else.",
                 date: "2026-04-01",
                 readTime: "4 min"
             },
@@ -312,6 +314,7 @@ Copying details between screens, chasing confirmations, and rebuilding the same 
 ### Grow the work, not the overhead
 
 Automate the repetitive pieces: intake, reminders, status updates, and handoffs to the field. Your crew stays busy on paid jobs. Your office stays lean. You get capacity without hiring another full-time admin just to keep the lights on.`,
+                takeaway: "List the three office tasks that eat the most hours. Automate or template the top one before you hire another desk seat.",
                 date: "2026-04-07",
                 readTime: "4 min"
             },
@@ -330,6 +333,7 @@ Walk one job from first contact to paid invoice. Note every handoff. Missed afte
 ### Close the gap
 
 Tighten intake so every request becomes a tracked job. Make follow-ups automatic. Give yourself an owner board so you can see what's open, what's stuck, and what's ready to invoice. Keep the jobs you already paid to attract.`,
+                takeaway: "Pull last week's new leads. Count how many never got a booked window. Build a same-day follow-up rule for those.",
                 date: "2026-04-07",
                 readTime: "5 min"
             },
@@ -348,6 +352,7 @@ One wrong digit can send a crew to the wrong street. Now you're burning truck ti
 ### Stop retyping the same job
 
 Push details once and let them travel: form to board to tech. Cleaner data means faster dispatch, fewer callbacks, and less chaos between office and field.`,
+                takeaway: "Pick one form-to-CRM handoff and kill the retype. Details should move once: form to board to tech phone.",
                 date: "2026-04-12",
                 readTime: "4 min"
             },
@@ -366,6 +371,7 @@ Look for retyping, waiting on someone to remember a follow-up, or techs calling 
 ### Measure what matters
 
 How long until a new request gets a real response? How long until a quote goes out? How often do open jobs sit with no next step? If the answer depends on memory, automate the trigger and free your team to do the work that pays.`,
+                takeaway: "Map one real job end to end on paper. Circle every retype, wait, or forgotten follow-up. Fix the biggest circle first.",
                 date: "2026-04-18",
                 readTime: "5 min"
             },
@@ -384,6 +390,7 @@ A missed call into a full mailbox is not a captured job. Customers move on. By m
 ### Cover the hours without living on the phone
 
 Use an after-hours path that captures the request, books or queues it, and notifies the right person. Morning should start with jobs already secured, not a pile of unknowns. That is how you make money while the shop is closed.`,
+                takeaway: "Replace after-hours voicemail with a capture path that books or queues the request and texts the right person tonight.",
                 date: "2026-04-28",
                 readTime: "4 min"
             },
@@ -408,6 +415,7 @@ I started Carrillo Dynamics to build the boring stuff that keeps shops paid: int
 I'm not here to sell you a pretty website or a buzzword deck. I'm here to help you make more money, save time, and run with less chaos so you can focus on the work that actually pays.
 
  - Nico Carrillo, Owner`,
+                takeaway: "If this story matches your shop, book a call. Bring one leak you want sealed and we map the baseline.",
                 date: "2026-04-24",
                 readTime: "4 min"
             }
@@ -625,6 +633,7 @@ El hueco suele ser aburrido: alguien tiene que notar el pedido, abrir una pantal
 ### Qué hacer esta semana
 
 Mida cuánto tarda desde la primera llamada o formulario hasta una respuesta humana real. Si pasa del minuto con frecuencia, arregle primero la captación. Automatice el traspaso para que su equipo reciba los datos al instante y pueda contestar mientras el cliente aún decide.`,
+                takeaway: "Mida sus próximos 10 leads desde el primer contacto hasta una respuesta humana. Si la mayoría pasa de 60 segundos, arregle primero el traspaso de captación.",
                 date: "2026-04-01",
                 readTime: "4 min"
             },
@@ -643,6 +652,7 @@ Copiar detalles entre pantallas, perseguir confirmaciones y rehacer las mismas a
 ### Crezca el trabajo, no la sobrecarga
 
 Automatice lo repetitivo: captación, recordatorios, estados y traspasos al campo. Su cuadrilla se mantiene en trabajos pagados. Su oficina se mantiene liviana. Gana capacidad sin contratar otra persona solo para sostener el proceso.`,
+                takeaway: "Liste las tres tareas de oficina que más horas comen. Automatice o plantille la primera antes de contratar otro puesto de escritorio.",
                 date: "2026-04-07",
                 readTime: "4 min"
             },
@@ -661,6 +671,7 @@ Recorra un trabajo desde el primer contacto hasta la factura pagada. Anote cada 
 ### Cierre el hueco
 
 Ajuste la captación para que cada pedido sea un trabajo rastreado. Haga los seguimientos automáticos. Tenga un tablero de dueño para ver qué está abierto, qué está atorado y qué está listo para facturar. Conserve los trabajos que ya pagó por atraer.`,
+                takeaway: "Revise los leads nuevos de la semana pasada. Cuente cuántos nunca tuvieron ventana agendada. Arme una regla de seguimiento el mismo día.",
                 date: "2026-04-07",
                 readTime: "5 min"
             },
@@ -679,6 +690,7 @@ Un dígito mal puede mandar a la cuadrilla a la calle equivocada. Ahora quema ti
 ### Deje de reescribir el mismo trabajo
 
 Capture los datos una vez y deje que viajen: formulario a tablero a técnico. Datos limpios significan despacho más rápido, menos llamadas de vuelta y menos caos entre oficina y campo.`,
+                takeaway: "Elija un traspaso de formulario a CRM y elimine el reescribir. Los datos deben moverse una vez: formulario a tablero a teléfono del técnico.",
                 date: "2026-04-12",
                 readTime: "4 min"
             },
@@ -697,6 +709,7 @@ Busque reescritura, esperas a que alguien recuerde un seguimiento, o técnicos q
 ### Mida lo que importa
 
 ¿Cuánto tarda una solicitud nueva en tener respuesta real? ¿Cuánto tarda en salir una cotización? ¿Con qué frecuencia quedan trabajos abiertos sin siguiente paso? Si la respuesta depende de la memoria, automatice el disparador y libere a su equipo para el trabajo que sí paga.`,
+                takeaway: "Mapee un trabajo real de punta a punta en papel. Circule cada reescritura, espera o seguimiento olvidado. Arregle primero el círculo más grande.",
                 date: "2026-04-18",
                 readTime: "5 min"
             },
@@ -715,6 +728,7 @@ Una llamada perdida a un buzón lleno no es un trabajo capturado. El cliente sig
 ### Cubra las horas sin vivir pegado al teléfono
 
 Use un camino fuera de horario que capture el pedido, lo agende o lo encole, y avise a la persona correcta. La mañana debería empezar con trabajos ya asegurados, no con una pila de desconocidos. Así se gana dinero mientras el taller está cerrado.`,
+                takeaway: "Reemplace el buzón fuera de horario con un camino que capture, agende o encole el pedido y avise por texto a la persona correcta esa misma noche.",
                 date: "2026-04-28",
                 readTime: "4 min"
             },
@@ -739,6 +753,7 @@ Empecé Carrillo Dynamics para construir lo aburrido que mantiene a los talleres
 No estoy aquí para venderle un sitio bonito ni un pitch de moda. Estoy aquí para ayudarle a ganar más dinero, ahorrar tiempo y operar con menos caos, para que se enfoque en el trabajo que sí paga.
 
  - Nico Carrillo, Owner`,
+                takeaway: "Si esta historia encaja con su taller, agende una llamada. Traiga una fuga que quiera sellar y mapeamos el baseline.",
                 date: "2026-04-24",
                 readTime: "4 min"
             }

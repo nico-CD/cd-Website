@@ -99,6 +99,18 @@ const ArticleDetail = () => {
               animate={{ opacity: 1, y: 0 }}
               className="space-y-14"
             >
+              <div className="print-brand mb-6 hidden items-center justify-between border-b-2 border-[#10b981] pb-3 print:flex">
+                <div className="flex items-center gap-2">
+                  <img src="/bull_PNGs/vect.bull.svg" alt="" className="h-7 w-7" />
+                  <p className="font-display text-sm font-black uppercase tracking-tight text-[#067a4f]">
+                    Carrillo <span className="text-[#10b981]">Dynamics</span>
+                  </p>
+                </div>
+                <p className="font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-[#067a4f]">
+                  carrillodynamics.com/resources
+                </p>
+              </div>
+
               <div className="space-y-6 border-l-4 border-[#10b981] pl-6 md:pl-8">
                 <Link
                   to="/resources"
@@ -111,6 +123,21 @@ const ArticleDetail = () => {
                 <h1 className="font-display text-4xl font-black uppercase leading-[0.95] tracking-tighter text-foreground break-words sm:text-5xl md:text-6xl">
                   {article.title}
                 </h1>
+
+                <div className="hidden space-y-2 print:block">
+                  <p className="border border-[#10b981]/50 bg-[#ecfdf5] p-3 text-[10pt] font-medium leading-snug text-[#064e3b]">
+                    <span className="mb-1 block font-mono text-[8pt] font-bold uppercase tracking-[0.14em] text-[#067a4f]">
+                      {t.articleLabels.abstract}
+                    </span>
+                    {article.description}
+                  </p>
+                  <p className="border border-[#10b981]/50 bg-[#ecfdf5] p-3 text-[10pt] font-medium leading-snug text-[#064e3b]">
+                    <span className="mb-1 block font-mono text-[8pt] font-bold uppercase tracking-[0.14em] text-[#067a4f]">
+                      {t.articleLabels.technicalSpecs}
+                    </span>
+                    {article.takeaway}
+                  </p>
+                </div>
 
                 <div className="flex flex-wrap items-center gap-6 border-t border-[#27272A] pt-6 text-xs font-bold uppercase tracking-[0.16em] text-zinc-500">
                   <span className="inline-flex items-center gap-2">
@@ -173,8 +200,8 @@ const ArticleDetail = () => {
                   </ReactMarkdown>
                 </div>
 
-                <aside className="space-y-8 lg:col-span-4">
-                  <div className="space-y-4 border border-[#27272A] bg-[#0c0c0e]/90 p-6">
+                <aside className="space-y-8 lg:col-span-4 print:hidden">
+                  <div className="space-y-4 border border-[#10b981]/40 bg-[#0c0c0e]/90 p-6">
                     <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#10b981]">
                       {t.articleLabels.abstract}
                     </h4>
@@ -183,10 +210,10 @@ const ArticleDetail = () => {
                     </p>
                   </div>
 
-                  <div className="space-y-4 border border-[#27272A] bg-[#0c0c0e]/90 p-6">
+                  <div className="space-y-4 border border-[#10b981]/40 bg-[#0c0c0e]/90 p-6">
                     {isPhilosophy ? (
                       <>
-                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-200">
+                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#10b981]">
                           {lang === "en" ? "Do not press" : "No pulse"}
                         </h4>
                         {!eggPressed ? (
@@ -216,13 +243,11 @@ const ArticleDetail = () => {
                       </>
                     ) : (
                       <>
-                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-zinc-200">
+                        <h4 className="text-xs font-bold uppercase tracking-[0.16em] text-[#10b981]">
                           {t.articleLabels.technicalSpecs}
                         </h4>
-                        <p className="text-sm font-medium leading-relaxed text-zinc-400">
-                          {lang === "en"
-                            ? "Read it once. Apply one fix in your shop this week. Then book a call if you want us to build it."
-                            : "Léalo una vez. Aplique un arreglo en su taller esta semana. Luego agende si quiere que lo construyamos."}
+                        <p className="text-sm font-medium leading-relaxed text-zinc-300">
+                          {article.takeaway}
                         </p>
                       </>
                     )}
@@ -232,7 +257,7 @@ const ArticleDetail = () => {
                     <Button
                       onClick={handlePrint}
                       variant="outline"
-                      className="h-12 w-full justify-start rounded-md border-[#27272A] text-xs font-bold uppercase tracking-widest hover:bg-[#10b981]/10"
+                      className="h-12 w-full justify-start rounded-md border-[#10b981]/40 text-xs font-bold uppercase tracking-widest hover:bg-[#10b981]/10"
                     >
                       <Printer className="mr-3 h-4 w-4 text-[#10b981]" />
                       {t.articleLabels.downloadPdf}
@@ -240,7 +265,7 @@ const ArticleDetail = () => {
                     <Button
                       onClick={handleShare}
                       variant="outline"
-                      className="h-12 w-full justify-start rounded-md border-[#27272A] text-xs font-bold uppercase tracking-widest hover:bg-[#10b981]/10"
+                      className="h-12 w-full justify-start rounded-md border-[#10b981]/40 text-xs font-bold uppercase tracking-widest hover:bg-[#10b981]/10"
                     >
                       <Share2 className="mr-3 h-4 w-4 text-[#10b981]" />
                       {t.articleLabels.shareEntry}
