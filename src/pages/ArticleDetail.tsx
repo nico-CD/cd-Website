@@ -230,7 +230,7 @@ const ArticleDetail = () => {
                                         onClick={() => navigate('/book')}
                                         className="h-20 px-12 bg-[#10b981] text-black font-black uppercase tracking-[0.2em] rounded-none hover:bg-white transition-all flex items-center group"
                                     >
-                                        {lang === 'en' ? 'Book a 15-min call' : 'Agendar llamada de 15 min'}
+                                        {lang === 'en' ? 'Book a call' : 'Agende su llamada'}
                                         <ArrowRight className="ml-4 h-6 w-6 group-hover:translate-x-2 transition-transform" />
                                     </Button>
                                 </div>

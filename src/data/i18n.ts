@@ -119,8 +119,8 @@ export const i18nData: Record<Language, I18nContent> = {
         hero: {
             title: "Stop losing clients to",
             subtitle: "Time back. Money kept. Headaches gone. That's our deal.",
-            cta: "Book a 15-min call",
-            audit: "Book a 15-min call",
+            cta: "Book a call",
+            audit: "Book a call",
             badge1: "TRUSTED LOCALLY",
             badge2: "FAST & RELIABLE",
             badge3: "MOBILE FRIENDLY"
@@ -428,8 +428,8 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         hero: {
             title: "Su negocio está perdiendo clientes por",
             subtitle: "Tiempo de vuelta. Dinero cuidado. Sin dolores de cabeza. Ese es el trato.",
-            cta: "Agendar llamada de 15 min",
-            audit: "Llamada de 15 min",
+            cta: "Agende su llamada",
+            audit: "Agende su llamada",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
             badge2: "SIN RETRASOS DE CARGA",
             badge3: "OPTIMIZADO PARA MÓVILES"

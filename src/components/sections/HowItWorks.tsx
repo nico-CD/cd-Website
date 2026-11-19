@@ -102,8 +102,8 @@ const HowItWorks = () => {
                         className="inline-flex items-center gap-2 rounded-xl bg-[#10b981] px-8 py-4 text-sm md:text-base font-black uppercase tracking-wider text-zinc-950 transition-colors hover:bg-[#0ea672]"
                     >
                         {lang === 'en'
-                            ? "Book a 15-min call →"
-                            : "Agendar llamada de 15 min →"}
+                            ? "Book a call →"
+                            : "Agende su llamada →"}
                     </Link>
                 </div>
             </div>

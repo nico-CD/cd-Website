@@ -53,7 +53,7 @@ const Start = () => {
           subtitle:
             "A short walk-through of the Shop Systems we engineer for local operators. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
-          bookPrimary: "Book a 15-min call",
+          bookPrimary: "Book a call",
           demosEyebrow: "Want to click around first?",
           demosBody: "Open CD Demos and try eleven live Shop System demos yourself.",
           openHub: "Open CD Demos",
@@ -69,7 +69,7 @@ const Start = () => {
           subtitle:
             "Un recorrido corto de los Shop Systems que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
-          bookPrimary: "Agendar llamada de 15 min",
+          bookPrimary: "Agende su llamada",
           demosEyebrow: "¿Prefiere explorar primero?",
           demosBody: "Abra Demos CD y pruebe once demos de Shop System en vivo.",
           openHub: "Abrir Demos CD",
