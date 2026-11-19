@@ -6,17 +6,18 @@ const BEATS = {
     { before: "Money leaking.", after: "Money kept." },
     { before: "Time burning.", after: "Time saved." },
     { before: "Jobs slipping.", after: "More jobs." },
-    { before: "Chaos rising.", after: "Less chaos." },
+    { before: "Chaos rising.", after: "Under control." },
   ],
   es: [
     { before: "Dinero se fuga.", after: "Dinero cuidado." },
     { before: "Tiempo se quema.", after: "Tiempo ahorrado." },
     { before: "Trabajos se escapan.", after: "Más trabajos." },
-    { before: "Caos crece.", after: "Menos caos." },
+    { before: "Caos crece.", after: "Bajo control." },
   ],
 } as const;
 
-const CYCLE_MS = 8000;
+/** One before→after arc per beat, then advance. No fade back to old red caption. */
+const CYCLE_MS = 7500;
 
 /** Logo-based chaos → control arc. Captions rotate through the hero sub beats. */
 export function BullArc({ className = "" }: { className?: string }) {
@@ -29,7 +30,7 @@ export function BullArc({ className = "" }: { className?: string }) {
       typeof window !== "undefined" &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduce) {
-      setBeat(2);
+      setBeat(3);
       return;
     }
     const id = window.setInterval(() => {
@@ -53,10 +54,7 @@ export function BullArc({ className = "" }: { className?: string }) {
             className="bull-arc__bull bull-arc__bull--before relative z-10 h-[58%] w-[58%] object-contain"
             decoding="async"
           />
-          <p
-            key={`before-${beat}`}
-            className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-red-400/90"
-          >
+          <p className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-red-400/90">
             {before}
           </p>
         </div>
@@ -71,10 +69,7 @@ export function BullArc({ className = "" }: { className?: string }) {
             className="bull-arc__bull bull-arc__bull--after relative z-10 h-[58%] w-[58%] object-contain"
             decoding="async"
           />
-          <p
-            key={`after-${beat}`}
-            className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-[#10b981]"
-          >
+          <p className="bull-arc__caption relative z-10 mt-5 text-center text-[11px] font-bold uppercase tracking-[0.22em] text-[#10b981]">
             {after}
           </p>
         </div>

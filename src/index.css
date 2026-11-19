@@ -125,17 +125,15 @@
     z-index: 50;
   }
 
-  /* Bull hero arc: jobs slipping → jobs locked (CSS only) */
+  /* Bull hero arc: one-shot before→after per beat (JS advances captions) */
   @keyframes bull-arc-swap {
-    0%, 36% { opacity: 1; }
-    46%, 88% { opacity: 0; }
-    100% { opacity: 1; }
+    0%, 38% { opacity: 1; }
+    48%, 100% { opacity: 0; }
   }
 
   @keyframes bull-arc-reveal {
-    0%, 36% { opacity: 0; }
-    46%, 88% { opacity: 1; }
-    100% { opacity: 0; }
+    0%, 38% { opacity: 0; }
+    48%, 100% { opacity: 1; }
   }
 
   @keyframes bull-arc-jitter {
@@ -144,11 +142,11 @@
   }
 
   .bull-arc__pane--before {
-    animation: bull-arc-swap 8s ease-in-out infinite;
+    animation: bull-arc-swap 7.5s ease-in-out forwards;
   }
 
   .bull-arc__pane--after {
-    animation: bull-arc-reveal 8s ease-in-out infinite;
+    animation: bull-arc-reveal 7.5s ease-in-out forwards;
   }
 
   .bull-arc__haze {
