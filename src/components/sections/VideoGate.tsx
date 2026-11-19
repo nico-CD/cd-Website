@@ -3,38 +3,41 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "@/components/LanguageProvider";
 import { DEMO_HUB_URL } from "@/data/trades";
 
-const TRADES_EN = [
-  "HVAC",
-  "Plumbing",
-  "Electrical",
-  "Waste",
-  "Roofing",
-  "Construction",
-  "Barber",
-  "Beauty",
-  "Towing",
-  "Landscaping",
-  "Cleaning",
-] as const;
+type TradeLink = {
+  id: string;
+  labelEn: string;
+  labelEs: string;
+  hubTrade: string | null;
+};
 
-const TRADES_ES = [
-  "HVAC",
-  "Plomería",
-  "Eléctrico",
-  "Residuos",
-  "Techado",
-  "Construcción",
-  "Barbería",
-  "Belleza",
-  "Grúas",
-  "Paisajismo",
-  "Limpieza",
-] as const;
+const TRADES: TradeLink[] = [
+  { id: "hvac", labelEn: "HVAC", labelEs: "HVAC", hubTrade: "hvac" },
+  { id: "plumbing", labelEn: "Plumbing", labelEs: "Plomería", hubTrade: "plumbing" },
+  { id: "electrical", labelEn: "Electrical", labelEs: "Eléctrico", hubTrade: "electrical" },
+  { id: "waste", labelEn: "Waste", labelEs: "Residuos", hubTrade: "waste" },
+  { id: "roofing", labelEn: "Roofing", labelEs: "Techado", hubTrade: "roofing" },
+  { id: "construction", labelEn: "Construction", labelEs: "Construcción", hubTrade: "construction" },
+  { id: "barber", labelEn: "Barber", labelEs: "Barbería", hubTrade: "barber" },
+  { id: "beauty", labelEn: "Beauty", labelEs: "Belleza", hubTrade: "beauty" },
+  { id: "towing", labelEn: "Towing", labelEs: "Grúas", hubTrade: "towing" },
+  { id: "landscaping", labelEn: "Landscaping", labelEs: "Paisajismo", hubTrade: "landscaping" },
+  { id: "cleaning", labelEn: "Cleaning", labelEs: "Limpieza", hubTrade: "cleaning" },
+  {
+    id: "custom",
+    labelEn: "Custom builds as needed",
+    labelEs: "A medida según se necesite",
+    hubTrade: "custom",
+  },
+];
 
-/** Closer with trade proof. Book is the main funnel. */
+function hubTradeUrl(trade: string | null) {
+  if (!trade) return DEMO_HUB_URL;
+  return `${DEMO_HUB_URL}/?trade=${trade}`;
+}
+
+/** Closer with quiet brand + live trade links. Book is the main funnel. */
 const VideoGate = () => {
   const { lang } = useTranslation();
-  const trades = lang === "es" ? TRADES_ES : TRADES_EN;
 
   const copy =
     lang === "en"
@@ -59,9 +62,9 @@ const VideoGate = () => {
       className="relative z-10 border-t border-[#27272A] bg-background px-6 py-16 transition-colors duration-300 md:py-24"
     >
       <div
-        className="pointer-events-none absolute inset-0 opacity-[0.18]"
+        className="pointer-events-none absolute inset-0 opacity-[0.16]"
         style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 24 0 L 0 0 0 24' fill='none' stroke='%2310b981' stroke-width='0.6' stroke-opacity='0.35'/%3E%3C/svg%3E")`,
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 24 0 L 0 0 0 24' fill='none' stroke='%2310b981' stroke-width='0.6' stroke-opacity='0.3'/%3E%3C/svg%3E")`,
         }}
       />
 
@@ -73,7 +76,19 @@ const VideoGate = () => {
         transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
       >
         <div className="relative overflow-hidden border border-[#27272A] bg-[#0c0c0e]">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/50 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/55 to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-px bg-gradient-to-b from-[#10b981]/40 via-[#10b981]/15 to-transparent" />
+          <div className="pointer-events-none absolute -right-10 bottom-[-20%] flex h-[120%] w-[55%] items-center justify-center opacity-[0.045]">
+            <img
+              src="/bull_PNGs/vect.bull.svg"
+              alt=""
+              width={420}
+              height={420}
+              className="h-full w-full object-contain"
+              decoding="async"
+            />
+          </div>
+          <div className="pointer-events-none absolute -left-24 top-1/3 h-64 w-64 rounded-full bg-[#10b981]/[0.07] blur-3xl" />
 
           <div className="relative grid gap-10 px-6 py-12 sm:px-10 sm:py-14 md:grid-cols-[1.2fr_0.8fr] md:items-center md:gap-14 md:px-12 md:py-16">
             <div className="text-center md:text-left">
@@ -105,15 +120,31 @@ const VideoGate = () => {
               <p className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">
                 {copy.tradesLabel}
               </p>
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-3 text-left sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-2">
-                {trades.map((trade) => (
-                  <li
-                    key={trade}
-                    className="text-sm font-medium tracking-wide text-zinc-300 sm:text-[15px]"
-                  >
-                    {trade}
-                  </li>
-                ))}
+              <ul className="grid grid-cols-1 gap-1.5 text-left sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                {TRADES.map((trade) => {
+                  const label = lang === "es" ? trade.labelEs : trade.labelEn;
+                  const isCustom = trade.id === "custom";
+                  return (
+                    <li key={trade.id} className={isCustom ? "sm:col-span-2 lg:col-span-2" : undefined}>
+                      <a
+                        href={hubTradeUrl(trade.hubTrade)}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`group inline-flex items-center gap-2 rounded-md px-2 py-1.5 text-sm font-medium tracking-wide transition-colors sm:text-[15px] ${
+                          isCustom
+                            ? "text-zinc-200 hover:bg-[#10b981]/10 hover:text-[#10b981]"
+                            : "text-zinc-300 hover:bg-white/[0.04] hover:text-white"
+                        }`}
+                      >
+                        <span
+                          className="h-1.5 w-1.5 shrink-0 rounded-full bg-[#10b981]/50 transition-colors group-hover:bg-[#10b981]"
+                          aria-hidden
+                        />
+                        {label}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>
