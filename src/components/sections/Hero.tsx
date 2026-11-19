@@ -25,15 +25,15 @@ const Hero = (_props: HeroProps) => {
         className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center text-center"
       >
         <h1 className="uppercase leading-[0.95]">
-          <span className="block text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl md:whitespace-nowrap">
-            {lang === "en" ? "You're buying leads you never close." : "Está pagando leads que nunca cierra."}
+          <span className="block text-4xl font-black tracking-tight text-white sm:text-6xl lg:text-7xl">
+            {lang === "en" ? "You're losing leads?" : "¿Está perdiendo leads?"}
           </span>
           <span className="mt-1 block text-4xl font-black tracking-tight text-[#10b981] sm:text-6xl lg:text-7xl md:mt-2">
-            {lang === "en" ? "Get your time back. Keep the money." : "Recupere su tiempo. Cuide su dinero."}
+            {lang === "en" ? "We lock them in." : "Los aseguramos."}
           </span>
         </h1>
 
-        <p className="mx-auto mt-6 mb-12 max-w-3xl text-lg font-medium leading-relaxed text-zinc-300 md:mb-16 md:text-xl">
+        <p className="mx-auto mt-5 mb-10 max-w-xl text-base font-medium leading-snug text-zinc-300 md:mb-14 md:mt-6 md:text-xl md:leading-relaxed">
           {t.hero.subtitle}
         </p>
 

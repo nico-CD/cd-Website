@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Get your time back. Keep the money. Carrillo Dynamics builds CD Systems so more customers lock in and the owner board runs the day. Book a 15-minute call. English and Spanish.";
+        "You're losing leads? We lock them in. Carrillo Dynamics builds CD Systems that give time back and keep the money. Book a 15-minute call. English and Spanish.";
     const descriptionEs =
-        "Recupere su tiempo. Cuide su dinero. Carrillo Dynamics construye CD Systems para asegurar más clientes y correr el día desde el tablero de dueño. Reserve una llamada de 15 minutos. Inglés y español.";
+        "¿Está perdiendo leads? Los aseguramos. Carrillo Dynamics construye CD Systems que devuelven tiempo y cuidan el dinero. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",

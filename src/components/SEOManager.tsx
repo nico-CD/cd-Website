@@ -31,8 +31,8 @@ const SEOManager: React.FC<SEOManagerProps> = ({
         : `${brandName} | ${tagline}`;
         
     const siteDescription = lang === 'en' 
-        ? 'Get your time back. Keep the money. More customers locked before they bounce, run from an owner board. That is a CD System. Chicago-based. English and Spanish.'
-        : 'Recupere su tiempo. Cuide su dinero. Más clientes asegurados antes de que se vayan, desde un tablero de dueño. Eso es un CD System. Con sede en Chicago. Inglés y español.';
+        ? "You're losing leads? We lock them in. Time back. Money kept. That's a CD System. Chicago-based. English and Spanish."
+        : '¿Está perdiendo leads? Los aseguramos. Tiempo de vuelta. Dinero cuidado. Eso es un CD System. Con sede en Chicago. Inglés y español.';
     
     const baseUrl = 'https://carrillodynamics.com';
     
