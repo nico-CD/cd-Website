@@ -4,9 +4,9 @@ const StructuredData = () => {
     const { lang } = useTranslation();
 
     const descriptionEn =
-        "Carrillo Dynamics builds systems and automations for local service businesses in the Chicago area and beyond. Get more jobs, automate busywork, cut headaches. Book a 15-minute call. English and Spanish.";
+        "Carrillo Dynamics is an operations & automation engineering firm. We build Shop Systems for local operators — after-hours intake to an owner board on your domain. Book a 15-minute call. English and Spanish.";
     const descriptionEs =
-        "Carrillo Dynamics construye sistemas y automatizaciones para negocios de servicios locales en el área de Chicago y más allá. Consiga más trabajos, automatice el trabajo manual, reduzca dolores de cabeza. Reserve una llamada de 15 minutos. Inglés y español.";
+        "Carrillo Dynamics es una firma de ingeniería de operaciones y automatización. Construimos Shop Systems para operadores locales: captación fuera de horario hasta un tablero de dueño en su dominio. Reserve una llamada de 15 minutos. Inglés y español.";
 
     const websiteSchema = {
         "@context": "https://schema.org",
@@ -83,7 +83,7 @@ const StructuredData = () => {
                 "name": "What does Carrillo Dynamics do?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Carrillo Dynamics builds systems and automations for local service businesses so shops get more jobs, automate busywork, and cut headaches. Book a 15-minute call to map a system and owner board for your trade.",
+                    "text": "Carrillo Dynamics engineers and ships Shop Systems for local service businesses — intake to owner board — not slide decks. Book a 15-minute call to map the baseline for your trade.",
                 },
             },
             {

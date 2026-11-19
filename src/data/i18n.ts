@@ -118,7 +118,7 @@ export const i18nData: Record<Language, I18nContent> = {
         },
         hero: {
             title: "Stop losing clients to",
-            subtitle: "We build the systems that help service businesses succeed. You get more jobs, automate the busywork, and cut the headaches.",
+            subtitle: "We're operations & automation engineers. We build Shop Systems for local operators — after-hours intake to an owner board on your domain.",
             cta: "Book a 15-min call",
             audit: "Book a 15-min call",
             badge1: "TRUSTED LOCALLY",
@@ -271,7 +271,7 @@ export const i18nData: Record<Language, I18nContent> = {
             },
             {
                 q: "What does Carrillo Dynamics actually do?",
-                a: "We're ops and automation engineers for local service businesses. We don't just advise. We build and ship the systems. Book a 15-minute call and we'll map a system and owner board for your trade."
+                a: "We're operations & automation engineers. We engineer and ship Shop Systems for local service businesses — intake to owner board — not slide decks. Book 15 minutes and we'll map the baseline for your trade."
             },
             {
                 q: "Do you work in English and Spanish?",
@@ -427,7 +427,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
         },
         hero: {
             title: "Su negocio está perdiendo clientes por",
-            subtitle: "Construimos los sistemas que ayudan a las empresas de servicios a tener éxito. Consigue más trabajos, automatiza el trabajo manual y reduce los dolores de cabeza.",
+            subtitle: "Somos ingenieros de operaciones y automatización. Construimos Shop Systems para operadores locales: captación fuera de horario hasta un tablero de dueño en su dominio.",
             cta: "Agendar llamada de 15 min",
             audit: "Llamada de 15 min",
             badge1: "INGENIERÍA BASADA EN CHICAGO",
@@ -580,7 +580,7 @@ Technology shouldn't complicate your life; it should amplify the hard work you'v
             },
             {
                 q: "¿Qué hace realmente Carrillo Dynamics?",
-                a: "Somos ingenieros de operaciones y automatización para negocios de servicios locales. No solo aconsejamos. Construimos y entregamos los sistemas. Reserve una llamada de 15 minutos y mapeamos un sistema y tablero de dueño para su oficio."
+                a: "Somos ingenieros de operaciones y automatización. Diseñamos y entregamos Shop Systems para negocios de servicios locales — de la captación al tablero de dueño — no presentaciones. Reserve 15 minutos y mapeamos el baseline de su oficio."
             },
             {
                 q: "¿Trabajan en inglés y español?",

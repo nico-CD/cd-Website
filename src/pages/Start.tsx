@@ -51,32 +51,32 @@ const Start = () => {
           title: "Watch the demo.",
           titleAccent: "Book a call.",
           subtitle:
-            "A short walk-through of the trade systems we build for local shops. Then book 15 minutes or open the live demos.",
+            "A short walk-through of the Shop Systems we engineer for local operators. Then book 15 minutes or open the live demos.",
           videoTitle: "Carrillo Dynamics demo walk-through",
           bookPrimary: "Book a 15-min call",
           demosEyebrow: "Want to click around first?",
-          demosBody: "Open CD Demos and try eleven live trade systems yourself.",
+          demosBody: "Open CD Demos and try eleven live Shop System demos yourself.",
           openHub: "Open CD Demos",
           bookTitleLead: "Book Your",
           bookTitleAccent: "15-Min Call",
           bookBody:
-            "15 minutes to map bottlenecks and sketch a system and owner board for your shop.",
+            "15 minutes to map bottlenecks and lock a Shop System baseline for your trade.",
           langToggle: "ES",
         }
       : {
           title: "Vea el demo.",
           titleAccent: "Agende una llamada.",
           subtitle:
-            "Un recorrido corto de los sistemas de oficios que construimos para talleres locales. Luego reserve 15 minutos o abra los demos en vivo.",
+            "Un recorrido corto de los Shop Systems que diseñamos para operadores locales. Luego reserve 15 minutos o abra los demos en vivo.",
           videoTitle: "Recorrido demo de Carrillo Dynamics",
           bookPrimary: "Agendar llamada de 15 min",
           demosEyebrow: "¿Prefiere explorar primero?",
-          demosBody: "Abra Demos CD y pruebe once sistemas de oficios en vivo.",
+          demosBody: "Abra Demos CD y pruebe once demos de Shop System en vivo.",
           openHub: "Abrir Demos CD",
           bookTitleLead: "Agende Su",
           bookTitleAccent: "Llamada de 15 Min",
           bookBody:
-            "15 minutos para mapear cuellos de botella y bosquejar un sistema y tablero de dueño para su taller.",
+            "15 minutos para mapear cuellos de botella y fijar el baseline de Shop System para su oficio.",
           langToggle: "EN",
         };
 

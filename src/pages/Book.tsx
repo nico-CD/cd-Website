@@ -60,8 +60,8 @@ const Book = () => {
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground font-medium max-w-2xl mx-auto">
                         {lang === 'en' 
-                            ? "Let's discuss your business, find the bottlenecks, and see how our automations can help you scale." 
-                            : "Hablemos sobre su negocio, identifiquemos los cuellos de botella y veamos cómo nuestras automatizaciones pueden ayudarle a escalar."}
+                            ? "We map bottlenecks and lock a Shop System baseline for your trade — intake to owner board." 
+                            : "Mapeamos cuellos de botella y fijamos el baseline de Shop System para su oficio: captación hasta tablero de dueño."}
                     </p>
                 </motion.div>
 
@@ -124,7 +124,7 @@ const Book = () => {
                                 {lang === 'en' ? "2. The Plan" : "2. El Plan"}
                             </h3>
                             <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We sketch a custom site and owner board for your shop." : "Bosquejamos un sitio y tablero de dueño a la medida de su taller."}
+                                {lang === 'en' ? "We map a Shop System for your trade — demo baseline, skin, and owner board." : "Mapeamos un Shop System para su oficio: baseline del demo, marca y tablero de dueño."}
                             </p>
                         </div>
                         
@@ -137,7 +137,7 @@ const Book = () => {
                                 {lang === 'en' ? "3. The Deployment" : "3. El Despliegue"}
                             </h3>
                             <p className="text-muted-foreground font-medium">
-                                {lang === 'en' ? "We build, test, and launch your new automated system." : "Construimos, probamos y lanzamos su nuevo sistema automatizado."}
+                                {lang === 'en' ? "We engineer, test, and launch on your domain after kickoff." : "Ingeniería, pruebas y lanzamiento en su dominio después del kickoff."}
                             </p>
                         </div>
                     </div>
