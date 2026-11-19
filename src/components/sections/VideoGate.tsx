@@ -11,7 +11,7 @@ const VideoGate = () => {
     lang === "en"
       ? {
           line: "Pick a trade. Try it live.",
-          support: "Eleven live demos. Book a call when it clicks.",
+          support: "Eleven live demos. Book a call if it clicks.",
           book: "Book a call",
           tryDemo: "Try a demo",
         }

@@ -3,16 +3,16 @@ import { useTranslation } from "@/components/LanguageProvider";
 
 const BEATS = {
   en: [
-    { before: "Money leaking.", after: "Money kept." },
-    { before: "Time burning.", after: "Time saved." },
-    { before: "Jobs slipping.", after: "More jobs." },
-    { before: "Chaos rising.", after: "Under control." },
+    { before: "Money leaking...", after: "Money kept." },
+    { before: "Time burning...", after: "Time saved." },
+    { before: "Jobs slipping...", after: "More jobs." },
+    { before: "Chaos rising...", after: "Under control." },
   ],
   es: [
-    { before: "Dinero se fuga.", after: "Dinero cuidado." },
-    { before: "Tiempo se quema.", after: "Tiempo ahorrado." },
-    { before: "Trabajos se escapan.", after: "Más trabajos." },
-    { before: "Caos crece.", after: "Bajo control." },
+    { before: "Dinero se fuga...", after: "Dinero cuidado." },
+    { before: "Tiempo se quema...", after: "Tiempo ahorrado." },
+    { before: "Trabajos se escapan...", after: "Más trabajos." },
+    { before: "Caos crece...", after: "Bajo control." },
   ],
 } as const;
 

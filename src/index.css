@@ -137,8 +137,10 @@
   }
 
   @keyframes bull-arc-jitter {
-    0%, 100% { transform: scale(0.92) rotate(-3.5deg) translateY(4px); }
-    50% { transform: scale(0.93) rotate(-2deg) translateY(2px); }
+    0%, 100% { transform: scale(0.9) rotate(-5deg) translate(2px, 5px); }
+    25% { transform: scale(0.91) rotate(-2.5deg) translate(-2px, 3px); }
+    50% { transform: scale(0.9) rotate(-6deg) translate(1px, 6px); }
+    75% { transform: scale(0.915) rotate(-3deg) translate(-1px, 2px); }
   }
 
   .bull-arc__pane--before {
@@ -168,7 +170,7 @@
 
   .bull-arc__bull--before {
     filter: grayscale(0.95) brightness(0.72) sepia(0.55) hue-rotate(-18deg) saturate(1.6) contrast(1.05);
-    animation: bull-arc-jitter 1.6s ease-in-out infinite;
+    animation: bull-arc-jitter 0.85s ease-in-out infinite;
     opacity: 0.92;
   }
 
