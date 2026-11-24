@@ -1,0 +1,37 @@
+{
+  "rewrites": [
+    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+  ],
+  "redirects": [
+    {
+      "source": "/articles/65-second-lead-uk",
+      "destination": "/resources/60-second-lead-rule",
+      "permanent": true
+    },
+    {
+      "source": "/articles/operational-leak-detection",
+      "destination": "/resources/stop-losing-leads",
+      "permanent": true
+    },
+    {
+      "source": "/articles",
+      "destination": "/resources",
+      "permanent": true
+    },
+    {
+      "source": "/articles/:path*",
+      "destination": "/resources/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/success",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    },
+    {
+      "source": "/unsubscribed",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}
