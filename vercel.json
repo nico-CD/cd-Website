@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/((?!assets/).*)", "destination": "/index.html" }
+    { "source": "/((?!assets/|bull_PNGs/).*)", "destination": "/index.html" }
   ],
   "redirects": [
     {
